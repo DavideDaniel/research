@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: Technical Documentation
-  text: Framework Analysis & Guides
-  tagline: Practical analysis of development frameworks and tools for busy engineers
+  name: Research Papers
+  text: Technical Analysis & Guides
+  tagline: In-depth analysis on software development frameworks, AI-powered development, and engineering practices
   actions:
     - theme: brand
-      text: Browse Docs
+      text: Browse Papers
       link: /papers/
     - theme: alt
       text: View on GitHub
@@ -16,7 +16,7 @@ hero:
 features:
   - icon: 📋
     title: Spec-Driven Development
-    details: Analysis of BMAD, SpecKit, and OpenSpec - when to use each and how to adopt
+    details: Comprehensive analysis of enterprise-grade SDD frameworks including BMAD, SpecKit, and OpenSpec
     link: /papers/sdd-frameworks/
   - icon: 🤖
     title: Agentic Development Tools
@@ -34,18 +34,18 @@ features:
 
 Technical analysis designed for software architects, principal engineers, and development team leads evaluating modern frameworks and tools.
 
-Each guide provides:
+Each paper provides:
 
-- Framework comparisons with decision matrices
+- Framework comparisons and architectural analysis
 - Practical implementation patterns
 - Integration guidance
 - Real-world adoption considerations
 
 ## Navigation
 
-- **[Docs](/papers/)** - Browse all documentation
+- **[Papers](/papers/)** - Browse all papers
 - **[GitHub](https://github.com/DavideDaniel/research)** - Source repository
 
 ---
 
-*All content created with AI assistance. See individual docs for specific sources.*
+*All content created with AI assistance. See individual papers for specific sources.*

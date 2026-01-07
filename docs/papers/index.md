@@ -1,4 +1,4 @@
-# Documentation
+# Research Papers
 
 In-depth technical analysis to help engineers evaluate frameworks, tools, and practices.
 
@@ -26,7 +26,7 @@ Analysis of BMAD, SpecKit, and OpenSpec frameworks - when to use each, how they 
 
 ## About
 
-This documentation is:
+These papers are:
 
 - **Practically focused** - real-world implementation over theory
 - **For busy engineers** - practical guidance from hands-on experience

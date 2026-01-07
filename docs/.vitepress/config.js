@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Technical Documentation',
+  title: 'Research Papers',
   description: 'In-depth technical analysis on software development frameworks and engineering practices',
   base: '/research/',
 
@@ -10,7 +10,7 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Docs', link: '/papers/' },
+      { text: 'Papers', link: '/papers/' },
       { text: 'GitHub', link: 'https://github.com/DavideDaniel/research' }
     ],
 
