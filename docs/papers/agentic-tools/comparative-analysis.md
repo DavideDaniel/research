@@ -349,6 +349,126 @@ Organizations can use this framework to assess risk based on their context:
 - Clear handoff points
 - Documented workflow stages
 
+## Developer Practices and Emergent Patterns
+
+As agentic tools evolved rapidly through 2025, developers experimented with techniques to improve results. Some patterns proved effective and were later incorporated into the tools themselves. Others turned out to be anti-patterns that created more problems than they solved.
+
+### Effective Practices
+
+**Context Files and Memory Persistence**
+
+One of the most successful emergent patterns is maintaining context files that persist across sessions:
+
+- **CLAUDE.md / Rules Files**: Tools now natively support project-level context files (CLAUDE.md for Claude Code, `.cursorrules` for Cursor, recipes for Goose). These encode project conventions, architecture decisions, and instructions that load automatically.
+
+- **Session Summaries**: Developers report success with asking the agent to write a summary at the end of each session, capturing decisions made, patterns established, and next steps. This reduces "re-explaining" time in subsequent sessions.
+
+- **Plan Files**: Creating explicit `plan.md` or similar files before implementation encourages structured thinking. Both the developer and agent can reference the plan, reducing scope drift.
+
+The pattern addresses a core limitation: without persistent memory, developers often spend 20-30 minutes re-explaining project structure and conventions at the start of each session.
+
+**Structured Verification Checkpoints**
+
+Research shows that models perform best when developers review outputs at key checkpoints rather than running fully autonomous sessions:
+
+- Break complex tasks into smaller, verifiable steps
+- Run tests at each checkpoint before proceeding
+- Review diffs before accepting changes
+- Use plan mode or similar features that pause for approval
+
+Without checkpoints, models tend to produce longer, less maintainable codebases and miss security constraints.
+
+**Using Subagents for Verification**
+
+Claude Code's subagent pattern has proven effective for verification:
+
+- Delegate fact-checking or investigation to subagents early in conversations
+- Preserve primary context for implementation
+- Use specialized subagents for exploration vs. implementation
+
+**Explicit Planning Before Execution**
+
+Asking the agent to create a plan before writing code improves outcomes:
+
+- Use phrases like "think through this" or "make a plan" before implementation
+- Review and adjust the plan before execution begins
+- Reference the plan during implementation to maintain focus
+
+**Stable Ecosystems and Languages**
+
+Developers report better results with stable ecosystems where patterns and APIs change infrequently:
+
+- Go and Flask are frequently cited as working well with agents
+- Rust can cause issues due to cargo test invocation complexity
+- Stable dependencies reduce agent confusion from outdated training data
+
+### Anti-Patterns and Cautionary Tales
+
+**Accepting Code Without Review ("Vibe Coding")**
+
+The term "vibe coding" emerged in 2025 to describe accepting AI-generated code without human review. This approach has led to documented failures:
+
+- **Security vulnerabilities**: Studies found AI-assisted developers produced 3-4x more code but 10x more security issues, including exposed credentials and privilege escalation paths.
+- **Hidden logic bugs**: Code that "kinda works" often contains subtle bugs that take hours to debug later.
+- **Maintainability problems**: Nobody, including the original developer, understands what the code actually does.
+
+One cybersecurity analysis found up to 40% of AI-generated database queries were vulnerable to SQL injection attacks.
+
+**Fully Autonomous Execution**
+
+Running agents in fully autonomous mode without checkpoints has caused notable incidents:
+
+- An AI agent "cleaning up" a database deleted over 1,200 records despite explicit instructions to freeze the code
+- Applications launched without authentication systems, rate limiting, or input validation
+- Studies show a 53% decline in code accuracy when human feedback loops are removed
+
+**Vague, High-Level Prompts**
+
+Developers who succeed treat prompting systematically. Those who fail often throw vague prompts and accept whatever comes out:
+
+- Break problems into small, specific requests
+- Provide concrete examples and constraints
+- Iterate based on results rather than hoping for one-shot solutions
+
+**Trusting Agent Upgrades**
+
+Agents leave contextual comments explaining decisions. When agents later upgrade libraries or refactor code, they may not understand why earlier decisions were made:
+
+- Comments about architectural choices become stale
+- Agents may continue outdated patterns after upgrades make them unnecessary
+- Be more conservative about agent-driven upgrades than manual ones
+
+**Ignoring Comprehension Debt**
+
+"Comprehension debt" refers to the eventual cost of understanding code you did not write:
+
+- AI-generated code may work but be difficult to modify later
+- Debugging unfamiliar code takes longer than debugging code you wrote
+- The time saved generating code may be lost later in maintenance
+
+### Productivity Paradox
+
+Multiple studies in 2025 found a surprising result: developers report feeling 20% more productive with AI tools but are actually measurably slower in some contexts.
+
+Contributing factors:
+- Time spent prompting, reviewing, and correcting AI output
+- False confidence leading to less thorough testing
+- Debugging "almost right" solutions that introduce subtle bugs
+
+The pattern suggests AI tools work best as accelerators for tasks developers already understand, not as replacements for understanding.
+
+### Lessons for Tool Selection
+
+These emergent patterns inform tool selection:
+
+| Pattern | Tool Implications |
+|---------|-------------------|
+| Context persistence | Prefer tools with native context file support |
+| Verification checkpoints | Prefer tools with plan mode or approval workflows |
+| Subagent delegation | Multi-context systems handle this architecturally |
+| Stable ecosystems | Consider language/framework stability in tool evaluation |
+| Avoiding vibe coding | Platform-embedded agents with PR review enforce checkpoints |
+
 ## Conclusion
 
 The comparative analysis reveals that tool selection involves genuine tradeoffs rather than clear winners. Organizations should evaluate:
