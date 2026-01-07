@@ -177,6 +177,23 @@ When working on this repository:
 5. **Practical examples** - Code snippets, workflows, decision matrices
 6. **Proper attribution** - Always note frameworks and sources researched
 7. **Cross-reference** - Link between related sections and papers
+8. **Use Mermaid for diagrams** - Use Mermaid syntax for all flowcharts and diagrams (not ASCII art)
+
+### Diagrams with Mermaid
+
+When creating diagrams, use Mermaid syntax. The repository has `vitepress-plugin-mermaid` configured.
+
+Example:
+````markdown
+```mermaid
+flowchart TD
+    A["Primary Agent"] --> B["Subagent 1"]
+    A --> C["Subagent 2"]
+    A --> D["Subagent 3"]
+```
+````
+
+Use `<br/>` for line breaks within node labels. Prefer `flowchart TD` (top-down) for hierarchical diagrams.
 
 ## Future Paper Ideas
 
