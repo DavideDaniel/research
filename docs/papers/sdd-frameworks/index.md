@@ -6,7 +6,7 @@ This research paper provides a comprehensive analysis of specification-driven de
 
 **Publication Date:** January 2026  
 **Author:** David Daniel  
-**Target Audience:** Software architects, development team leads, and engineering professionals
+**Target Audience:** Software architects, principal engineers, development team leads, and engineering professionals
 
 ## What is Spec-Driven Development?
 
@@ -92,6 +92,11 @@ For agentic AI development tools (Claude Code, Goose, Cursor, GitHub Copilot), s
 - Evaluating SDD frameworks for enterprise adoption
 - Designing specification-driven architectures
 - Planning migration from traditional development
+
+### Principal Engineers
+- Establishing specification standards across teams
+- Driving technical adoption of SDD practices
+- Mentoring engineers on specification-first development
 
 ### Development Team Leads
 - Implementing SDD practices in existing teams
