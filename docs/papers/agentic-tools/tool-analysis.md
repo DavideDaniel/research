@@ -11,11 +11,11 @@ This section provides detailed architectural analysis of four representative age
 
 The analysis focuses on architectural properties rather than feature comparisons, enabling readers to evaluate tools based on their execution models rather than marketing claims.
 
-**Analysis Approach:** Each tool analyzed here offers multiple interaction modes—from lightweight assistive features to fully autonomous execution. This analysis covers the full spectrum of modes for each tool, with deeper architectural focus on the autonomous and agentic capabilities that distinguish these tools from traditional code completion systems.
+**Analysis Approach:** The tools analyzed here represent two distinct lineages. Cursor and GitHub Copilot evolved from assistive code completion into increasingly autonomous agents, offering a spectrum of interaction modes. Claude Code and Goose were designed as agentic systems from the start. For each tool, this analysis covers available interfaces, customization options, and core architectural contributions, with deeper focus on the autonomous execution capabilities.
 
 ## Claude Code
 
-Claude Code is an agentic development tool designed to operate across terminal, IDE, and CLI environments. Its defining architectural characteristic is explicit use of subagents for task decomposition.
+Claude Code is an agentic development tool designed to operate across terminal, IDE, and CLI environments. Unlike tools that evolved from code completion, Claude Code was built as an agentic system from the start—there is no "assistive mode" versus "agent mode" distinction.
 
 ### Architectural Class
 
@@ -24,6 +24,77 @@ Multi-context agent system
 ### Primary Interface
 
 Terminal, IDE integration, CLI
+
+### Interface Options
+
+Claude Code is available through multiple interfaces, all sharing the same underlying agentic architecture:
+
+**Terminal/CLI**
+
+The primary interface for most users:
+- Interactive REPL for conversational development
+- Direct command execution and file manipulation
+- Full access to local development environment
+- Session persistence and history
+
+**IDE Extension**
+
+VS Code integration that brings Claude Code into the editor:
+- Sidebar panel for interaction
+- Editor context awareness
+- Integrated terminal access
+- File and selection context
+
+**SDK/API**
+
+Programmatic access for building custom tooling:
+- Claude Code can be embedded in automated workflows
+- Enables custom orchestration layers
+- Powers CI/CD integrations and custom agents
+
+All interfaces provide the same agentic capabilities—the choice is about developer preference and workflow integration rather than capability differences.
+
+### Customization and Configuration
+
+**CLAUDE.md Files**
+
+Project-level context files that inform agent behavior:
+- Repository conventions and architecture notes
+- Build and test commands
+- File structure explanations
+- Loaded automatically when entering a project directory
+
+**Slash Commands**
+
+Custom commands defined in `.claude/commands/`:
+- Reusable prompts and workflows
+- Can include file references and templates
+- Team-shareable command libraries
+- Invoked with `/command-name` syntax
+
+**Hooks**
+
+Event-driven customization for tool execution:
+- Pre and post hooks for tool calls
+- Can validate, log, or modify tool behavior
+- Enables policy enforcement and auditing
+- Configured per-project or globally
+
+**MCP Server Integration**
+
+Extensibility through Model Context Protocol:
+- Connect external tools and data sources
+- Custom capability development
+- Standardized extension interface
+- Enables integration with databases, APIs, and services
+
+**Permissions and Allowlists**
+
+Tool access control:
+- Configure which tools the agent can use
+- Restrict file system access patterns
+- Control command execution permissions
+- Supports least-privilege configurations
 
 ### Architectural Contributions
 
@@ -104,7 +175,7 @@ For more on SDD frameworks, see [Spec-Driven Development Framework Patterns](/pa
 
 ## Goose
 
-Goose is an open-source AI agent project with CLI and desktop interfaces. Its defining architectural characteristic is recipe-based workflow orchestration, with optional subrecipes for decomposition.
+Goose is an open-source AI agent project from Block. Like Claude Code, Goose was designed as an agentic system from the start rather than evolving from code completion. Its defining architectural characteristic is recipe-based workflow orchestration, with optional subrecipes for decomposition.
 
 ### Architectural Class
 
@@ -113,6 +184,52 @@ Multi-context agent system
 ### Primary Interface
 
 CLI, Desktop Application
+
+### Interface Options
+
+**CLI**
+
+Command-line interface for terminal-based workflows:
+- Session-based interaction model
+- Recipe execution from command line
+- Scriptable for automation
+- Lightweight resource footprint
+
+**Desktop Application**
+
+GUI application for visual interaction:
+- Session management with history
+- Recipe browsing and selection
+- Extension configuration interface
+- More accessible for users less comfortable with terminal
+
+Both interfaces provide equivalent agentic capabilities—the desktop app is essentially a GUI wrapper around the same underlying engine.
+
+### Configuration and Extensibility
+
+**Profiles**
+
+Named configurations that bundle settings:
+- Model provider and selection
+- Default extensions
+- System prompt customizations
+- Quick switching between configurations
+
+**Extensions (MCP Servers)**
+
+Goose uses MCP (Model Context Protocol) as its primary extension mechanism:
+- Built-in extensions for common operations (filesystem, GitHub, etc.)
+- Community and custom extensions
+- Declarative extension configuration per recipe
+- Enables integration with external tools and services
+
+**Session Management**
+
+Persistent session state across interactions:
+- Resume previous sessions
+- Session history and context
+- Named sessions for different projects
+- Session export and sharing
 
 ### Architectural Contributions
 
