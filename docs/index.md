@@ -14,19 +14,15 @@ hero:
       link: https://github.com/DavideDaniel/research
 
 features:
-  - icon: 📋
-    title: Spec-Driven Development
+  - title: Spec-Driven Development
     details: Comprehensive analysis of enterprise-grade SDD frameworks including BMAD, SpecKit, and OpenSpec
     link: /papers/sdd-frameworks/
-  - icon: 🤖
-    title: Agentic Development Tools
+  - title: Agentic Development Tools
     details: Architectural comparison of Claude Code, Goose, Cursor, and GitHub Copilot
     link: /papers/agentic-tools/
-  - icon: 🏗️
-    title: Practical Focus
+  - title: Practical Focus
     details: Implementation guidance and comparisons based on hands-on experience
-  - icon: 🔧
-    title: For Busy Engineers
+  - title: For Busy Engineers
     details: Built for architects, principal engineers, and team leads evaluating tools
 ---
 
