@@ -84,7 +84,7 @@ Analysis of complementary technologies and ecosystem convergence:
 |-----------|----------|------------|----------|----------|
 | **BMAD** | Greenfield automation | Multi-agent simulation | 5 phases, 19+ agents | Production-Ready |
 | **SpecKit** | Enterprise governance | Constitutional rules | 5 phases, GitHub-native | Production-Ready |
-| **OpenSpec** | Brownfield retrofitting | Lightweight, incremental | 3 phases, minimal overhead | Active Development |
+| **OpenSpec** | Brownfield retrofitting | Lightweight, incremental | 3 phases, minimal overhead | Production-Ready |
 
 ## Who Should Read This Paper
 
