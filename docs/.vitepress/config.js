@@ -17,7 +17,7 @@ export default defineConfig({
     sidebar: {
       '/papers/sdd-frameworks/': [
         {
-          text: 'Spec-Driven Development Frameworks',
+          text: 'Spec-Driven Development Framework Patterns',
           items: [
             { text: 'Overview', link: '/papers/sdd-frameworks/' },
             { text: 'Getting Started', link: '/papers/sdd-frameworks/getting-started' },
@@ -35,7 +35,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2026 Davide Daniel'
+      copyright: 'Copyright © 2026 David Daniel'
     },
 
     search: {
@@ -57,7 +57,7 @@ export default defineConfig({
   },
 
   head: [
-    ['meta', { name: 'author', content: 'Davide Daniel' }],
+    ['meta', { name: 'author', content: 'David Daniel' }],
     ['meta', { name: 'keywords', content: 'spec-driven development, software architecture, development frameworks, BDD, contract testing' }]
   ],
 

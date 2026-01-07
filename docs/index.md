@@ -43,10 +43,10 @@ Each paper provides:
 
 ## Latest Research
 
-### [Spec-Driven Development Frameworks](/papers/sdd-frameworks/)
+### [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/)
 **Published: January 2026**
 
-Comprehensive analysis of three enterprise-grade spec-driven development frameworks: BMAD (28,000+ stars), SpecKit (60,500+ stars), and OpenSpec (15,700+ stars). Includes foundational theory, detailed framework comparisons, and ecosystem integration patterns.
+Comprehensive analysis of three production-ready spec-driven development frameworks: BMAD, SpecKit, and OpenSpec. Includes foundational theory, detailed framework comparisons, and ecosystem integration patterns.
 
 [Start reading →](/papers/sdd-frameworks/)
 

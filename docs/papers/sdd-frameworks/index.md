@@ -1,11 +1,11 @@
-# Spec-Driven Development Frameworks: A Comprehensive Guide
+# Spec-Driven Development Framework Patterns
 
 ## Overview
 
 This research paper provides a comprehensive analysis of specification-driven development (SDD) frameworks for enterprise software development. The paper examines three production-ready frameworks—BMAD, SpecKit, and OpenSpec—along with their foundational theories and ecosystem integration patterns.
 
 **Publication Date:** January 2026  
-**Author:** Davide Daniel  
+**Author:** David Daniel  
 **Target Audience:** Software architects, development team leads, and engineering professionals
 
 ## What is Spec-Driven Development?
@@ -49,7 +49,7 @@ Introduction to SDD concepts, framework selection guidance, and quick-start exam
 
 ### 2. Framework Comparison
 Detailed analysis of BMAD, SpecKit, and OpenSpec including:
-- GitHub metrics and community health
+- Community health and enterprise adoption patterns
 - Core philosophies and architectural approaches
 - Workflow stages and implementation patterns
 - Technology stacks and language support
@@ -80,11 +80,11 @@ Analysis of complementary technologies and ecosystem convergence:
 
 ## Framework Quick Comparison
 
-| Framework | Stars | Best For | Philosophy | Workflow |
-|-----------|-------|----------|------------|----------|
-| **BMAD** | 28,000+ | Greenfield automation | Multi-agent simulation | 5 phases, 19+ agents |
-| **SpecKit** | 60,500+ | Enterprise governance | Constitutional rules | 5 phases, GitHub-native |
-| **OpenSpec** | 15,700+ | Brownfield retrofitting | Lightweight, incremental | 3 phases, minimal overhead |
+| Framework | Best For | Philosophy | Workflow | Maturity |
+|-----------|----------|------------|----------|----------|
+| **BMAD** | Greenfield automation | Multi-agent simulation | 5 phases, 19+ agents | Production-Ready |
+| **SpecKit** | Enterprise governance | Constitutional rules | 5 phases, GitHub-native | Production-Ready |
+| **OpenSpec** | Brownfield retrofitting | Lightweight, incremental | 3 phases, minimal overhead | Active Development |
 
 ## Who Should Read This Paper
 
@@ -133,6 +133,28 @@ This research is based on:
 - **Industry Patterns:** Review of publicly documented enterprise adoption stories
 - **Technical Evaluation:** Hands-on testing and workflow analysis
 - **Ecosystem Analysis:** Survey of complementary tools and integration patterns
+
+## References and Resources
+
+### Core Frameworks
+
+- **BMAD Method:** [https://github.com/bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD)
+- **GitHub Spec Kit:** [https://github.com/github/spec-kit](https://github.com/github/spec-kit)
+- **OpenSpec:** [https://github.com/Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec)
+
+### Adjacent Technologies
+
+- **MetaGPT:** [https://github.com/geekan/MetaGPT](https://github.com/geekan/MetaGPT)
+- **Pact:** [https://github.com/pact-foundation/pact](https://github.com/pact-foundation/pact)
+- **Cucumber:** [https://github.com/cucumber/cucumber](https://github.com/cucumber/cucumber)
+- **SpecFlow:** [https://github.com/SpecFlowOSS/SpecFlow](https://github.com/SpecFlowOSS/SpecFlow)
+- **Behave:** [https://github.com/behave/behave](https://github.com/behave/behave)
+- **Momentic:** [https://www.momentic.ai](https://www.momentic.ai)
+
+### Theoretical Foundations
+
+- **Martin Fowler - Test Pyramid:** [https://martinfowler.com/bliki/TestPyramid.html](https://martinfowler.com/bliki/TestPyramid.html)
+- **GitHub Blog:** [https://github.blog](https://github.blog)
 
 ## Framework Versions
 
@@ -203,7 +225,7 @@ This paper will be updated periodically to reflect:
 If citing this research in academic or professional work, please use:
 
 ```
-Daniel, D. (2026). Spec-Driven Development Frameworks: A Comprehensive Guide.
+Daniel, David (2026). Spec-Driven Development Framework Patterns.
 Retrieved from https://davidedaniel.github.io/research/papers/sdd-frameworks/
 ```
 

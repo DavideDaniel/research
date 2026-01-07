@@ -10,7 +10,7 @@ We explore multi-agent orchestration platforms, AI-powered testing tools, tradit
 
 ### MetaGPT: Software Company as Multi-Agent System
 
-**GitHub Stars:** 62,600+ | **Maturity:** Production-Ready
+**Maturity:** Production-Ready | **Community:** Active Development
 
 MetaGPT represents a paradigm shift in how we conceptualize software development automation. Rather than viewing development as a series of individual tasks, MetaGPT models the entire software development process as a multi-agent company, where AI agents assume different organizational roles.
 
@@ -273,7 +273,7 @@ def step_impl(context):
 
 ### Pact: Consumer-Driven Contract Testing
 
-**GitHub Stars:** 8,900+ (Pact JVM)
+**Maturity:** Production-Ready | **Community:** Community-Driven
 
 Pact pioneered consumer-driven contract testing and remains the industry standard for API specification verification in distributed systems.
 
@@ -703,34 +703,45 @@ The future of software development is specification-driven, AI-augmented, and in
 
 ## References and Resources
 
-**Multi-Agent Frameworks:**
-- MetaGPT: github.com/geekan/MetaGPT
-- AutoGen: github.com/microsoft/autogen
-- LangGraph: github.com/langchain-ai/langgraph
-- CrewAI: github.com/joaomdmoura/crewAI
+### Core SDD Frameworks
 
-**AI Testing Platforms:**
-- Momentic: momentic.ai
-- Testim: testim.io
-- Mabl: mabl.com
-- Applitools: applitools.com
+- **BMAD Method:** [https://github.com/bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD)
+- **GitHub Spec Kit:** [https://github.com/github/spec-kit](https://github.com/github/spec-kit)
+- **OpenSpec:** [https://github.com/Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec)
 
-**BDD Frameworks:**
-- Cucumber: cucumber.io
-- SpecFlow: specflow.org
-- Behave: github.com/behave/behave
-- Gauge: gauge.org
+### Multi-Agent Frameworks
 
-**Contract Testing:**
-- Pact: docs.pact.io
-- PactFlow: pactflow.io
-- Spring Cloud Contract: spring.io/projects/spring-cloud-contract
+- **MetaGPT:** [https://github.com/geekan/MetaGPT](https://github.com/geekan/MetaGPT)
+- **AutoGen:** [https://github.com/microsoft/autogen](https://github.com/microsoft/autogen)
+- **LangGraph:** [https://github.com/langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)
+- **CrewAI:** [https://github.com/joaomdmoura/crewAI](https://github.com/joaomdmoura/crewAI)
 
-**Standards and Protocols:**
-- Model Context Protocol (MCP): Anthropic documentation
-- OpenAPI Specification: swagger.io/specification
-- GraphQL Schema: graphql.org
+### AI Testing Platforms
+
+- **Momentic:** [https://www.momentic.ai](https://www.momentic.ai)
+- **Testim:** [https://www.testim.io](https://www.testim.io)
+- **Mabl:** [https://www.mabl.com](https://www.mabl.com)
+- **Applitools:** [https://applitools.com](https://applitools.com)
+
+### BDD Frameworks
+
+- **Cucumber:** [https://github.com/cucumber/cucumber](https://github.com/cucumber/cucumber)
+- **SpecFlow:** [https://github.com/SpecFlowOSS/SpecFlow](https://github.com/SpecFlowOSS/SpecFlow)
+- **Behave:** [https://github.com/behave/behave](https://github.com/behave/behave)
+- **Gauge:** [https://gauge.org](https://gauge.org)
+
+### Contract Testing
+
+- **Pact:** [https://github.com/pact-foundation/pact](https://github.com/pact-foundation/pact)
+- **PactFlow:** [https://pactflow.io](https://pactflow.io)
+- **Spring Cloud Contract:** [https://spring.io/projects/spring-cloud-contract](https://spring.io/projects/spring-cloud-contract)
+
+### Theoretical Foundations
+
+- **Martin Fowler - Test Pyramid:** [https://martinfowler.com/bliki/TestPyramid.html](https://martinfowler.com/bliki/TestPyramid.html)
+- **OpenAPI Specification:** [https://swagger.io/specification](https://swagger.io/specification)
+- **GraphQL Schema:** [https://graphql.org](https://graphql.org)
 
 ---
 
-*This analysis was created with AI assistance. Technologies referenced: MetaGPT, Momentic, Pact, Cucumber, SpecFlow, Behave, AutoGen, LangGraph, CrewAI, and Model Context Protocol.*
+*This analysis was created with AI assistance. Technologies referenced: MetaGPT, Momentic, Pact, Cucumber, SpecFlow, Behave, AutoGen, LangGraph, CrewAI, and Model Context Protocol. Data as of January 2026.*

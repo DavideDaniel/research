@@ -7,7 +7,7 @@ This comprehensive analysis examines three production-ready spec-driven developm
 ## Framework Profiles
 
 ### BMAD: Agentic Team Simulation
-**GitHub Stars:** 28,000+ | **Maturity:** Production-Ready
+**Maturity:** Production-Ready | **Community:** Active Development
 
 BMAD implements specification-driven development through multi-agent orchestration, simulating a complete software development team with 19+ specialized AI agents. The framework emphasizes autonomous agent collaboration around executable specifications.
 
@@ -44,7 +44,7 @@ BMAD implements specification-driven development through multi-agent orchestrati
 - Learning curve for team coordination models
 
 ### SpecKit: Constitution-Driven Governance
-**GitHub Stars:** 60,500+ | **Maturity:** Production-Ready | **Backing:** GitHub
+**Maturity:** Production-Ready | **Community:** Community-Driven | **Backing:** GitHub
 
 SpecKit represents GitHub's official approach to spec-driven development, emphasizing governance, compliance, and traceability through a constitutional framework. The system enforces specification compliance through codified rules and automated verification.
 
@@ -100,7 +100,7 @@ SpecKit represents GitHub's official approach to spec-driven development, emphas
 - May feel heavyweight for small teams or projects
 
 ### OpenSpec: Lightweight Brownfield-First
-**GitHub Stars:** 15,700+ | **Maturity:** Production-Ready
+**Maturity:** Production-Ready | **Community:** Active Development
 
 OpenSpec prioritizes pragmatism and incremental adoption, designed specifically for retrofitting specifications into existing codebases. The framework minimizes disruption while maximizing value from specification-driven practices.
 
@@ -150,11 +150,11 @@ OpenSpec prioritizes pragmatism and incremental adoption, designed specifically 
 
 ## Comparative Analysis
 
-### GitHub Metrics and Community Health
+### Community Health and Enterprise Adoption
 
 | Metric | BMAD | SpecKit | OpenSpec |
 |--------|------|---------|----------|
-| Stars | 28,000+ | 60,500+ | 15,700+ |
+| Maturity Level | Production-Ready | Production-Ready | Production-Ready |
 | Contributors | 150+ | 300+ | 80+ |
 | Recent Activity | Very Active | Extremely Active | Active |
 | Enterprise Users | 50+ | 200+ | 30+ |
@@ -393,14 +393,29 @@ Specification-driven development through these frameworks represents a significa
 
 All three frameworks demonstrate production readiness and active community support, making them viable choices for enterprise adoption in 2026 and beyond.
 
-## References and Further Reading
+## References and Resources
 
-- BMAD Official Documentation: [GitHub Repository]
-- SpecKit Documentation: [GitHub Repository]
-- OpenSpec Project: [GitHub Repository]
-- Martin Fowler on Specification-Driven Development
+### Core Frameworks
+
+- **BMAD Method:** [https://github.com/bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD)
+- **GitHub Spec Kit:** [https://github.com/github/spec-kit](https://github.com/github/spec-kit)
+- **OpenSpec:** [https://github.com/Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec)
+
+### Adjacent Technologies
+
+- **MetaGPT:** [https://github.com/geekan/MetaGPT](https://github.com/geekan/MetaGPT)
+- **Pact:** [https://github.com/pact-foundation/pact](https://github.com/pact-foundation/pact)
+- **Cucumber:** [https://github.com/cucumber/cucumber](https://github.com/cucumber/cucumber)
+- **SpecFlow:** [https://github.com/SpecFlowOSS/SpecFlow](https://github.com/SpecFlowOSS/SpecFlow)
+- **Behave:** [https://github.com/behave/behave](https://github.com/behave/behave)
+- **Momentic:** [https://www.momentic.ai](https://www.momentic.ai)
+
+### Theoretical Foundations
+
+- **Martin Fowler - Test Pyramid:** [https://martinfowler.com/bliki/TestPyramid.html](https://martinfowler.com/bliki/TestPyramid.html)
+- **GitHub Blog:** [https://github.blog](https://github.blog)
 - IEEE Software Engineering Standards for Specifications
 
 ---
 
-*This analysis was created with AI assistance. Frameworks researched: BMAD, SpecKit, and OpenSpec from official GitHub repositories and documentation. Metrics and adoption data as of January 2026.*
+*This analysis was created with AI assistance. Frameworks researched: BMAD, SpecKit, and OpenSpec from official GitHub repositories and documentation. Data as of January 2026.*

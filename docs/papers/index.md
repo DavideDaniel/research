@@ -4,7 +4,7 @@ Browse technical research papers and documentation on software development frame
 
 ## Published Papers
 
-### [Spec-Driven Development Frameworks](/papers/sdd-frameworks/)
+### [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/)
 **Published: January 2026**
 
 Comprehensive analysis of enterprise-grade specification-driven development frameworks including BMAD, SpecKit, and OpenSpec. This research covers:
