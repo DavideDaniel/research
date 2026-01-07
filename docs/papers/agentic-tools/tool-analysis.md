@@ -63,18 +63,12 @@ A primary agent delegates subtasks and integrates results, enabling decompositio
 
 ### Execution Model
 
-```
-┌─────────────────────────────────────┐
-│         Primary Agent               │
-│    (coordination, integration)      │
-└──────────────┬──────────────────────┘
-               │
-    ┌──────────┼──────────┐
-    ▼          ▼          ▼
-┌────────┐ ┌────────┐ ┌────────┐
-│Subagent│ │Subagent│ │Subagent│
-│Explore │ │Implement│ │Verify │
-└────────┘ └────────┘ └────────┘
+```mermaid
+flowchart TD
+    A["Primary Agent<br/>(coordination, integration)"]
+    A --> B["Subagent<br/>Explore"]
+    A --> C["Subagent<br/>Implement"]
+    A --> D["Subagent<br/>Verify"]
 ```
 
 ### Integration Patterns
@@ -180,18 +174,12 @@ Goose's open source model allows deep customization and internal governance:
 
 ### Execution Model
 
-```
-┌─────────────────────────────────────┐
-│         Parent Recipe               │
-│    (orchestration, aggregation)     │
-└──────────────┬──────────────────────┘
-               │
-    ┌──────────┼──────────┐
-    ▼          ▼          ▼
-┌────────┐ ┌────────┐ ┌────────┐
-│Subrecipe│ │Subrecipe│ │Subrecipe│
-│  Lint  │ │  Test  │ │  Build │
-└────────┘ └────────┘ └────────┘
+```mermaid
+flowchart TD
+    A["Parent Recipe<br/>(orchestration, aggregation)"]
+    A --> B["Subrecipe<br/>Lint"]
+    A --> C["Subrecipe<br/>Test"]
+    A --> D["Subrecipe<br/>Build"]
 ```
 
 ### Integration Patterns
@@ -283,21 +271,15 @@ This is best understood as parallel exploration, not coordinated multi-agent orc
 
 ### Execution Model
 
-```
-┌─────────────────────────────────────┐
-│         User Task                   │
-└──────────────┬──────────────────────┘
-               │
-    ┌──────────┼──────────┐
-    ▼          ▼          ▼
-┌────────┐ ┌────────┐ ┌────────┐
-│Worktree│ │Worktree│ │Worktree│
-│Attempt 1│ │Attempt 2│ │Attempt 3│
-└────────┘ └────────┘ └────────┘
-    │          │          │
-    └──────────┼──────────┘
-               ▼
-         User Selection
+```mermaid
+flowchart TD
+    A["User Task"]
+    A --> B["Worktree<br/>Attempt 1"]
+    A --> C["Worktree<br/>Attempt 2"]
+    A --> D["Worktree<br/>Attempt 3"]
+    B --> E["User Selection"]
+    C --> E
+    D --> E
 ```
 
 ### Integration Patterns
@@ -370,22 +352,12 @@ GitHub's materials describe the coding agent as running within GitHub's workflow
 
 ### Execution Model
 
-```
-┌─────────────────────────────────────┐
-│         Issue/Task                  │
-└──────────────┬──────────────────────┘
-               ▼
-┌─────────────────────────────────────┐
-│      GitHub Workflow Environment    │
-│         (Copilot Agent)             │
-└──────────────┬──────────────────────┘
-               ▼
-┌─────────────────────────────────────┐
-│         Pull Request                │
-│    (review checkpoint)              │
-└──────────────┬──────────────────────┘
-               ▼
-         Human Review
+```mermaid
+flowchart TD
+    A["Issue/Task"]
+    A --> B["GitHub Workflow Environment<br/>(Copilot Agent)"]
+    B --> C["Pull Request<br/>(review checkpoint)"]
+    C --> D["Human Review"]
 ```
 
 ### Integration Patterns
