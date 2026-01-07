@@ -26,6 +26,18 @@ export default defineConfig({
             { text: 'Adjacent Technologies', link: '/papers/sdd-frameworks/adjacent-technologies' }
           ]
         }
+      ],
+      '/papers/agentic-tools/': [
+        {
+          text: 'Agentic Development Tools',
+          items: [
+            { text: 'Overview', link: '/papers/agentic-tools/' },
+            { text: 'Terminology & Taxonomy', link: '/papers/agentic-tools/terminology-taxonomy' },
+            { text: 'Tool Analysis', link: '/papers/agentic-tools/tool-analysis' },
+            { text: 'Comparative Analysis', link: '/papers/agentic-tools/comparative-analysis' },
+            { text: 'References & Resources', link: '/papers/agentic-tools/references' }
+          ]
+        }
       ]
     },
 

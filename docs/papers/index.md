@@ -4,6 +4,25 @@ Browse technical research papers and documentation on software development frame
 
 ## Published Papers
 
+### [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/)
+**Published: January 2026**
+
+Comparative architectural analysis of AI-powered development tools including Claude Code, Goose, Cursor, and GitHub Copilot. This research covers:
+
+- Architectural taxonomy of agentic development tools
+- Execution substrate and context management analysis
+- Multi-context delegation patterns
+- Governance implications and failure modes
+- Integration with specification-driven workflows
+
+**Target Audience:** Software architects, development team leads, engineering professionals
+
+**Topics:** Agentic AI, execution architectures, multi-context systems, development governance, tool comparison
+
+[Read the paper →](/papers/agentic-tools/)
+
+---
+
 ### [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/)
 **Published: January 2026**
 

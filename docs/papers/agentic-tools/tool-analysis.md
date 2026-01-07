@@ -1,0 +1,445 @@
+# Tool Analysis
+
+## Introduction
+
+This section provides detailed architectural analysis of four representative agentic development tools. For each tool, we examine:
+
+- Core architectural contributions
+- Execution model and context management
+- Integration patterns with development workflows
+- Current limitations and constraints
+
+The analysis focuses on architectural properties rather than feature comparisons, enabling readers to evaluate tools based on their execution models rather than marketing claims.
+
+## Claude Code
+
+Claude Code is an agentic development tool designed to operate across terminal, IDE, and CLI environments. Its defining architectural characteristic is explicit use of subagents for task decomposition.
+
+### Architectural Class
+
+Multi-context agent system
+
+### Primary Interface
+
+Terminal, IDE integration, CLI
+
+### Architectural Contributions
+
+**Subagent Architecture**
+
+Claude Code implements subagents as pre-configured agent contexts with specific roles, their own context windows, and configurable tool access. This architecture directly addresses the context window limitation that affects all LLM-based tools.
+
+Key properties:
+- Each subagent operates within its own context window
+- Subagents can be constrained by purpose and permissions
+- The primary agent coordinates delegation and result integration
+- Subagent configurations can be customized for specific workflows
+
+**Context Isolation**
+
+Each subagent uses its own context window, reducing contamination between planning, exploration, and implementation work. This isolation prevents:
+
+- Exploration results from polluting implementation context
+- Implementation details from affecting high-level planning
+- One subtask's failures from corrupting another's progress
+
+**Role Specialization**
+
+Different subagents can be constrained by purpose and tool permissions, enabling least-privilege patterns. Example specializations:
+
+- **Exploration agents:** Read-only access for codebase investigation
+- **Implementation agents:** Write access scoped to specific directories
+- **Verification agents:** Test execution without production access
+
+**Delegation and Reintegration**
+
+A primary agent delegates subtasks and integrates results, enabling decomposition without forcing developers to manually manage separate threads. The delegation pattern:
+
+1. Primary agent receives complex task
+2. Primary agent identifies decomposition strategy
+3. Subtasks dispatched to appropriate subagents
+4. Subagent results returned to primary context
+5. Primary agent synthesizes and continues
+
+### Execution Model
+
+```
+┌─────────────────────────────────────┐
+│         Primary Agent               │
+│    (coordination, integration)      │
+└──────────────┬──────────────────────┘
+               │
+    ┌──────────┼──────────┐
+    ▼          ▼          ▼
+┌────────┐ ┌────────┐ ┌────────┐
+│Subagent│ │Subagent│ │Subagent│
+│Explore │ │Implement│ │Verify │
+└────────┘ └────────┘ └────────┘
+```
+
+### Integration Patterns
+
+**With Specification-Driven Development:**
+
+Claude Code can integrate with SDD workflows through:
+- Slash commands that load specification context
+- Subagents specialized for specification verification
+- Custom instructions that enforce specification compliance
+
+For more on SDD frameworks, see [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/).
+
+**With Version Control:**
+
+- Direct git integration for commits and branches
+- Awareness of repository state and history
+- PR creation through CLI tools
+
+### Current Limitations
+
+**Delegation is not fully inspectable:** Delegation decisions are partially implicit and not fully user-configurable in a way that always makes the "why" and "when" obvious during execution. Developers may not always understand when and why subagents are invoked.
+
+**Orchestration complexity:** Multi-context coordination introduces failure modes when subagent outputs conflict, duplicate work, or make incompatible assumptions. Debugging requires understanding the delegation structure.
+
+**Local execution dependencies:** Outcomes and reproducibility depend on the developer's machine configuration unless teams standardize environments. Different developers may get different results for identical prompts.
+
+---
+
+## Goose
+
+Goose is an open-source AI agent project with CLI and desktop interfaces. Its defining architectural characteristic is recipe-based workflow orchestration, with optional subrecipes for decomposition.
+
+### Architectural Class
+
+Multi-context agent system
+
+### Primary Interface
+
+CLI, Desktop Application
+
+### Architectural Contributions
+
+**Recipe System**
+
+Recipes package instructions, extensions, and parameters into reusable workflows. A recipe defines:
+
+- System prompts and instructions
+- Enabled extensions and MCP servers
+- Context sources and initialization
+- Output expectations and formats
+
+Recipe example structure:
+```yaml
+name: code-review
+description: Comprehensive code review workflow
+extensions:
+  - github
+  - filesystem
+instructions: |
+  Review the provided code changes for:
+  - Correctness and potential bugs
+  - Style and conventions
+  - Performance implications
+  - Security considerations
+```
+
+**Subrecipes for Decomposition**
+
+Subrecipes enable a parent recipe to invoke specialized workflows. This provides explicit multi-context delegation where:
+
+- Parent recipe defines overall objective
+- Subrecipes handle specific subtasks
+- Results flow back to parent context
+- Delegation structure is declarative and versionable
+
+Note: Goose documentation describes subrecipes as experimental and subject to change.
+
+**Sequential and Parallel Workflow Patterns**
+
+Goose supports both sequential subrecipe execution and guidance for running subrecipes in parallel patterns. This enables:
+
+- Pipeline-style workflows with ordered steps
+- Fan-out patterns for independent subtasks
+- Aggregation of parallel results
+
+**MCP-Oriented Extensibility**
+
+Goose treats MCP (Model Context Protocol) servers as key extension points for adding capabilities beyond code manipulation. This enables:
+
+- Integration with external tools and services
+- Custom capability development
+- Standardized extension interface
+
+**Open Source Foundation**
+
+Goose's open source model allows deep customization and internal governance:
+
+- Organization-specific extensions and recipes
+- Custom workflow development
+- Internal recipe libraries
+- Transparent execution model
+
+### Execution Model
+
+```
+┌─────────────────────────────────────┐
+│         Parent Recipe               │
+│    (orchestration, aggregation)     │
+└──────────────┬──────────────────────┘
+               │
+    ┌──────────┼──────────┐
+    ▼          ▼          ▼
+┌────────┐ ┌────────┐ ┌────────┐
+│Subrecipe│ │Subrecipe│ │Subrecipe│
+│  Lint  │ │  Test  │ │  Build │
+└────────┘ └────────┘ └────────┘
+```
+
+### Integration Patterns
+
+**With Specification-Driven Development:**
+
+Goose recipes can encode SDD workflows:
+- Specification validation recipes
+- Implementation recipes constrained by specs
+- Verification recipes that check compliance
+
+**With Version Control:**
+
+- Git operations through extensions
+- Recipe-defined commit patterns
+- Branch management workflows
+
+**With CI/CD:**
+
+- Recipes as shareable workflow definitions
+- Consistent execution across environments
+- Integration with automation pipelines
+
+### Current Limitations
+
+**Recipe ecosystem maturity:** Recipe discovery, versioning, and standardization are still emerging. Teams may need to build and maintain internal workflow infrastructure rather than leveraging community patterns.
+
+**Orchestration debugging:** When a multi-step recipe fails, diagnosing where failure occurred and which context caused it can be difficult. Error propagation through recipe chains requires careful handling.
+
+**Local execution model:** Like other local tools, reproducibility depends on environment standardization. Recipes may behave differently across developer machines with different configurations.
+
+**Subrecipe stability:** As an experimental feature, subrecipes may change in ways that affect existing workflows. Organizations should plan for potential migration.
+
+---
+
+## Cursor
+
+Cursor is an IDE-native tool built as a fork of Visual Studio Code with deep AI integration. It supports assistive interactions and a highly autonomous Agent mode.
+
+### Architectural Class
+
+IDE-native autonomous agent
+
+### Primary Interface
+
+IDE (VS Code fork)
+
+### Architectural Contributions
+
+**Deep IDE Integration**
+
+Cursor inherits the VS Code ecosystem, providing:
+
+- Full extension compatibility
+- Workspace and project awareness
+- Integrated debugging workflows
+- Familiar keybindings and interface
+
+This integration means developers can adopt Cursor without changing their existing VS Code workflows.
+
+**Codebase Understanding**
+
+Cursor relies on indexing and context retrieval to support multi-file reasoning and edits:
+
+- Automatic codebase indexing
+- Semantic code search
+- Cross-file reference resolution
+- Project structure awareness
+
+**Agent Mode Autonomy**
+
+Agent mode enables multi-step task execution:
+
+- Multi-file edits without per-file approval
+- Command execution and iteration
+- Error detection and correction attempts
+- Progress toward stated objective
+
+**Parallel Worktrees (Parallel Attempts)**
+
+Cursor's parallel agents feature runs multiple attempts in separate git worktrees, enabling independent solution exploration without interference:
+
+- Each attempt operates in isolated worktree
+- No coordination between parallel executions
+- User selects best outcome from attempts
+- Useful for exploring solution space
+
+This is best understood as parallel exploration, not coordinated multi-agent orchestration. Each attempt is a single-agent execution; parallelism provides selection, not collaboration.
+
+### Execution Model
+
+```
+┌─────────────────────────────────────┐
+│         User Task                   │
+└──────────────┬──────────────────────┘
+               │
+    ┌──────────┼──────────┐
+    ▼          ▼          ▼
+┌────────┐ ┌────────┐ ┌────────┐
+│Worktree│ │Worktree│ │Worktree│
+│Attempt 1│ │Attempt 2│ │Attempt 3│
+└────────┘ └────────┘ └────────┘
+    │          │          │
+    └──────────┼──────────┘
+               ▼
+         User Selection
+```
+
+### Integration Patterns
+
+**With Specification-Driven Development:**
+
+Cursor can work with specification files:
+- Specification files in workspace for context
+- Rules files to constrain agent behavior
+- Manual specification verification
+
+**With Version Control:**
+
+- Git integration through VS Code
+- Worktree management for parallel attempts
+- Standard commit and branch workflows
+
+### Current Limitations
+
+**Single-agent execution per attempt:** Each attempt operates as one agent context. Parallel attempts improve search over solutions but do not create collaboration among specialized roles. Complex tasks may benefit from explicit decomposition that parallel attempts do not provide.
+
+**No explicit context isolation within an attempt:** The same context is used across planning and execution within an attempt, which can increase scope creep on complex tasks. Unlike multi-context systems, there is no architectural separation between exploration and implementation.
+
+**Local governance only:** Guardrails are policy and practice dependent, not enforced by architecture. Organizations must rely on team discipline and code review to maintain standards.
+
+---
+
+## GitHub Copilot
+
+GitHub Copilot originated as an assistive code completion system and has expanded into chat, code review, and a coding agent that can create and update pull requests.
+
+### Architectural Class
+
+Platform-embedded workflow agent
+
+### Primary Interface
+
+IDE integration, GitHub Platform
+
+### Architectural Contributions
+
+**PR-Centric Output**
+
+Copilot coding agent is designed to open pull requests or update existing pull requests, then request human review. This architectural choice:
+
+- Creates explicit checkpoint for review
+- Produces auditable artifact
+- Integrates with existing PR workflows
+- Forces structured output format
+
+**Platform Governance**
+
+The PR workflow creates an enforced checkpoint for review, and platform policies can constrain merges:
+
+- Required reviewers
+- Status checks and CI gates
+- Branch protection rules
+- Audit logging
+
+Governance is architectural, not dependent on developer discipline.
+
+**Actions-Based Execution Model**
+
+GitHub's materials describe the coding agent as running within GitHub's workflow environment, emphasizing safety considerations around workflows and secrets:
+
+- Managed execution environment
+- Defined resource boundaries
+- Workflow-based triggers
+- Secret management integration
+
+### Execution Model
+
+```
+┌─────────────────────────────────────┐
+│         Issue/Task                  │
+└──────────────┬──────────────────────┘
+               ▼
+┌─────────────────────────────────────┐
+│      GitHub Workflow Environment    │
+│         (Copilot Agent)             │
+└──────────────┬──────────────────────┘
+               ▼
+┌─────────────────────────────────────┐
+│         Pull Request                │
+│    (review checkpoint)              │
+└──────────────┬──────────────────────┘
+               ▼
+         Human Review
+```
+
+### Integration Patterns
+
+**With Specification-Driven Development:**
+
+Copilot can integrate with SDD through:
+- Issue templates with specification references
+- PR templates requiring specification compliance
+- CI checks that verify specification adherence
+
+See [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/) for framework-specific integration patterns.
+
+**With CI/CD:**
+
+- Native GitHub Actions integration
+- Status checks as quality gates
+- Deployment workflow triggers
+
+### Current Limitations
+
+**Single-agent execution per task:** Each coding agent session behaves as a single workflow agent. There is no explicit multi-context delegation or role specialization within a session.
+
+**Platform constraints:** Work is bounded by what is feasible in the GitHub environment:
+
+- Runner access and capabilities
+- Secret availability and management
+- Workflow approval requirements
+- Network and resource limits
+
+**Latency compared to local interactive loops:** The PR loop can slow iteration for exploratory work. Each iteration requires:
+
+- Agent execution in workflow environment
+- PR creation or update
+- Review and feedback
+- Another agent iteration
+
+This loop is appropriate for well-defined tasks but may frustrate rapid exploration.
+
+**Workflow safety considerations:** GitHub highlights that workflows may not run automatically when Copilot pushes changes, and that workflows can expose secrets, requiring careful review before running.
+
+---
+
+## Summary
+
+| Tool | Architectural Class | Key Strength | Primary Constraint |
+|------|---------------------|--------------|-------------------|
+| **Claude Code** | Multi-context agent | Explicit context isolation via subagents | Delegation visibility |
+| **Goose** | Multi-context agent | Declarative workflow definitions (recipes) | Recipe ecosystem maturity |
+| **Cursor** | IDE-native agent | Deep IDE integration, parallel exploration | Single-context per attempt |
+| **GitHub Copilot** | Platform-embedded | Architectural governance via PR workflow | Platform execution constraints |
+
+The following section provides comparative analysis across these tools, examining architectural tradeoffs and failure modes in detail.
+
+---
+
+*This analysis was created with AI assistance. Tools analyzed from official documentation and public materials. Data as of January 2026.*
