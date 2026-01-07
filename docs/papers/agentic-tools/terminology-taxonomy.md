@@ -26,8 +26,11 @@ A system that responds to user prompts or actions but does not independently ini
 The scope of actions an agent may perform without explicit user approval. Autonomy boundaries vary across several dimensions:
 
 **File operations:** Can the agent create, modify, or delete files?
+
 **Command execution:** Can the agent run shell commands or scripts?
+
 **Remote operations:** Can the agent interact with external services, APIs, or repositories?
+
 **Scope expansion:** Can the agent extend its work beyond the initially specified task?
 
 ### Execution Substrate
@@ -35,7 +38,9 @@ The scope of actions an agent may perform without explicit user approval. Autono
 The environment in which agent actions occur. Common substrates include:
 
 **Local machine:** Agent runs on the developer's workstation with direct filesystem and command access
+
 **IDE process:** Agent operates within an IDE's sandboxed or semi-sandboxed environment
+
 **Remote/managed CI:** Agent executes in a platform-controlled environment with defined boundaries
 
 The execution substrate has significant implications for reproducibility, governance, and operational risk.
@@ -214,8 +219,11 @@ Single-context systems have simpler failure modes. Multi-context systems provide
 When selecting tools, consider:
 
 **Compliance requirements:** Platform-embedded tools may provide required audit trails
+
 **Team discipline:** Local autonomous tools require established practices
+
 **Task complexity:** Simple tasks may not benefit from multi-context overhead
+
 **Integration needs:** Consider how tools interact with existing workflows
 
 The following sections analyze specific tools within this taxonomic framework.

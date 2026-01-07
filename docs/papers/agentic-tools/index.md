@@ -9,7 +9,9 @@ This paper presents a comparative architectural analysis of four representative 
 All observations are time-bound to January 2026. These tools evolve rapidly, and architectural properties described here may change.
 
 **Publication Date:** January 2026
+
 **Author:** David Daniel
+
 **Target Audience:** Software architects, principal engineers, development team leads, and engineering professionals
 
 ## How to Read This Paper
@@ -128,6 +130,7 @@ This paper will be updated periodically to reflect:
 - Community feedback and corrections
 
 **Last Updated:** January 2026
+
 **Next Scheduled Review:** April 2026
 
 ---
