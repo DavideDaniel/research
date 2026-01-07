@@ -368,7 +368,7 @@ Cursor CLI launched in August 2025, bringing terminal-based agentic capabilities
 - Can run headlessly alongside other IDEs (JetBrains, VS Code, Neovim)
 - Requires Cursor subscription
 
-The CLI is agentic—it proposes edits and shell commands for user approval, similar to Claude Code's terminal interface.
+The CLI is agentic—it proposes edits and shell commands for user approval. The interaction model closely resembles Claude Code's terminal interface, reflecting convergence toward similar patterns for terminal-based agentic development. Key differences: Cursor CLI offers multi-model selection and ties into the Cursor subscription ecosystem, while Claude Code is single-model (Claude) with subagent delegation.
 
 ### Interaction Modes Overview
 
