@@ -17,7 +17,7 @@ The analysis focuses on architectural properties rather than feature comparisons
 
 ## Claude Code
 
-Claude Code is an agentic development tool designed to operate across terminal, IDE, and CLI environments. Unlike tools that evolved from code completion, Claude Code was built as an agentic system from the start—there is no "assistive mode" versus "agent mode" distinction.
+Claude Code is an agentic development tool designed to operate across terminal, IDE, and CLI environments. Unlike tools that evolved from code completion, Claude Code was built as an agentic system from the start. There is no "assistive mode" versus "agent mode" distinction.
 
 ### Architectural Class
 
@@ -54,7 +54,7 @@ Programmatic access for building custom tooling:
 - Enables custom orchestration layers
 - Powers CI/CD integrations and custom agents
 
-All interfaces provide the same agentic capabilities—the choice is about developer preference and workflow integration rather than capability differences.
+All interfaces provide the same agentic capabilities. The choice is about developer preference and workflow integration rather than capability differences.
 
 ### Customization and Configuration
 
@@ -205,7 +205,7 @@ GUI application for visual interaction:
 - Extension configuration interface
 - More accessible for users less comfortable with terminal
 
-Both interfaces provide equivalent agentic capabilities—the desktop app is essentially a GUI wrapper around the same underlying engine.
+Both interfaces provide equivalent agentic capabilities. The desktop app is essentially a GUI wrapper around the same underlying engine.
 
 ### Configuration and Extensibility
 
@@ -368,7 +368,7 @@ Cursor CLI launched in August 2025, bringing terminal-based agentic capabilities
 - Can run headlessly alongside other IDEs (JetBrains, VS Code, Neovim)
 - Requires Cursor subscription
 
-The CLI is agentic—it proposes edits and shell commands for user approval. The interaction model closely resembles Claude Code's terminal interface, reflecting convergence toward similar patterns for terminal-based agentic development. Key differences: Cursor CLI offers multi-model selection and ties into the Cursor subscription ecosystem, while Claude Code is single-model (Claude) with subagent delegation.
+The CLI is agentic: it proposes edits and shell commands for user approval. The interaction model closely resembles Claude Code's terminal interface, reflecting convergence toward similar patterns for terminal-based agentic development. Key differences: Cursor CLI offers multi-model selection and ties into the Cursor subscription ecosystem, while Claude Code is single-model (Claude) with subagent delegation.
 
 ### Interaction Modes Overview
 
@@ -523,7 +523,7 @@ GitHub Copilot encompasses multiple capabilities that serve different developmen
 
 **Inline Code Completion**
 
-The original Copilot experience—real-time code suggestions as you type:
+The original Copilot experience, providing real-time code suggestions as you type:
 - Context-aware completions based on surrounding code and comments
 - Multi-line suggestions including entire function bodies
 - Works across supported IDEs (VS Code, JetBrains, Neovim, etc.)
@@ -552,7 +552,7 @@ Automated review suggestions on pull requests:
 Assistive command-line helper (not agentic):
 - Explain commands: `gh copilot explain "git rebase -i HEAD~3"`
 - Suggest commands: `gh copilot suggest "find large files in repo"`
-- Does not execute commands—user reviews and runs manually
+- Does not execute commands; user reviews and runs manually
 - Helpful for learning and composing complex shell commands
 
 **Copilot Extensions and MCP**
