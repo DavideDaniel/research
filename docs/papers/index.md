@@ -29,7 +29,7 @@ Analysis of BMAD, SpecKit, and OpenSpec frameworks - when to use each, how they 
 This documentation is:
 
 - **Practically focused** - real-world implementation over theory
-- **For working engineers** - decision frameworks, not academic abstractions
+- **For busy engineers** - decision frameworks, not academic abstractions
 - **Based on primary sources** - official docs, repos, and hands-on experience
 - **Open** - free to use, share, and contribute to
 

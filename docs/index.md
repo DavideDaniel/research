@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Technical Documentation
   text: Framework Analysis & Guides
-  tagline: Practical analysis of development frameworks and tools for working engineers
+  tagline: Practical analysis of development frameworks and tools for busy engineers
   actions:
     - theme: brand
       text: Browse Docs
@@ -26,7 +26,7 @@ features:
     title: Practical Focus
     details: Decision frameworks and implementation guidance, not academic theory
   - icon: 🔧
-    title: For Working Engineers
+    title: For Busy Engineers
     details: Built for architects, principal engineers, and team leads evaluating tools
 ---
 
