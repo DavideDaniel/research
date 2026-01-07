@@ -11,7 +11,7 @@ This section provides detailed architectural analysis of four representative age
 
 The analysis focuses on architectural properties rather than feature comparisons, enabling readers to evaluate tools based on their execution models rather than marketing claims.
 
-**Analysis Approach:** The tools analyzed here represent two distinct lineages. Cursor and GitHub Copilot evolved from assistive code completion into increasingly autonomous agents, offering a spectrum of interaction modes. Claude Code and Goose were designed as agentic systems from the start. For each tool, this analysis covers available interfaces, customization options, and core architectural contributions, with deeper focus on the autonomous execution capabilities.
+**Analysis Approach:** The tools analyzed here have different origins. GitHub Copilot evolved from inline code completion (2021) into chat and eventually a coding agent. Cursor launched as an AI-first IDE with chat and composer as core features from day one. Claude Code and Goose were designed as agentic systems from the start. For each tool, this analysis covers available interfaces, customization options, and core architectural contributions, with deeper focus on the autonomous execution capabilities.
 
 ## Claude Code
 
@@ -340,7 +340,7 @@ Goose recipes can encode SDD workflows:
 
 ## Cursor
 
-Cursor is an IDE-native tool built as a fork of Visual Studio Code with deep AI integration. Cursor offers multiple interaction modes spanning a spectrum from lightweight assistance to autonomous execution.
+Cursor is an AI-first IDE built as a fork of Visual Studio Code. Unlike GitHub Copilot which added AI features to an existing product, Cursor was designed from launch with AI chat and composer as core capabilities. It offers multiple interaction modes spanning a spectrum from lightweight assistance to autonomous execution.
 
 ### Architectural Class
 
