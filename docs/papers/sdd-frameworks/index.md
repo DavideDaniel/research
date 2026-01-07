@@ -69,14 +69,14 @@ Deep dive into the theoretical foundations underlying SDD:
 [Read Foundational Theory →](./foundational-theory)
 
 ### 4. Adjacent Technologies
-Analysis of complementary technologies and ecosystem convergence:
-- Multi-agent orchestration (MetaGPT, AutoGen)
-- AI-powered testing platforms (Momentic)
+Foundational ecosystem technologies that complement SDD:
 - BDD frameworks (Cucumber, SpecFlow, Behave)
-- Contract testing ecosystem (Pact, PactFlow)
-- 2025-2026 technology convergence trends
+- Contract testing ecosystem (Pact, PactFlow, Spring Cloud Contract)
+- Integration patterns with SDD frameworks
 
 [Read Adjacent Technologies →](./adjacent-technologies)
+
+For agentic AI development tools (Claude Code, Goose, Cursor, GitHub Copilot), see [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/).
 
 ## Framework Quick Comparison
 
@@ -190,8 +190,8 @@ New to spec-driven development? Start with:
 - [TDD Fundamentals](./foundational-theory#test-driven-development-tdd-the-foundation)
 - [BDD Patterns](./foundational-theory#behavior-driven-development-bdd-stakeholder-aligned-specifications)
 - [Contract Testing](./foundational-theory#consumer-driven-contract-testing-api-specification-patterns)
-- [Multi-Agent Systems](./adjacent-technologies#multi-agent-orchestration-systems)
-- [AI Integration](./adjacent-technologies#the-2025-2026-technology-convergence)
+- [BDD Frameworks](./adjacent-technologies#bdd-tools-and-framework-ecosystem)
+- [Pact & Contract Testing](./adjacent-technologies#contract-testing-ecosystem)
 
 ### By Use Case
 - [Greenfield Projects](./frameworks-comparison#greenfield-projects)
