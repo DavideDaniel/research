@@ -16,7 +16,7 @@ All observations are time-bound to January 2026. These tools evolve rapidly, and
 
 This paper is intended to help you reason about architectural tradeoffs, not to recommend a single "best" tool. Organizations vary in constraints such as editor standardization, compliance requirements, existing vendor contracts, developer experience maturity, and cost sensitivity. The goal is to describe the execution models clearly enough that teams can map them to their own constraints.
 
-**Disclosure:** I use Cursor in a work setting because that is the standardized tool available, I pay for Claude Code personally, and I am actively evaluating Goose for both personal and professional use.
+**Disclosure:** I use Cursor at work, I pay for Claude Code personally, and I am actively evaluating Goose for both personal and professional use.
 
 ## Target Audience
 
