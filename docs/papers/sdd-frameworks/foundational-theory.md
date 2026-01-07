@@ -42,7 +42,7 @@ def test_user_registration_with_valid_email():
     assert user.email == "user@example.com"
 ```
 
-We're not merely writing a test—we're specifying behavior. The test states:
+We're not merely writing a test; we're specifying behavior. The test states:
 - Registration accepts email and password
 - Valid registration creates an active user
 - The user's email is stored correctly

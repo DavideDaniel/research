@@ -53,6 +53,7 @@ research/
 - **Professional yet accessible** - Technical without being overly academic
 - **Practical focus** - Implementation guidance over pure theory
 - **No emojis or icons** - Clean, professional presentation
+- **No em dashes** - Use commas, semicolons, colons, or parentheses instead
 - **Evidence-based** - Back claims with examples and patterns
 - **Balanced perspective** - Present multiple viewpoints fairly
 
@@ -207,7 +208,7 @@ Potential topics for expansion:
 
 ## Contact and Contribution
 
-**Repository Owner:** Davide Daniel  
+**Repository Owner:** David Daniel  
 **GitHub:** https://github.com/DavideDaniel/research
 
 **Contributions Welcome:**
