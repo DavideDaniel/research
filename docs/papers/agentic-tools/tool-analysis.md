@@ -11,9 +11,13 @@ This section provides detailed architectural analysis of four representative age
 
 The analysis focuses on architectural properties rather than feature comparisons, enabling readers to evaluate tools based on their execution models rather than marketing claims.
 
+**Analysis Approach:** The tools analyzed here have different origins. GitHub Copilot evolved from inline code completion (2021) into chat and eventually a coding agent. Cursor launched as an AI-first IDE with chat and composer as core features from day one. Claude Code and Goose were designed as agentic systems from the start. For each tool, this analysis covers available interfaces, customization options, and core architectural contributions, with deeper focus on the autonomous execution capabilities.
+
+**Note on Currency:** These tools evolve rapidly. This analysis reflects publicly available documentation as of January 2026. Readers should consult official documentation for the latest capabilities. See [References](./references) for documentation links.
+
 ## Claude Code
 
-Claude Code is an agentic development tool designed to operate across terminal, IDE, and CLI environments. Its defining architectural characteristic is explicit use of subagents for task decomposition.
+Claude Code is an agentic development tool designed to operate across terminal, IDE, and CLI environments. Unlike tools that evolved from code completion, Claude Code was built as an agentic system from the start. There is no "assistive mode" versus "agent mode" distinction.
 
 ### Architectural Class
 
@@ -22,6 +26,77 @@ Multi-context agent system
 ### Primary Interface
 
 Terminal, IDE integration, CLI
+
+### Interface Options
+
+Claude Code is available through multiple interfaces, all sharing the same underlying agentic architecture:
+
+**Terminal/CLI**
+
+The primary interface for most users:
+- Interactive REPL for conversational development
+- Direct command execution and file manipulation
+- Full access to local development environment
+- Session persistence and history
+
+**IDE Extension**
+
+VS Code integration that brings Claude Code into the editor:
+- Sidebar panel for interaction
+- Editor context awareness
+- Integrated terminal access
+- File and selection context
+
+**SDK/API**
+
+Programmatic access for building custom tooling:
+- Claude Code can be embedded in automated workflows
+- Enables custom orchestration layers
+- Powers CI/CD integrations and custom agents
+
+All interfaces provide the same agentic capabilities. The choice is about developer preference and workflow integration rather than capability differences.
+
+### Customization and Configuration
+
+**CLAUDE.md Files**
+
+Project-level context files that inform agent behavior:
+- Repository conventions and architecture notes
+- Build and test commands
+- File structure explanations
+- Loaded automatically when entering a project directory
+
+**Slash Commands**
+
+Custom commands defined in `.claude/commands/`:
+- Reusable prompts and workflows
+- Can include file references and templates
+- Team-shareable command libraries
+- Invoked with `/command-name` syntax
+
+**Hooks**
+
+Event-driven customization for tool execution:
+- Pre and post hooks for tool calls
+- Can validate, log, or modify tool behavior
+- Enables policy enforcement and auditing
+- Configured per-project or globally
+
+**MCP Server Integration**
+
+Extensibility through Model Context Protocol:
+- Connect external tools and data sources
+- Custom capability development
+- Standardized extension interface
+- Enables integration with databases, APIs, and services
+
+**Permissions and Allowlists**
+
+Tool access control:
+- Configure which tools the agent can use
+- Restrict file system access patterns
+- Control command execution permissions
+- Supports least-privilege configurations
 
 ### Architectural Contributions
 
@@ -64,11 +139,13 @@ A primary agent delegates subtasks and integrates results, enabling decompositio
 ### Execution Model
 
 ```mermaid
+%%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 50}}}%%
 flowchart TD
-    A["Primary Agent<br/>(coordination, integration)"]
-    A --> B["Subagent<br/>Explore"]
-    A --> C["Subagent<br/>Implement"]
-    A --> D["Subagent<br/>Verify"]
+    A["Primary Agent
+    (coordination, integration)"]
+    A --> B["Subagent: Explore"]
+    A --> C["Subagent: Implement"]
+    A --> D["Subagent: Verify"]
 ```
 
 ### Integration Patterns
@@ -100,7 +177,7 @@ For more on SDD frameworks, see [Spec-Driven Development Framework Patterns](/pa
 
 ## Goose
 
-Goose is an open-source AI agent project with CLI and desktop interfaces. Its defining architectural characteristic is recipe-based workflow orchestration, with optional subrecipes for decomposition.
+Goose is an open-source AI agent project from Block. Like Claude Code, Goose was designed as an agentic system from the start rather than evolving from code completion. Its defining architectural characteristic is recipe-based workflow orchestration, with optional subrecipes for decomposition.
 
 ### Architectural Class
 
@@ -109,6 +186,52 @@ Multi-context agent system
 ### Primary Interface
 
 CLI, Desktop Application
+
+### Interface Options
+
+**CLI**
+
+Command-line interface for terminal-based workflows:
+- Session-based interaction model
+- Recipe execution from command line
+- Scriptable for automation
+- Lightweight resource footprint
+
+**Desktop Application**
+
+GUI application for visual interaction:
+- Session management with history
+- Recipe browsing and selection
+- Extension configuration interface
+- More accessible for users less comfortable with terminal
+
+Both interfaces provide equivalent agentic capabilities. The desktop app is essentially a GUI wrapper around the same underlying engine.
+
+### Configuration and Extensibility
+
+**Profiles**
+
+Named configurations that bundle settings:
+- Model provider and selection
+- Default extensions
+- System prompt customizations
+- Quick switching between configurations
+
+**Extensions (MCP Servers)**
+
+Goose uses MCP (Model Context Protocol) as its primary extension mechanism:
+- Built-in extensions for common operations (filesystem, GitHub, etc.)
+- Community and custom extensions
+- Declarative extension configuration per recipe
+- Enables integration with external tools and services
+
+**Session Management**
+
+Persistent session state across interactions:
+- Resume previous sessions
+- Session history and context
+- Named sessions for different projects
+- Session export and sharing
 
 ### Architectural Contributions
 
@@ -175,11 +298,13 @@ Goose's open source model allows deep customization and internal governance:
 ### Execution Model
 
 ```mermaid
+%%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 50}}}%%
 flowchart TD
-    A["Parent Recipe<br/>(orchestration, aggregation)"]
-    A --> B["Subrecipe<br/>Lint"]
-    A --> C["Subrecipe<br/>Test"]
-    A --> D["Subrecipe<br/>Build"]
+    A["Parent Recipe
+    (orchestration, aggregation)"]
+    A --> B["Subrecipe: Lint"]
+    A --> C["Subrecipe: Test"]
+    A --> D["Subrecipe: Build"]
 ```
 
 ### Integration Patterns
@@ -217,7 +342,7 @@ Goose recipes can encode SDD workflows:
 
 ## Cursor
 
-Cursor is an IDE-native tool built as a fork of Visual Studio Code with deep AI integration. It supports assistive interactions and a highly autonomous Agent mode.
+Cursor is an AI-first IDE built as a fork of Visual Studio Code. Unlike GitHub Copilot which added AI features to an existing product, Cursor was designed from launch with AI chat and composer as core capabilities. It offers multiple interaction modes spanning a spectrum from lightweight assistance to autonomous execution.
 
 ### Architectural Class
 
@@ -225,9 +350,81 @@ IDE-native autonomous agent
 
 ### Primary Interface
 
-IDE (VS Code fork)
+IDE (VS Code fork), CLI
 
-### Architectural Contributions
+### Interface Options
+
+**IDE**
+
+The primary Cursor experience as a VS Code fork with integrated AI capabilities.
+
+**CLI (August 2025)**
+
+Cursor CLI launched in August 2025, bringing terminal-based agentic capabilities:
+- Interactive Mode for conversational coding sessions
+- Non-Interactive Mode for automation and CI/CD pipelines
+- Multi-model support (GPT, Claude, Gemini)
+- MCP (Model Context Protocol) integration
+- Can run headlessly alongside other IDEs (JetBrains, VS Code, Neovim)
+- Requires Cursor subscription
+
+The CLI is agentic: it proposes edits and shell commands for user approval. The interaction model closely resembles Claude Code's terminal interface, reflecting convergence toward similar patterns for terminal-based agentic development. Key differences: Cursor CLI offers multi-model selection and ties into the Cursor subscription ecosystem, while Claude Code is single-model (Claude) with subagent delegation.
+
+### Interaction Modes Overview
+
+Within the IDE, Cursor provides several distinct interaction modes:
+
+**Tab Completion**
+
+Inline code suggestions that autocomplete as you type. This is the lightest-touch interaction:
+- Single-line and multi-line completions
+- Context-aware suggestions based on surrounding code
+- Accept/reject with keyboard shortcuts
+- No explicit prompting required
+
+**Chat**
+
+Conversational interface for questions and guidance:
+- Ask questions about code, errors, or implementation approaches
+- Reference files and symbols with @ mentions
+- Responses appear in a sidebar panel
+- Does not directly modify files
+
+**Cmd+K (Inline Editing)**
+
+Prompt-driven editing within the editor:
+- Select code and describe desired changes
+- Generates diffs for review before applying
+- Scoped to selected region or current file
+- User approves each change
+
+**Agent Mode**
+
+Autonomous multi-step execution (detailed below):
+- Plans and executes toward a stated objective
+- Creates, modifies, and deletes files
+- Runs terminal commands
+- Iterates on errors
+
+**Background Agents (Parallel Worktrees)**
+
+Multiple autonomous attempts in isolated git worktrees (detailed below).
+
+### Customization and Configuration
+
+**Rules Files**
+
+Cursor supports rules files (`.cursor/rules` or `.cursorrules`) that constrain and guide agent behavior:
+- Project-specific instructions and conventions
+- Code style and architecture guidelines
+- File and directory restrictions
+- Custom prompts loaded automatically
+
+Rules files allow teams to encode standards that apply across all Cursor interactions, providing a form of declarative configuration similar to Goose's recipes but scoped to the IDE context.
+
+### Architectural Contributions (Agent Mode Focus)
+
+The remainder of this analysis focuses on Agent mode and parallel worktrees, which represent Cursor's approach to autonomous task execution.
 
 **Deep IDE Integration**
 
@@ -258,7 +455,7 @@ Agent mode enables multi-step task execution:
 - Error detection and correction attempts
 - Progress toward stated objective
 
-**Parallel Worktrees (Parallel Attempts)**
+**Parallel Worktrees (Background Agents)**
 
 Cursor's parallel agents feature runs multiple attempts in separate git worktrees, enabling independent solution exploration without interference:
 
@@ -272,11 +469,12 @@ This is best understood as parallel exploration, not coordinated multi-agent orc
 ### Execution Model
 
 ```mermaid
+%%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 50}}}%%
 flowchart TD
     A["User Task"]
-    A --> B["Worktree<br/>Attempt 1"]
-    A --> C["Worktree<br/>Attempt 2"]
-    A --> D["Worktree<br/>Attempt 3"]
+    A --> B["Worktree: Attempt 1"]
+    A --> C["Worktree: Attempt 2"]
+    A --> D["Worktree: Attempt 3"]
     B --> E["User Selection"]
     C --> E
     D --> E
@@ -309,7 +507,7 @@ Cursor can work with specification files:
 
 ## GitHub Copilot
 
-GitHub Copilot originated as an assistive code completion system and has expanded into chat, code review, and a coding agent that can create and update pull requests.
+GitHub Copilot originated as an assistive code completion system and has expanded into a suite of AI-powered development features spanning inline assistance to autonomous task execution.
 
 ### Architectural Class
 
@@ -319,7 +517,78 @@ Platform-embedded workflow agent
 
 IDE integration, GitHub Platform
 
-### Architectural Contributions
+### Product Suite Overview
+
+GitHub Copilot encompasses multiple capabilities that serve different development contexts:
+
+**Inline Code Completion**
+
+The original Copilot experience, providing real-time code suggestions as you type:
+- Context-aware completions based on surrounding code and comments
+- Multi-line suggestions including entire function bodies
+- Works across supported IDEs (VS Code, JetBrains, Neovim, etc.)
+- No explicit prompting required
+
+This remains the most widely used Copilot feature for day-to-day development.
+
+**Copilot Chat**
+
+Conversational interface available in IDE and on GitHub.com:
+- Ask questions about code, explain errors, suggest refactors
+- Reference files and symbols with context
+- Available in editor sidebar and GitHub web interface
+- Can generate code snippets but requires manual application
+
+**Code Review (Copilot in Pull Requests)**
+
+Automated review suggestions on pull requests:
+- Analyzes PR diffs and suggests improvements
+- Comments on potential issues, style violations, bugs
+- Integrated into GitHub's PR review workflow
+- Suggestions require human approval to apply
+
+**Copilot CLI**
+
+Assistive command-line helper (not agentic):
+- Explain commands: `gh copilot explain "git rebase -i HEAD~3"`
+- Suggest commands: `gh copilot suggest "find large files in repo"`
+- Does not execute commands; user reviews and runs manually
+- Helpful for learning and composing complex shell commands
+
+**Copilot Extensions and MCP**
+
+Third-party integrations that extend Copilot's capabilities:
+- Connect to external services and APIs
+- Custom context sources and actions
+- Extensible through GitHub's extension framework
+- MCP Registry integration for discovering and installing MCP servers directly from VS Code
+
+**Agent Mode in IDE (VS Code)**
+
+Local agentic execution within VS Code (distinct from the platform coding agent):
+- Translates ideas into code autonomously
+- Identifies subtasks and executes across multiple files
+- Runs locally in developer's environment
+- Expanding to JetBrains, Eclipse, and Xcode
+
+**Agent Skills (December 2025)**
+
+Customizable instructions that guide agent behavior:
+- Works across coding agent, CLI, and VS Code agent mode
+- Write custom skills or use shared community skills
+- Compatible with Claude Code skills (automatic pickup if already configured)
+- Agent-specific instructions for fine-tuned behavior
+
+**Coding Agent (Platform)**
+
+Autonomous task execution via pull requests (detailed below):
+- Assigns issues to Copilot for implementation
+- Creates and updates PRs autonomously
+- Runs in GitHub's managed environment (GitHub Actions)
+
+### Architectural Contributions (Coding Agent Focus)
+
+The remainder of this analysis focuses on the coding agent, which represents GitHub Copilot's approach to autonomous task execution. Unlike the other Copilot features which augment developer workflows, the coding agent operates independently to produce complete pull requests.
 
 **PR-Centric Output**
 
@@ -353,10 +622,13 @@ GitHub's materials describe the coding agent as running within GitHub's workflow
 ### Execution Model
 
 ```mermaid
+%%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 50}}}%%
 flowchart TD
     A["Issue/Task"]
-    A --> B["GitHub Workflow Environment<br/>(Copilot Agent)"]
-    B --> C["Pull Request<br/>(review checkpoint)"]
+    A --> B["GitHub Workflow Environment
+    (Copilot Agent)"]
+    B --> C["Pull Request
+    (review checkpoint)"]
     C --> D["Human Review"]
 ```
 
