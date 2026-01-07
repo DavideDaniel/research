@@ -1,0 +1,23 @@
+{
+  "name": "research",
+  "version": "1.0.0",
+  "description": "Technical research papers and documentation on software development frameworks, AI-powered development, and engineering practices",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "research",
+    "documentation",
+    "spec-driven-development",
+    "software-architecture",
+    "development-frameworks"
+  ],
+  "author": "Davide Daniel",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  }
+}
