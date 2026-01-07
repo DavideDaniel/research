@@ -417,30 +417,15 @@ The convergence of large language models (LLMs), agentic AI, and specification-d
 
 **1. Specification Generation by AI Agents**
 
-Traditional: Manual specification authoring
-Modern: AI agents generate specifications from:
-- Natural language requirements
-- Existing code analysis
-- User behavior patterns
-- Domain knowledge bases
+Traditional approaches relied on manual specification authoring. Modern AI agents can generate specifications from natural language requirements, existing code analysis, user behavior patterns, and domain knowledge bases.
 
 **2. Automated Specification Refinement**
 
-Traditional: Human review and iteration
-Modern: AI agents:
-- Identify specification gaps
-- Suggest improvements
-- Resolve ambiguities
-- Ensure consistency
+Traditional approaches required human review and iteration. Modern AI agents can identify specification gaps, suggest improvements, resolve ambiguities, and ensure consistency across the specification corpus.
 
 **3. Intelligent Verification Orchestration**
 
-Traditional: Fixed test suites
-Modern: AI agents:
-- Generate verification strategies
-- Prioritize verification based on risk
-- Adapt verification to code changes
-- Learn from verification results
+Traditional approaches used fixed test suites. Modern AI agents generate verification strategies dynamically, prioritize verification based on risk, adapt verification to code changes, and learn from verification results over time.
 
 #### Model Context Protocol (MCP) Integration
 
