@@ -66,11 +66,13 @@ A primary agent delegates subtasks and integrates results, enabling decompositio
 ### Execution Model
 
 ```mermaid
+%%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 50}}}%%
 flowchart TD
-    A["Primary Agent<br/>(coordination, integration)"]
-    A --> B["Subagent<br/>Explore"]
-    A --> C["Subagent<br/>Implement"]
-    A --> D["Subagent<br/>Verify"]
+    A["Primary Agent
+    (coordination, integration)"]
+    A --> B["Subagent: Explore"]
+    A --> C["Subagent: Implement"]
+    A --> D["Subagent: Verify"]
 ```
 
 ### Integration Patterns
@@ -177,11 +179,13 @@ Goose's open source model allows deep customization and internal governance:
 ### Execution Model
 
 ```mermaid
+%%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 50}}}%%
 flowchart TD
-    A["Parent Recipe<br/>(orchestration, aggregation)"]
-    A --> B["Subrecipe<br/>Lint"]
-    A --> C["Subrecipe<br/>Test"]
-    A --> D["Subrecipe<br/>Build"]
+    A["Parent Recipe
+    (orchestration, aggregation)"]
+    A --> B["Subrecipe: Lint"]
+    A --> C["Subrecipe: Test"]
+    A --> D["Subrecipe: Build"]
 ```
 
 ### Integration Patterns
@@ -328,11 +332,12 @@ This is best understood as parallel exploration, not coordinated multi-agent orc
 ### Execution Model
 
 ```mermaid
+%%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 50}}}%%
 flowchart TD
     A["User Task"]
-    A --> B["Worktree<br/>Attempt 1"]
-    A --> C["Worktree<br/>Attempt 2"]
-    A --> D["Worktree<br/>Attempt 3"]
+    A --> B["Worktree: Attempt 1"]
+    A --> C["Worktree: Attempt 2"]
+    A --> D["Worktree: Attempt 3"]
     B --> E["User Selection"]
     C --> E
     D --> E
@@ -462,10 +467,13 @@ GitHub's materials describe the coding agent as running within GitHub's workflow
 ### Execution Model
 
 ```mermaid
+%%{init: {'flowchart': {'nodeSpacing': 30, 'rankSpacing': 50}}}%%
 flowchart TD
     A["Issue/Task"]
-    A --> B["GitHub Workflow Environment<br/>(Copilot Agent)"]
-    B --> C["Pull Request<br/>(review checkpoint)"]
+    A --> B["GitHub Workflow Environment
+    (Copilot Agent)"]
+    B --> C["Pull Request
+    (review checkpoint)"]
     C --> D["Human Review"]
 ```
 
