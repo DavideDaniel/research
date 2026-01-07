@@ -1,16 +1,16 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Research Papers',
-  description: 'Technical research on software development frameworks and engineering practices',
+  title: 'Technical Documentation',
+  description: 'In-depth technical analysis on software development frameworks and engineering practices',
   base: '/research/',
-  
+
   themeConfig: {
     logo: '/logo.svg',
-    
+
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Papers', link: '/papers/' },
+      { text: 'Docs', link: '/papers/' },
       { text: 'GitHub', link: 'https://github.com/DavideDaniel/research' }
     ],
 

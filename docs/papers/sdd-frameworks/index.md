@@ -2,7 +2,7 @@
 
 ## Overview
 
-This research paper provides a comprehensive analysis of specification-driven development (SDD) frameworks for enterprise software development. The paper examines three production-ready frameworks (BMAD, SpecKit, and OpenSpec) along with their foundational theories and ecosystem integration patterns.
+This documentation provides a comprehensive analysis of specification-driven development (SDD) frameworks for enterprise software development. It examines three production-ready frameworks (BMAD, SpecKit, and OpenSpec) along with their foundational theories and ecosystem integration patterns.
 
 **Publication Date:** January 2026  
 **Author:** David Daniel  

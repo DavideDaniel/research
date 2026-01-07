@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: Research Papers
-  text: Technical Documentation & Analysis
-  tagline: In-depth research on software development frameworks, AI-powered development, and engineering practices
+  name: Technical Documentation
+  text: Framework Analysis & Guides
+  tagline: Practical analysis of development frameworks and tools for working engineers
   actions:
     - theme: brand
-      text: Browse Papers
+      text: Browse Docs
       link: /papers/
     - theme: alt
       text: View on GitHub
@@ -16,46 +16,36 @@ hero:
 features:
   - icon: 📋
     title: Spec-Driven Development
-    details: Comprehensive analysis of enterprise-grade SDD frameworks including BMAD, SpecKit, and OpenSpec
+    details: Analysis of BMAD, SpecKit, and OpenSpec - when to use each and how to adopt
     link: /papers/sdd-frameworks/
-  - icon: 🏗️
-    title: Architectural Patterns
-    details: Practical implementation guidance for modern software architecture and development workflows
   - icon: 🤖
-    title: AI-Powered Development
-    details: Integration of agentic AI, multi-agent orchestration, and specification-driven automation
+    title: Agentic Development Tools
+    details: Architectural comparison of Claude Code, Goose, Cursor, and GitHub Copilot
+    link: /papers/agentic-tools/
+  - icon: 🏗️
+    title: Practical Focus
+    details: Decision frameworks and implementation guidance, not academic theory
   - icon: 🔧
-    title: Enterprise Adoption
-    details: Decision frameworks, comparison matrices, and real-world implementation considerations
+    title: For Working Engineers
+    details: Built for architects, principal engineers, and team leads evaluating tools
 ---
 
-## About This Research
+## What's Here
 
-This collection of technical research papers is designed for software architects, principal engineers, development team leads, and engineering professionals evaluating modern development frameworks and practices for enterprise adoption.
+Technical analysis designed for software architects, principal engineers, and development team leads evaluating modern frameworks and tools.
 
-Each paper provides:
+Each guide provides:
 
-- Detailed framework comparisons and architectural analysis
-- Practical implementation examples and patterns
-- Decision matrices for framework selection
-- Integration guidance for CI/CD pipelines
-- Real-world enterprise adoption considerations
-
-## Latest Research
-
-### [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/)
-**Published: January 2026**
-
-Comprehensive analysis of three production-ready spec-driven development frameworks: BMAD, SpecKit, and OpenSpec. Includes foundational theory, detailed framework comparisons, and ecosystem integration patterns.
-
-[Start reading →](/papers/sdd-frameworks/)
+- Framework comparisons with decision matrices
+- Practical implementation patterns
+- Integration guidance
+- Real-world adoption considerations
 
 ## Navigation
 
-- **[Papers](/papers/)** - Browse all research papers
+- **[Docs](/papers/)** - Browse all documentation
 - **[GitHub](https://github.com/DavideDaniel/research)** - Source repository
-- **About** - Questions or feedback? Open an issue on GitHub
 
 ---
 
-*All content created with AI assistance. See individual papers for specific framework references and sources.*
+*All content created with AI assistance. See individual docs for specific sources.*

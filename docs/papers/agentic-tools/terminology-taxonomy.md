@@ -222,4 +222,4 @@ The following sections analyze specific tools within this taxonomic framework.
 
 ---
 
-*This analysis was created with AI assistance. Terminology derived from academic multi-agent systems literature and tool documentation. Data as of January 2026.*
+*This analysis was created with AI assistance. Terminology derived from multi-agent systems patterns and tool documentation. Data as of January 2026.*
