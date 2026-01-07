@@ -24,7 +24,7 @@ features:
     link: /papers/agentic-tools/
   - icon: 🏗️
     title: Practical Focus
-    details: Decision frameworks and implementation guidance, not academic theory
+    details: Implementation guidance and comparisons, not academic theory
   - icon: 🔧
     title: For Busy Engineers
     details: Built for architects, principal engineers, and team leads evaluating tools
