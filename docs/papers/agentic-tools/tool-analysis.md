@@ -11,7 +11,7 @@ This section provides detailed architectural analysis of four representative age
 
 The analysis focuses on architectural properties rather than feature comparisons, enabling readers to evaluate tools based on their execution models rather than marketing claims.
 
-**Scope Note:** This analysis focuses specifically on the agentic and autonomous capabilities of each tool. Many of these products offer multiple interaction modes (assistive completion, chat, inline editing, etc.) that are not covered here. For each tool, we analyze the mode or feature that best represents its approach to autonomous task execution. See individual tool sections for specific scope clarifications.
+**Analysis Approach:** Each tool analyzed here offers multiple interaction modes—from lightweight assistive features to fully autonomous execution. This analysis covers the full spectrum of modes for each tool, with deeper architectural focus on the autonomous and agentic capabilities that distinguish these tools from traditional code completion systems.
 
 ## Claude Code
 
@@ -219,9 +219,7 @@ Goose recipes can encode SDD workflows:
 
 ## Cursor
 
-Cursor is an IDE-native tool built as a fork of Visual Studio Code with deep AI integration. Cursor offers multiple interaction modes including Tab completion (inline suggestions), Chat, Cmd+K inline editing, and Agent mode.
-
-**Scope Clarification:** This analysis focuses on Cursor's Agent mode and parallel worktrees (Background Agents), which represent its approach to autonomous task execution. The assistive modes (Tab, Chat, Cmd+K) and customization features (rules files, custom commands) are not covered in depth here, though they represent significant capabilities for day-to-day development workflows.
+Cursor is an IDE-native tool built as a fork of Visual Studio Code with deep AI integration. Cursor offers multiple interaction modes spanning a spectrum from lightweight assistance to autonomous execution.
 
 ### Architectural Class
 
@@ -231,7 +229,61 @@ IDE-native autonomous agent
 
 IDE (VS Code fork)
 
-### Architectural Contributions
+### Interaction Modes Overview
+
+Cursor provides several distinct interaction modes, each suited to different development contexts:
+
+**Tab Completion**
+
+Inline code suggestions that autocomplete as you type. This is the lightest-touch interaction:
+- Single-line and multi-line completions
+- Context-aware suggestions based on surrounding code
+- Accept/reject with keyboard shortcuts
+- No explicit prompting required
+
+**Chat**
+
+Conversational interface for questions and guidance:
+- Ask questions about code, errors, or implementation approaches
+- Reference files and symbols with @ mentions
+- Responses appear in a sidebar panel
+- Does not directly modify files
+
+**Cmd+K (Inline Editing)**
+
+Prompt-driven editing within the editor:
+- Select code and describe desired changes
+- Generates diffs for review before applying
+- Scoped to selected region or current file
+- User approves each change
+
+**Agent Mode**
+
+Autonomous multi-step execution (detailed below):
+- Plans and executes toward a stated objective
+- Creates, modifies, and deletes files
+- Runs terminal commands
+- Iterates on errors
+
+**Background Agents (Parallel Worktrees)**
+
+Multiple autonomous attempts in isolated git worktrees (detailed below).
+
+### Customization and Configuration
+
+**Rules Files**
+
+Cursor supports rules files (`.cursor/rules` or `.cursorrules`) that constrain and guide agent behavior:
+- Project-specific instructions and conventions
+- Code style and architecture guidelines
+- File and directory restrictions
+- Custom prompts loaded automatically
+
+Rules files allow teams to encode standards that apply across all Cursor interactions, providing a form of declarative configuration similar to Goose's recipes but scoped to the IDE context.
+
+### Architectural Contributions (Agent Mode Focus)
+
+The remainder of this analysis focuses on Agent mode and parallel worktrees, which represent Cursor's approach to autonomous task execution.
 
 **Deep IDE Integration**
 
@@ -262,7 +314,7 @@ Agent mode enables multi-step task execution:
 - Error detection and correction attempts
 - Progress toward stated objective
 
-**Parallel Worktrees (Parallel Attempts)**
+**Parallel Worktrees (Background Agents)**
 
 Cursor's parallel agents feature runs multiple attempts in separate git worktrees, enabling independent solution exploration without interference:
 
@@ -313,9 +365,7 @@ Cursor can work with specification files:
 
 ## GitHub Copilot
 
-GitHub Copilot originated as an assistive code completion system and has expanded into a suite of AI-powered development features including inline code completion, Chat (in IDE and on GitHub), code review, CLI assistance, and a coding agent that can create and update pull requests.
-
-**Scope Clarification:** This analysis focuses specifically on GitHub Copilot's coding agent feature—the capability that autonomously works on issues and creates pull requests within GitHub's platform. The inline completion, Chat, code review, and CLI features are not covered here, though they represent the majority of daily Copilot usage for most developers.
+GitHub Copilot originated as an assistive code completion system and has expanded into a suite of AI-powered development features spanning inline assistance to autonomous task execution.
 
 ### Architectural Class
 
@@ -325,7 +375,60 @@ Platform-embedded workflow agent
 
 IDE integration, GitHub Platform
 
-### Architectural Contributions
+### Product Suite Overview
+
+GitHub Copilot encompasses multiple capabilities that serve different development contexts:
+
+**Inline Code Completion**
+
+The original Copilot experience—real-time code suggestions as you type:
+- Context-aware completions based on surrounding code and comments
+- Multi-line suggestions including entire function bodies
+- Works across supported IDEs (VS Code, JetBrains, Neovim, etc.)
+- No explicit prompting required
+
+This remains the most widely used Copilot feature for day-to-day development.
+
+**Copilot Chat**
+
+Conversational interface available in IDE and on GitHub.com:
+- Ask questions about code, explain errors, suggest refactors
+- Reference files and symbols with context
+- Available in editor sidebar and GitHub web interface
+- Can generate code snippets but requires manual application
+
+**Code Review (Copilot in Pull Requests)**
+
+Automated review suggestions on pull requests:
+- Analyzes PR diffs and suggests improvements
+- Comments on potential issues, style violations, bugs
+- Integrated into GitHub's PR review workflow
+- Suggestions require human approval to apply
+
+**Copilot CLI**
+
+Command-line assistance for shell commands:
+- Explain commands: `gh copilot explain "git rebase -i HEAD~3"`
+- Suggest commands: `gh copilot suggest "find large files in repo"`
+- Works in terminal outside of IDE context
+
+**Copilot Extensions**
+
+Third-party integrations that extend Copilot's capabilities:
+- Connect to external services and APIs
+- Custom context sources and actions
+- Extensible through GitHub's extension framework
+
+**Coding Agent**
+
+Autonomous task execution via pull requests (detailed below):
+- Assigns issues to Copilot for implementation
+- Creates and updates PRs autonomously
+- Runs in GitHub's managed environment
+
+### Architectural Contributions (Coding Agent Focus)
+
+The remainder of this analysis focuses on the coding agent, which represents GitHub Copilot's approach to autonomous task execution. Unlike the other Copilot features which augment developer workflows, the coding agent operates independently to produce complete pull requests.
 
 **PR-Centric Output**
 
