@@ -22,8 +22,6 @@ features:
     link: /papers/agentic-tools/
   - title: Practical Focus
     details: Implementation guidance and comparisons based on hands-on experience
-  - title: For Busy Engineers
-    details: Built for architects, principal engineers, and team leads evaluating tools
 ---
 
 ## What's Here

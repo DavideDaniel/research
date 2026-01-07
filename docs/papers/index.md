@@ -29,7 +29,6 @@ Analysis of BMAD, SpecKit, and OpenSpec frameworks - when to use each, how they 
 These papers are:
 
 - **Practically focused** - real-world implementation over theory
-- **For busy engineers** - practical guidance from hands-on experience
 - **Based on primary sources** - official docs, repos, and hands-on experience
 - **Open** - free to use, share, and contribute to
 
