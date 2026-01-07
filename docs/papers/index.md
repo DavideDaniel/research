@@ -42,6 +42,27 @@ Comprehensive analysis of enterprise-grade specification-driven development fram
 
 ---
 
+## Draft Papers
+
+### [Specification-Driven Development and Agentic Execution](/papers/sdd-agentic-execution/)
+**Status: Draft | January 2026**
+
+This paper examines what happens when specification-driven development workflows meet agentic execution systems. It focuses on how specifications are interpreted, transformed, and sometimes violated once execution is delegated to autonomous agents.
+
+- How specifications change meaning under autonomous execution
+- Execution architecture impacts on specification consumption
+- Common failure modes and their manifestations
+- Pilot design for surfacing specification-execution friction
+- Evaluation approaches without premature commitment
+
+**Target Audience:** Software architects, engineering leaders, platform teams, and teams using SDD frameworks
+
+**Topics:** Specification behavior, execution architectures, failure modes, pilot design, trust calibration
+
+[Read the draft →](/papers/sdd-agentic-execution/)
+
+---
+
 ## Upcoming Research
 
 Additional research papers are planned on topics including:

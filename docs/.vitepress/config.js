@@ -38,6 +38,19 @@ export default defineConfig({
             { text: 'References & Resources', link: '/papers/agentic-tools/references' }
           ]
         }
+      ],
+      '/papers/sdd-agentic-execution/': [
+        {
+          text: 'SDD and Agentic Execution',
+          items: [
+            { text: 'Overview', link: '/papers/sdd-agentic-execution/' },
+            { text: 'Specification Behavior', link: '/papers/sdd-agentic-execution/specification-behavior' },
+            { text: 'Execution Architectures', link: '/papers/sdd-agentic-execution/execution-architectures' },
+            { text: 'Failure Modes', link: '/papers/sdd-agentic-execution/failure-modes' },
+            { text: 'Pilot Evaluation', link: '/papers/sdd-agentic-execution/pilot-evaluation' },
+            { text: 'Conclusion', link: '/papers/sdd-agentic-execution/conclusion' }
+          ]
+        }
       ]
     },
 
