@@ -13,6 +13,8 @@ The analysis focuses on architectural properties rather than feature comparisons
 
 **Analysis Approach:** The tools analyzed here have different origins. GitHub Copilot evolved from inline code completion (2021) into chat and eventually a coding agent. Cursor launched as an AI-first IDE with chat and composer as core features from day one. Claude Code and Goose were designed as agentic systems from the start. For each tool, this analysis covers available interfaces, customization options, and core architectural contributions, with deeper focus on the autonomous execution capabilities.
 
+**Note on Currency:** These tools evolve rapidly. This analysis reflects publicly available documentation as of January 2026. Readers should consult official documentation for the latest capabilities. See [References](./references) for documentation links.
+
 ## Claude Code
 
 Claude Code is an agentic development tool designed to operate across terminal, IDE, and CLI environments. Unlike tools that evolved from code completion, Claude Code was built as an agentic system from the start—there is no "assistive mode" versus "agent mode" distinction.
@@ -348,11 +350,29 @@ IDE-native autonomous agent
 
 ### Primary Interface
 
-IDE (VS Code fork)
+IDE (VS Code fork), CLI
+
+### Interface Options
+
+**IDE**
+
+The primary Cursor experience as a VS Code fork with integrated AI capabilities.
+
+**CLI (August 2025)**
+
+Cursor CLI launched in August 2025, bringing terminal-based agentic capabilities:
+- Interactive Mode for conversational coding sessions
+- Non-Interactive Mode for automation and CI/CD pipelines
+- Multi-model support (GPT, Claude, Gemini)
+- MCP (Model Context Protocol) integration
+- Can run headlessly alongside other IDEs (JetBrains, VS Code, Neovim)
+- Requires Cursor subscription
+
+The CLI is agentic—it proposes edits and shell commands for user approval, similar to Claude Code's terminal interface.
 
 ### Interaction Modes Overview
 
-Cursor provides several distinct interaction modes, each suited to different development contexts:
+Within the IDE, Cursor provides several distinct interaction modes:
 
 **Tab Completion**
 
@@ -535,19 +555,36 @@ Assistive command-line helper (not agentic):
 - Does not execute commands—user reviews and runs manually
 - Helpful for learning and composing complex shell commands
 
-**Copilot Extensions**
+**Copilot Extensions and MCP**
 
 Third-party integrations that extend Copilot's capabilities:
 - Connect to external services and APIs
 - Custom context sources and actions
 - Extensible through GitHub's extension framework
+- MCP Registry integration for discovering and installing MCP servers directly from VS Code
 
-**Coding Agent**
+**Agent Mode in IDE (VS Code)**
+
+Local agentic execution within VS Code (distinct from the platform coding agent):
+- Translates ideas into code autonomously
+- Identifies subtasks and executes across multiple files
+- Runs locally in developer's environment
+- Expanding to JetBrains, Eclipse, and Xcode
+
+**Agent Skills (December 2025)**
+
+Customizable instructions that guide agent behavior:
+- Works across coding agent, CLI, and VS Code agent mode
+- Write custom skills or use shared community skills
+- Compatible with Claude Code skills (automatic pickup if already configured)
+- Agent-specific instructions for fine-tuned behavior
+
+**Coding Agent (Platform)**
 
 Autonomous task execution via pull requests (detailed below):
 - Assigns issues to Copilot for implementation
 - Creates and updates PRs autonomously
-- Runs in GitHub's managed environment
+- Runs in GitHub's managed environment (GitHub Actions)
 
 ### Architectural Contributions (Coding Agent Focus)
 
