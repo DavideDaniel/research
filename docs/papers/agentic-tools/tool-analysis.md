@@ -11,6 +11,8 @@ This section provides detailed architectural analysis of four representative age
 
 The analysis focuses on architectural properties rather than feature comparisons, enabling readers to evaluate tools based on their execution models rather than marketing claims.
 
+**Scope Note:** This analysis focuses specifically on the agentic and autonomous capabilities of each tool. Many of these products offer multiple interaction modes (assistive completion, chat, inline editing, etc.) that are not covered here. For each tool, we analyze the mode or feature that best represents its approach to autonomous task execution. See individual tool sections for specific scope clarifications.
+
 ## Claude Code
 
 Claude Code is an agentic development tool designed to operate across terminal, IDE, and CLI environments. Its defining architectural characteristic is explicit use of subagents for task decomposition.
@@ -217,7 +219,9 @@ Goose recipes can encode SDD workflows:
 
 ## Cursor
 
-Cursor is an IDE-native tool built as a fork of Visual Studio Code with deep AI integration. It supports assistive interactions and a highly autonomous Agent mode.
+Cursor is an IDE-native tool built as a fork of Visual Studio Code with deep AI integration. Cursor offers multiple interaction modes including Tab completion (inline suggestions), Chat, Cmd+K inline editing, and Agent mode.
+
+**Scope Clarification:** This analysis focuses on Cursor's Agent mode and parallel worktrees (Background Agents), which represent its approach to autonomous task execution. The assistive modes (Tab, Chat, Cmd+K) and customization features (rules files, custom commands) are not covered in depth here, though they represent significant capabilities for day-to-day development workflows.
 
 ### Architectural Class
 
@@ -309,7 +313,9 @@ Cursor can work with specification files:
 
 ## GitHub Copilot
 
-GitHub Copilot originated as an assistive code completion system and has expanded into chat, code review, and a coding agent that can create and update pull requests.
+GitHub Copilot originated as an assistive code completion system and has expanded into a suite of AI-powered development features including inline code completion, Chat (in IDE and on GitHub), code review, CLI assistance, and a coding agent that can create and update pull requests.
+
+**Scope Clarification:** This analysis focuses specifically on GitHub Copilot's coding agent feature—the capability that autonomously works on issues and creates pull requests within GitHub's platform. The inline completion, Chat, code review, and CLI features are not covered here, though they represent the majority of daily Copilot usage for most developers.
 
 ### Architectural Class
 
