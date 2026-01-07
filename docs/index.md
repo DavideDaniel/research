@@ -31,7 +31,7 @@ features:
 
 ## About This Research
 
-This collection of technical research papers is designed for software architects, development team leads, and engineering professionals evaluating modern development frameworks and practices for enterprise adoption.
+This collection of technical research papers is designed for software architects, principal engineers, development team leads, and engineering professionals evaluating modern development frameworks and practices for enterprise adoption.
 
 Each paper provides:
 
