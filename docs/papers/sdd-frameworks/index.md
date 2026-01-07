@@ -124,14 +124,21 @@ After reading this paper, you will be able to:
 5. **Integrate complementary tools** from the broader SDD ecosystem
 6. **Plan enterprise adoption** with realistic timelines and resource requirements
 
+## Research Background
+
+This research emerged from several months of hands-on experimentation with specification-driven development approaches. The investigation began after encountering a growing consensus in the wider engineering community that specifications provide better context for development—particularly when working with AI-assisted tooling and across distributed teams.
+
+Specification-first practices have proven effective at the individual engineer level, improving code quality and reducing ambiguity in implementation. However, scaling these practices beyond individual contributors requires consistent patterns and shared tooling. This paper examines how established frameworks address that challenge.
+
 ## Research Methodology
 
 This research is based on:
 
+- **Practical Experience:** Several months of hands-on testing with specification-driven approaches across different project types
 - **Primary Source Analysis:** Examination of official GitHub repositories, documentation, and source code for BMAD, SpecKit, and OpenSpec
 - **Community Engagement:** Analysis of issues, pull requests, discussions, and contributor patterns
 - **Industry Patterns:** Review of publicly documented enterprise adoption stories
-- **Technical Evaluation:** Hands-on testing and workflow analysis
+- **Technical Evaluation:** Workflow analysis and integration testing with existing development pipelines
 - **Ecosystem Analysis:** Survey of complementary tools and integration patterns
 
 ## References and Resources
