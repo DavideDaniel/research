@@ -529,10 +529,11 @@ Automated review suggestions on pull requests:
 
 **Copilot CLI**
 
-Command-line assistance for shell commands:
+Assistive command-line helper (not agentic):
 - Explain commands: `gh copilot explain "git rebase -i HEAD~3"`
 - Suggest commands: `gh copilot suggest "find large files in repo"`
-- Works in terminal outside of IDE context
+- Does not execute commands—user reviews and runs manually
+- Helpful for learning and composing complex shell commands
 
 **Copilot Extensions**
 
