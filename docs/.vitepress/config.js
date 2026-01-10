@@ -12,8 +12,7 @@ export default withMermaid(
 
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'Papers', link: '/papers/' },
-        { text: 'GitHub', link: 'https://github.com/DavideDaniel/research' }
+        { text: 'Papers', link: '/papers/' }
       ],
 
       sidebar: {
@@ -43,10 +42,6 @@ export default withMermaid(
         ]
       },
 
-      socialLinks: [
-        { icon: 'github', link: 'https://github.com/DavideDaniel/research' }
-      ],
-
       footer: {
         message: 'Released under the MIT License.',
         copyright: 'Copyright © 2026 David Daniel'
@@ -54,11 +49,6 @@ export default withMermaid(
 
       search: {
         provider: 'local'
-      },
-
-      editLink: {
-        pattern: 'https://github.com/DavideDaniel/research/edit/main/docs/:path',
-        text: 'Edit this page on GitHub'
       },
 
       lastUpdated: {
