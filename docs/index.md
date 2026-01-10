@@ -9,9 +9,6 @@ hero:
     - theme: brand
       text: Browse Papers
       link: /papers/
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/DavideDaniel/research
 
 features:
   - title: Spec-Driven Development
@@ -38,7 +35,6 @@ Each paper provides:
 ## Navigation
 
 - **[Papers](/papers/)** - Browse all papers
-- **[GitHub](https://github.com/DavideDaniel/research)** - Source repository
 
 ---
 
