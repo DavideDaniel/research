@@ -8,8 +8,6 @@ export default withMermaid(
     base: '/research/',
 
     themeConfig: {
-      logo: '/logo.svg',
-
       nav: [
         { text: 'Home', link: '/' },
         { text: 'Papers', link: '/papers/' }
