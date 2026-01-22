@@ -1,3 +1,8 @@
+---
+title: Enterprise-Grade SDD Framework Comparison
+description: Detailed comparison of BMAD, SpecKit, and OpenSpec including architectural approaches, workflow stages, enterprise adoption patterns, and decision matrices.
+---
+
 # Enterprise-Grade Framework Comparison
 
 ## Executive Summary

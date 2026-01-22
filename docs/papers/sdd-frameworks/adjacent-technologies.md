@@ -1,3 +1,8 @@
+---
+title: Adjacent Technologies and Ecosystem Integration
+description: Analysis of BDD frameworks (Cucumber, SpecFlow, Behave) and contract testing ecosystems (Pact, PactFlow) that complement specification-driven development.
+---
+
 # Adjacent Technologies & Ecosystem Integration
 
 ## Introduction

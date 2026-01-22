@@ -1,3 +1,8 @@
+---
+title: Agentic Tools Comparative Analysis
+description: Side-by-side architectural comparison of Claude Code, Goose, Cursor, and GitHub Copilot. Includes failure modes, operational risks, and governance implications.
+---
+
 # Comparative Analysis
 
 ## Introduction

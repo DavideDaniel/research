@@ -1,0 +1,8 @@
+# robots.txt for daviddaniel.tech/research
+# Allow all search engines to crawl all content
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://daviddaniel.tech/research/sitemap.xml
