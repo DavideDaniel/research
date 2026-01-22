@@ -23,26 +23,39 @@ This is a technical research repository hosting comprehensive research papers on
 ### Published Papers
 1. **Spec-Driven Development Frameworks** (January 2026)
    - Location: `docs/papers/sdd-frameworks/`
-   - Content: ~29,000 words
    - Sections: Getting Started, Framework Comparison, Foundational Theory, Adjacent Technologies
    - Frameworks covered: BMAD, SpecKit, OpenSpec
    - Related technologies: MetaGPT, Momentic, Pact, Cucumber, BDD frameworks
+
+2. **Agentic Development Tools and Execution Architectures** (January 2026)
+   - Location: `docs/papers/agentic-tools/`
+   - Sections: Terminology & Taxonomy, Tool Analysis, Comparative Analysis, References
+   - Tools covered: Claude Code, Goose, Cursor, GitHub Copilot
+   - Focus: Execution models, autonomy boundaries, governance implications
 
 ### Repository Structure
 ```
 research/
 ├── .github/workflows/deploy.yml    # GitHub Pages deployment
 ├── docs/
-│   ├── .vitepress/config.js        # VitePress configuration
+│   ├── .vitepress/config.js        # VitePress configuration (sitemap, meta tags, SEO)
+│   ├── public/
+│   │   └── robots.txt              # Search engine crawler instructions
 │   ├── index.md                    # Landing page
 │   ├── papers/
 │   │   ├── index.md                # Papers listing
-│   │   └── sdd-frameworks/         # First research paper
+│   │   ├── sdd-frameworks/         # SDD Frameworks paper
+│   │   │   ├── index.md
+│   │   │   ├── getting-started.md
+│   │   │   ├── frameworks-comparison.md
+│   │   │   ├── foundational-theory.md
+│   │   │   └── adjacent-technologies.md
+│   │   └── agentic-tools/          # Agentic Tools paper
 │   │       ├── index.md
-│   │       ├── getting-started.md
-│   │       ├── frameworks-comparison.md
-│   │       ├── foundational-theory.md
-│   │       └── adjacent-technologies.md
+│   │       ├── terminology-taxonomy.md
+│   │       ├── tool-analysis.md
+│   │       ├── comparative-analysis.md
+│   │       └── references.md
 ├── package.json
 └── README.md
 ```
@@ -195,6 +208,66 @@ flowchart TD
 
 Use `<br/>` for line breaks within node labels. Prefer `flowchart TD` (top-down) for hierarchical diagrams.
 
+## SEO Requirements
+
+All pages must follow SEO best practices to ensure proper indexing and discoverability.
+
+### Frontmatter Requirements (Mandatory)
+
+Every markdown file must include YAML frontmatter with:
+
+```yaml
+---
+title: Page Title (50-60 characters ideal)
+description: Page description for meta tags (150-160 characters ideal)
+---
+```
+
+Example for paper pages:
+```yaml
+---
+title: Spec-Driven Development Framework Patterns
+description: Comprehensive analysis of BMAD, SpecKit, and OpenSpec frameworks for specification-driven development. Includes framework comparison and adoption guidance.
+---
+```
+
+### URL Structure
+
+- Use kebab-case for file names: `getting-started.md`, not `GettingStarted.md`
+- Clean URLs are enabled (no `.html` extensions)
+- Canonical URLs point to `https://daviddaniel.tech/research/`
+
+### Meta Tags (Auto-Generated)
+
+The VitePress config (`docs/.vitepress/config.js`) automatically generates:
+- Canonical URLs per page
+- Open Graph tags (`og:title`, `og:description`, `og:url`)
+- Twitter card tags
+- JSON-LD structured data for paper pages (TechArticle schema)
+
+### SEO Checklist for New Pages
+
+When creating new pages:
+1. Add `title` frontmatter (required)
+2. Add `description` frontmatter (required, 150-160 chars)
+3. Use descriptive H1 heading (should match or relate to title)
+4. Include internal links to related content
+5. Verify page appears in sitemap after build
+
+### Sitemap and Robots
+
+- Sitemap: Auto-generated at `/research/sitemap.xml`
+- Robots.txt: Located at `docs/public/robots.txt`
+- Both are configured and should not need manual updates
+
+### SEO Files Reference
+
+| File | Purpose |
+|------|---------|
+| `docs/.vitepress/config.js` | Sitemap config, meta tags, transformPageData hook |
+| `docs/public/robots.txt` | Search engine crawler instructions |
+| Page frontmatter | Per-page title and description |
+
 ## Future Paper Ideas
 
 Potential topics for expansion:
@@ -287,6 +360,6 @@ When using Claude Code to work on this repository:
 
 ---
 
-**Last Updated:** January 7, 2026  
-**Repository Status:** Ready for initial deployment  
-**Current Papers:** 1 (SDD Frameworks)
+**Last Updated:** January 2026
+**Repository Status:** Production
+**Current Papers:** 2 (SDD Frameworks, Agentic Tools)

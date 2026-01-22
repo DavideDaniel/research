@@ -1,3 +1,8 @@
+---
+title: Research Papers
+description: Browse technical research papers on spec-driven development, agentic tools, software architecture, and modern engineering practices.
+---
+
 # Research Papers
 
 In-depth technical analysis to help engineers evaluate frameworks, tools, and practices.

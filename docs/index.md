@@ -1,5 +1,7 @@
 ---
 layout: home
+title: Research Papers - Technical Analysis on Software Development
+description: In-depth technical analysis on software development frameworks, AI-powered development tools, and engineering practices for architects and engineering professionals.
 
 hero:
   name: Research Papers
