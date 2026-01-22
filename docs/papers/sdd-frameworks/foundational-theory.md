@@ -1,3 +1,8 @@
+---
+title: "Foundational Theory: Understanding Spec-Driven Development"
+description: Deep dive into TDD, BDD, and consumer-driven contract testing patterns that form the theoretical foundation of specification-driven development frameworks.
+---
+
 # Foundational Theory: Understanding Spec-Driven Development
 
 ## Introduction

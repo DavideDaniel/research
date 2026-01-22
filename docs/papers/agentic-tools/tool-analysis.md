@@ -1,3 +1,8 @@
+---
+title: Agentic Tool Analysis
+description: Detailed architectural analysis of Claude Code, Goose, Cursor, and GitHub Copilot. Covers execution models, context management, and integration patterns for each tool.
+---
+
 # Tool Analysis
 
 ## Introduction

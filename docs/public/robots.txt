@@ -1,0 +1,11 @@
+# Robots.txt for Research Papers site
+# https://davidedaniel.github.io/research/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://davidedaniel.github.io/research/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1

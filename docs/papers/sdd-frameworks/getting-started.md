@@ -1,3 +1,8 @@
+---
+title: Getting Started with Spec-Driven Development
+description: Practical hands-on guide to implementing specification-driven development with BMAD, SpecKit, and OpenSpec frameworks. Includes quick-start examples and setup instructions.
+---
+
 # Getting Started with Spec-Driven Development
 
 ## Introduction

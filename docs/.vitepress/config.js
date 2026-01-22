@@ -1,11 +1,68 @@
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 
+const siteUrl = 'https://davidedaniel.github.io/research'
+const siteTitle = 'Research Papers'
+const siteDescription = 'In-depth technical analysis on software development frameworks, AI-powered development tools, and engineering practices for software architects and engineering professionals.'
+
 export default withMermaid(
   defineConfig({
-    title: 'Research Papers',
-    description: 'In-depth technical analysis on software development frameworks and engineering practices',
+    title: siteTitle,
+    description: siteDescription,
     base: '/research/',
+    lang: 'en-US',
+    lastUpdated: true,
+
+    sitemap: {
+      hostname: siteUrl
+    },
+
+    head: [
+      ['meta', { charset: 'utf-8' }],
+      ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+      ['meta', { name: 'author', content: 'David Daniel' }],
+      ['meta', { name: 'keywords', content: 'spec-driven development, software architecture, development frameworks, BDD, contract testing, agentic tools, Claude Code, AI development' }],
+      ['meta', { name: 'robots', content: 'index, follow' }],
+      ['link', { rel: 'canonical', href: siteUrl }],
+      // Open Graph
+      ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { property: 'og:locale', content: 'en_US' }],
+      ['meta', { property: 'og:site_name', content: siteTitle }],
+      ['meta', { property: 'og:title', content: siteTitle }],
+      ['meta', { property: 'og:description', content: siteDescription }],
+      ['meta', { property: 'og:url', content: siteUrl }],
+      // Twitter Card
+      ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+      ['meta', { name: 'twitter:title', content: siteTitle }],
+      ['meta', { name: 'twitter:description', content: siteDescription }],
+    ],
+
+    transformPageData(pageData) {
+      const canonicalUrl = `${siteUrl}/${pageData.relativePath}`
+        .replace(/index\.md$/, '')
+        .replace(/\.md$/, '.html')
+
+      pageData.frontmatter.head ??= []
+      pageData.frontmatter.head.push(
+        ['link', { rel: 'canonical', href: canonicalUrl }],
+        ['meta', { property: 'og:url', content: canonicalUrl }]
+      )
+
+      if (pageData.frontmatter.description) {
+        pageData.frontmatter.head.push(
+          ['meta', { property: 'og:description', content: pageData.frontmatter.description }],
+          ['meta', { name: 'twitter:description', content: pageData.frontmatter.description }]
+        )
+      }
+
+      if (pageData.title) {
+        const fullTitle = `${pageData.title} | ${siteTitle}`
+        pageData.frontmatter.head.push(
+          ['meta', { property: 'og:title', content: fullTitle }],
+          ['meta', { name: 'twitter:title', content: fullTitle }]
+        )
+      }
+    },
 
     themeConfig: {
       nav: [
@@ -57,11 +114,6 @@ export default withMermaid(
         }
       }
     },
-
-    head: [
-      ['meta', { name: 'author', content: 'David Daniel' }],
-      ['meta', { name: 'keywords', content: 'spec-driven development, software architecture, development frameworks, BDD, contract testing' }]
-    ],
 
     markdown: {
       lineNumbers: true

@@ -1,3 +1,8 @@
+---
+title: References and Resources
+description: Conclusion, official documentation links, and resources for further exploration of agentic development tools including Claude Code, Goose, Cursor, and GitHub Copilot.
+---
+
 # References and Resources
 
 ## Conclusion

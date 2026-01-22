@@ -1,3 +1,8 @@
+---
+title: Enterprise-Grade Framework Comparison
+description: Detailed comparison of BMAD, SpecKit, and OpenSpec frameworks. Covers architecture, workflows, enterprise adoption patterns, and decision matrices for framework selection.
+---
+
 # Enterprise-Grade Framework Comparison
 
 ## Executive Summary

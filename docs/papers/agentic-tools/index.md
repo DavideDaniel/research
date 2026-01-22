@@ -1,3 +1,8 @@
+---
+title: Agentic Development Tools and Execution Architectures
+description: Architectural comparison of Claude Code, Goose, Cursor, and GitHub Copilot. Analysis of execution models, autonomy boundaries, and context management for AI-powered development tools.
+---
+
 # Agentic Development Tools and Execution Architectures
 
 ## Overview

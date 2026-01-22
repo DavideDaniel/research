@@ -1,3 +1,8 @@
+---
+title: Spec-Driven Development Framework Patterns
+description: Comprehensive analysis of BMAD, SpecKit, and OpenSpec frameworks for specification-driven development. Includes framework comparison, adoption guidance, and integration patterns for enterprise teams.
+---
+
 # Spec-Driven Development Framework Patterns
 
 ## Overview

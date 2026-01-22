@@ -1,3 +1,8 @@
+---
+title: Research Papers
+description: Browse all research papers covering spec-driven development frameworks, agentic development tools, and modern engineering practices for enterprise software development.
+---
+
 # Research Papers
 
 In-depth technical analysis to help engineers evaluate frameworks, tools, and practices.
