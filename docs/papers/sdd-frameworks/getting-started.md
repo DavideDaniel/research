@@ -1,5 +1,6 @@
 ---
 title: Getting Started with Spec-Driven Development
+date: 2026-01-07
 description: Practical guide for implementing BMAD, SpecKit, and OpenSpec frameworks. Includes quick-start instructions, core concepts, and framework selection guidance.
 ---
 
