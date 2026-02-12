@@ -1,11 +1,26 @@
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
+import { RssPlugin } from 'vitepress-plugin-rss'
 
 const siteHostname = 'https://daviddaniel.tech'
 const siteBase = '/research'
 const siteUrl = `${siteHostname}${siteBase}`
 const siteName = 'Research Papers'
 const siteDescription = 'In-depth technical analysis on software development frameworks, AI-powered development, and engineering practices'
+
+const rssOptions = {
+  title: 'Research Papers - Technical Analysis on Software Development',
+  baseUrl: siteHostname,
+  description: siteDescription,
+  copyright: 'Copyright (c) 2026, David Daniel',
+  author: {
+    name: 'David Daniel',
+    link: 'https://github.com/DavideDaniel'
+  },
+  filename: 'feed.rss',
+  ignoreHome: true,
+  log: true
+}
 
 export default withMermaid(
   defineConfig({
@@ -56,7 +71,10 @@ export default withMermaid(
       ['meta', { name: 'twitter:site', content: '@davidedaniel' }],
 
       // Theme color
-      ['meta', { name: 'theme-color', content: '#3eaf7c' }]
+      ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+
+      // RSS autodiscovery
+      ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'RSS Feed', href: '/research/feed.rss' }]
     ],
 
     // Dynamic head tags based on page content
@@ -166,6 +184,10 @@ export default withMermaid(
 
     markdown: {
       lineNumbers: true
+    },
+
+    vite: {
+      plugins: [RssPlugin(rssOptions)]
     }
   })
 )
