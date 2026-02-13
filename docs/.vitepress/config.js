@@ -5,7 +5,7 @@ import { RssPlugin } from 'vitepress-plugin-rss'
 const siteHostname = 'https://daviddaniel.tech'
 const siteBase = '/research'
 const siteUrl = `${siteHostname}${siteBase}`
-const siteName = 'Research Papers'
+const siteName = 'Research'
 const siteDescription = 'In-depth technical analysis on software development frameworks, AI-powered development, and engineering practices'
 
 const rssOptions = {
@@ -39,7 +39,7 @@ export default withMermaid(
             ...item,
             url,
             changefreq: 'monthly',
-            priority: item.url === '' || item.url === '/' ? 1.0 : item.url.includes('papers/') ? 0.8 : 0.6
+            priority: item.url === '' || item.url === '/' ? 1.0 : (item.url.includes('papers/') || item.url.includes('articles/')) ? 0.8 : 0.6
           }
         })
       }
@@ -51,10 +51,8 @@ export default withMermaid(
     // Clean URLs without .html extension
     cleanUrls: true,
 
-    // Ignore dead links to companion articles not yet published
-    ignoreDeadLinks: [
-      /\/articles\//
-    ],
+    // Ignore dead links to external anchor targets that may not resolve at build time
+    ignoreDeadLinks: [],
 
     // Global head configuration
     head: [
@@ -106,8 +104,10 @@ export default withMermaid(
       head.push(['meta', { name: 'twitter:title', content: title }])
       head.push(['meta', { name: 'twitter:description', content: description }])
 
-      // Add structured data for paper pages
-      if (pageData.relativePath.includes('papers/') && !pageData.relativePath.endsWith('papers/index.md')) {
+      // Add structured data for paper and article pages
+      const isPaperPage = pageData.relativePath.includes('papers/') && !pageData.relativePath.endsWith('papers/index.md')
+      const isArticlePage = pageData.relativePath.includes('articles/') && !pageData.relativePath.endsWith('articles/index.md')
+      if (isPaperPage || isArticlePage) {
         const structuredData = {
           '@context': 'https://schema.org',
           '@type': 'TechArticle',
@@ -139,10 +139,29 @@ export default withMermaid(
     themeConfig: {
       nav: [
         { text: 'Home', link: '/' },
+        { text: 'Articles', link: '/articles/' },
         { text: 'Papers', link: '/papers/' }
       ],
 
       sidebar: {
+        '/articles/specification-layer/': [
+          {
+            text: 'Scaling Agentic Development',
+            items: [
+              { text: 'The Specification Layer', link: '/articles/specification-layer/' },
+              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' }
+            ]
+          }
+        ],
+        '/articles/autonomous-agents-loop/': [
+          {
+            text: 'Scaling Agentic Development',
+            items: [
+              { text: 'The Specification Layer', link: '/articles/specification-layer/' },
+              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' }
+            ]
+          }
+        ],
         '/papers/sdd-frameworks/': [
           {
             text: 'Spec-Driven Development Framework Patterns',
