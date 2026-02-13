@@ -40,6 +40,13 @@ Analysis of BMAD, SpecKit, and OpenSpec frameworks - when to use each, how they 
 
 ---
 
+## Companion Articles
+
+These papers are supported by practitioner-focused articles in the [Articles](/articles/) section:
+
+- [The Specification Layer](/articles/specification-layer/) — why enterprises need machine-readable specifications to scale agentic development
+- [The Autonomous Agents Loop](/articles/autonomous-agents-loop/) — why autonomous execution loops outperform interactive assistance
+
 ## About
 
 These papers are:
