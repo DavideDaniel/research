@@ -10,6 +10,16 @@ In-depth technical analysis to help engineers evaluate frameworks, tools, and pr
 
 ---
 
+### [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/)
+
+Evidence synthesis comparing autonomous AI agent execution loops against interactive human-in-the-loop assistance, covering SWE-bench benchmarks, the METR RCT, industry telemetry, and adjacent domain evidence.
+
+**Topics:** Autonomous agents, execution loops, SWE-bench, developer productivity, multi-agent systems, scaling laws
+
+[Read →](/papers/autonomous-agents/)
+
+---
+
 ### [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/)
 
 Architectural comparison of Claude Code, Goose, Cursor, and GitHub Copilot - how they differ in execution model, context management, and governance.
