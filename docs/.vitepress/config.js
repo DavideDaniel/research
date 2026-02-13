@@ -51,6 +51,11 @@ export default withMermaid(
     // Clean URLs without .html extension
     cleanUrls: true,
 
+    // Ignore dead links to companion articles not yet published
+    ignoreDeadLinks: [
+      /\/articles\//
+    ],
+
     // Global head configuration
     head: [
       // Basic meta tags
@@ -159,6 +164,18 @@ export default withMermaid(
               { text: 'Tool Analysis', link: '/papers/agentic-tools/tool-analysis' },
               { text: 'Comparative Analysis', link: '/papers/agentic-tools/comparative-analysis' },
               { text: 'References & Resources', link: '/papers/agentic-tools/references' }
+            ]
+          }
+        ],
+        '/papers/autonomous-agents/': [
+          {
+            text: 'Autonomous AI Agents: Execution Loops vs Interactive Assistance',
+            items: [
+              { text: 'Overview', link: '/papers/autonomous-agents/' },
+              { text: 'SWE-bench & Multi-Agent Execution', link: '/papers/autonomous-agents/benchmarks' },
+              { text: 'Developer Productivity Evidence', link: '/papers/autonomous-agents/productivity-evidence' },
+              { text: 'Adjacent Domains & Mechanisms', link: '/papers/autonomous-agents/adjacent-domains' },
+              { text: 'Conclusions & References', link: '/papers/autonomous-agents/conclusions' }
             ]
           }
         ]
