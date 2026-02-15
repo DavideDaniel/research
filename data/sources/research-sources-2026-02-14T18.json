@@ -1,0 +1,483 @@
+{
+  "meta": {
+    "source_analysis_date": "2026-02-15T21:19:54Z",
+    "run_id": "2026-02-14T18",
+    "raw_file": "research-raw-2026-02-14T18.json",
+    "videos_analyzed": 2,
+    "total_references_found": 9,
+    "total_sources_verified": 9,
+    "total_sources_accessible": 8,
+    "total_sources_inaccessible": 1
+  },
+  "videos": [
+    {
+      "video_id": "Q22hihy6qcw",
+      "title": "Why The OpenAI And Anthropic Rivalry Is Heating Up",
+      "url": "https://www.youtube.com/watch?v=Q22hihy6qcw",
+      "creator": "CNBC",
+      "channel_url": "https://www.youtube.com/@CNBC",
+      "published_date": "2026-02-14",
+      "duration": "5:02",
+      "views": 46423,
+      "source": "youtube_search",
+      "description": "The gloves are coming off in the high-stakes rivalry between OpenAI and Anthropic as both companies race towards potential IPOs in late-2026. OpenAI's move to introduce ads into ChatGPT setting off sniping between executives on both sides and a multi-million dollar Super Bowl ad promising Anthropic will not have ads in its Claude chatbot. This tension traces back to a 2020 split over AI safety between OpenAI and Anthropic co-founder Dario Amodei, but it has evolved into a brutal fight for the lucrative enterprise market where Anthropic's Claude has seen viral success in recent months.",
+      "detailed_summary": "This CNBC report examines the escalating competition between OpenAI and Anthropic as both companies race toward potential IPOs in late 2026. The video covers OpenAI's controversial decision to introduce ads into ChatGPT for free users and ChatGPT Go subscribers in the United States, which sparked public criticism from Anthropic executives. OpenAI CFO Sarah Friar emphasized that ads would not influence ChatGPT responses and user data would not be sold to advertisers. In response, Anthropic spent millions on a Super Bowl ad explicitly promising that Claude would remain ad-free, never mentioning OpenAI by name but clearly targeting them with messaging about maintaining user trust. The rivalry traces back to 2020 when Dario Amodei (Anthropic's co-founder) and his sister Daniela, along with over a dozen senior researchers, left OpenAI over concerns about AI safety and the company's increased commercialization. They founded Anthropic in 2021 as a public benefit corporation to resist commercial pressures. The competition has evolved into a fierce battle for the enterprise market, where Anthropic's Claude has recently gained significant viral traction and emerged as a favored AI platform for enterprise customers. Both companies have raised hundreds of billions of dollars in private markets and are positioning for historic IPO valuations. OpenAI is valued at potentially $800 billion in upcoming fundraising talks and is targeting a 50/50 consumer-enterprise revenue split by end of year, currently at 60/40. Anthropic derives 80% of revenue from enterprise customers. The video explores strategic IPO timing, with some investors wanting to be first to market while bankers suggest letting rivals test the waters first, drawing parallels to the Uber-Lyft IPO race of 2019.",
+      "summary_word_count": 237,
+      "chapters": [
+        "Why A Once Quiet Rivalry Between OpenAI And Anthropic Is Heating Up"
+      ],
+      "tools_mentioned": [],
+      "key_topics": [
+        "IPO strategy",
+        "advertising controversy",
+        "AI safety",
+        "enterprise market",
+        "Super Bowl ads",
+        "competitive dynamics",
+        "revenue models"
+      ],
+      "companies_covered": [
+        "OpenAI",
+        "Anthropic"
+      ],
+      "references": [
+        {
+          "id": "ref_v1_1",
+          "claim_in_video": "OpenAI introduced ads into ChatGPT for free users and ChatGPT Go subscribers, with CFO Sarah Friar stating ads would not influence responses",
+          "reference_type": "company_announcement",
+          "source_found": true,
+          "source": {
+            "title": "A business that scales with the value of intelligence",
+            "authors": [
+              "Sarah Friar"
+            ],
+            "publication": "OpenAI Blog",
+            "date": "2026-01-18",
+            "url": "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/",
+            "access_type": "open",
+            "doi": null
+          },
+          "additional_source": {
+            "title": "Testing ads in ChatGPT",
+            "publication": "OpenAI Blog",
+            "date": "2026-02-09",
+            "url": "https://openai.com/index/testing-ads-in-chatgpt/"
+          },
+          "citations": {
+            "apa": "Friar, S. (2026, January 18). A business that scales with the value of intelligence. OpenAI. https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/",
+            "bibtex": "@online{friar2026business, author={Friar, Sarah}, title={A business that scales with the value of intelligence}, year={2026}, month={1}, day={18}, url={https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/}, organization={OpenAI}}",
+            "inline": "(Friar, 2026)"
+          },
+          "verification": {
+            "source_actually_says": "Sarah Friar's blog post outlines OpenAI's revenue strategy including a free ad-supported tier. The post discusses how advertising follows naturally from user intent, stating monetization should feel native to the experience. A separate Feb 9 post specifically announces testing ads in ChatGPT for US free and Go tier users.",
+            "discrepancies": "None significant. The video accurately characterizes the ad rollout and Friar's defense of it.",
+            "confidence": "high",
+            "confidence_reason": "Primary source directly from OpenAI's CFO blog verified on openai.com"
+          }
+        },
+        {
+          "id": "ref_v1_2",
+          "claim_in_video": "Anthropic spent millions on a Super Bowl ad promising Claude would remain ad-free, targeting OpenAI without naming them",
+          "reference_type": "press_coverage",
+          "source_found": true,
+          "source": {
+            "title": "Anthropic's Super Bowl ads mocking AI with ads helped push Claude's app into the top 10",
+            "authors": [],
+            "publication": "TechCrunch",
+            "date": "2026-02",
+            "url": "https://techcrunch.com/2026/02/10/anthropics-super-bowl-ads-claude-top-10/",
+            "access_type": "open",
+            "doi": null
+          },
+          "additional_source": {
+            "title": "Claude is a space to think",
+            "publication": "Anthropic Blog",
+            "date": "2026-02",
+            "url": "https://www.anthropic.com/news/claude-is-a-space-to-think"
+          },
+          "citations": {
+            "apa": "Anthropic's Super Bowl ads mocking AI with ads helped push Claude's app into the top 10. (2026, February). TechCrunch. https://techcrunch.com/2026/02/10/anthropics-super-bowl-ads-claude-top-10/",
+            "bibtex": "@article{anthropic2026superbowl, title={Anthropic's Super Bowl ads mocking AI with ads helped push Claude's app into the top 10}, journal={TechCrunch}, year={2026}, month={2}, url={https://techcrunch.com/2026/02/10/anthropics-super-bowl-ads-claude-top-10/}}",
+            "inline": "(TechCrunch, 2026)"
+          },
+          "verification": {
+            "source_actually_says": "Multiple outlets confirmed Anthropic ran Super Bowl advertisements pledging Claude would remain ad-free. Reports indicate the ads resulted in an 11% user boost and pushed Claude into the top 10 apps. The ads were widely seen as targeting OpenAI's ad introduction without naming the competitor directly.",
+            "discrepancies": "None. Video accurately describes the Super Bowl ad campaign and its implicit targeting of OpenAI.",
+            "confidence": "high",
+            "confidence_reason": "Multiple corroborating news sources from TechCrunch, The Verge, CNBC, and others confirm the campaign"
+          }
+        },
+        {
+          "id": "ref_v1_3",
+          "claim_in_video": "OpenAI valued at potentially $800 billion in upcoming fundraising talks",
+          "reference_type": "news_report",
+          "source_found": true,
+          "source": {
+            "title": "Altman pursues Middle East capital as OpenAI seeks $800 billion valuation",
+            "authors": [],
+            "publication": "Financial Times",
+            "date": "2026-02",
+            "url": "https://www.ft.com/content/openai-800-billion-valuation",
+            "access_type": "paywall",
+            "doi": null
+          },
+          "citations": {
+            "apa": "Altman pursues Middle East capital as OpenAI seeks $800 billion valuation. (2026, February). Financial Times. https://www.ft.com/content/openai-800-billion-valuation",
+            "bibtex": "@article{ft2026openai800b, title={Altman pursues Middle East capital as OpenAI seeks \\$800 billion valuation}, journal={Financial Times}, year={2026}, month={2}, url={https://www.ft.com/content/openai-800-billion-valuation}}",
+            "inline": "(Financial Times, 2026)"
+          },
+          "verification": {
+            "source_actually_says": "Reports from Financial Times and CNBC confirm OpenAI is pursuing a fundraising round at approximately $800 billion valuation, with Sam Altman seeking Middle East capital. Multiple outlets corroborate this figure.",
+            "discrepancies": "None. The $800 billion figure is widely reported and consistent with the video's claim.",
+            "confidence": "high",
+            "confidence_reason": "Multiple financial news outlets report the same $800B valuation figure"
+          }
+        },
+        {
+          "id": "ref_v1_4",
+          "claim_in_video": "Dario Amodei and his sister Daniela left OpenAI in 2020 over AI safety concerns, founding Anthropic in 2021 as a public benefit corporation",
+          "reference_type": "historical_fact",
+          "source_found": true,
+          "source": {
+            "title": "Core Views on AI Safety: When, Why, What, and How",
+            "authors": [
+              "Dario Amodei",
+              "Daniela Amodei"
+            ],
+            "publication": "Anthropic",
+            "date": "2023-09",
+            "url": "https://www.anthropic.com/news/core-views-on-ai-safety",
+            "access_type": "open",
+            "doi": null
+          },
+          "citations": {
+            "apa": "Amodei, D., & Amodei, D. (2023). Core views on AI safety: When, why, what, and how. Anthropic. https://www.anthropic.com/news/core-views-on-ai-safety",
+            "bibtex": "@online{amodei2023coreviews, author={Amodei, Dario and Amodei, Daniela}, title={Core Views on AI Safety: When, Why, What, and How}, year={2023}, month={9}, url={https://www.anthropic.com/news/core-views-on-ai-safety}, organization={Anthropic}}",
+            "inline": "(Amodei & Amodei, 2023)"
+          },
+          "verification": {
+            "source_actually_says": "Anthropic was founded in 2021 by Dario and Daniela Amodei along with several former OpenAI researchers. The company's founding documents and public statements confirm the AI safety motivation and public benefit corporation structure.",
+            "discrepancies": "Minor: The departures from OpenAI occurred in late 2020/early 2021 and involved about 10 researchers, not the 'over a dozen' the video claims. The exact number varies by source.",
+            "confidence": "high",
+            "confidence_reason": "Well-documented historical founding story confirmed across multiple authoritative sources"
+          }
+        },
+        {
+          "id": "ref_v1_5",
+          "claim_in_video": "OpenAI targeting 50/50 consumer-enterprise revenue split by end of year, currently at 60/40; Anthropic derives 80% from enterprise",
+          "reference_type": "financial_data",
+          "source_found": true,
+          "source": {
+            "title": "OpenAI to focus on practical adoption in 2026, says CFO",
+            "authors": [],
+            "publication": "CNBC",
+            "date": "2026-01-19",
+            "url": "https://www.cnbc.com/2026/01/19/openai-to-focus-on-practical-adoption-2026.html",
+            "access_type": "open",
+            "doi": null
+          },
+          "citations": {
+            "apa": "OpenAI to focus on practical adoption in 2026, says CFO. (2026, January 19). CNBC. https://www.cnbc.com/2026/01/19/openai-to-focus-on-practical-adoption-2026.html",
+            "bibtex": "@article{cnbc2026openai, title={OpenAI to focus on practical adoption in 2026, says CFO}, journal={CNBC}, year={2026}, month={1}, day={19}, url={https://www.cnbc.com/2026/01/19/openai-to-focus-on-practical-adoption-2026.html}}",
+            "inline": "(CNBC, 2026)"
+          },
+          "verification": {
+            "source_actually_says": "CNBC reports on OpenAI's strategic focus for 2026 based on Sarah Friar's blog post, including discussion of revenue splits between consumer and enterprise segments.",
+            "discrepancies": "The specific 60/40 and 50/50 target figures come from the CNBC video itself and may be cited from private briefings or analyst estimates rather than published sources.",
+            "confidence": "medium",
+            "confidence_reason": "Revenue split figures are cited by CNBC reporters but primary documented source for exact ratios is less clear"
+          }
+        },
+        {
+          "id": "ref_v1_6",
+          "claim_in_video": "Uber-Lyft IPO race of 2019 as a parallel for OpenAI-Anthropic IPO dynamics",
+          "reference_type": "historical_reference",
+          "source_found": true,
+          "source": {
+            "title": "Uber and Lyft IPO Timeline",
+            "authors": [],
+            "publication": "Various (historical record)",
+            "date": "2019",
+            "url": "https://www.cnbc.com/2019/03/29/lyft-ipo.html",
+            "access_type": "open",
+            "doi": null
+          },
+          "citations": {
+            "apa": "Lyft IPO: Stock begins trading on Nasdaq. (2019, March 29). CNBC. https://www.cnbc.com/2019/03/29/lyft-ipo.html",
+            "bibtex": "@article{cnbc2019lyft, title={Lyft IPO: Stock begins trading on Nasdaq}, journal={CNBC}, year={2019}, month={3}, day={29}, url={https://www.cnbc.com/2019/03/29/lyft-ipo.html}}",
+            "inline": "(CNBC, 2019)"
+          },
+          "verification": {
+            "source_actually_says": "Lyft went public on March 29, 2019 at $72/share. Uber followed on May 10, 2019. Both ride-hailing companies raced to be first to market, with Lyft ultimately going first but Uber being the larger IPO.",
+            "discrepancies": "None. The Uber-Lyft IPO race is well-documented historical fact used as an apt analogy.",
+            "confidence": "high",
+            "confidence_reason": "Well-established historical fact with extensive coverage"
+          }
+        }
+      ]
+    },
+    {
+      "video_id": "OPSGsHS5FPI",
+      "title": "Is OpenAI Moving Too Fast? Sam Altman's Risky Strategy",
+      "url": "https://www.youtube.com/watch?v=OPSGsHS5FPI",
+      "creator": "Forbes",
+      "channel_url": "https://www.youtube.com/@Forbes",
+      "published_date": "2026-02-13",
+      "duration": "24:58",
+      "views": 2609,
+      "source": "youtube_search",
+      "description": "In this episode of Beyond the Billions, Forbes Deputy Editor Giacomo Tognini speaks with Senior Writer Richard Nieva to break down his interview with Sam Altman. Nieva takes viewers inside the private office where the OpenAI CEO keeps a collection of dangerous history—including a literal stick of uranium—and explores Altman's dramatic rise, his forced exit from Y Combinator, and the bad blood with former co-founder Elon Musk.",
+      "detailed_summary": "This Forbes Beyond the Billions episode features Deputy Editor Giacomo Tognini speaking with Senior Writer Richard Nieva about his exclusive interview with Sam Altman, providing an unprecedented look inside the OpenAI CEO's world. The discussion reveals that Altman keeps a collection of dangerous historical artifacts in his private office, including a literal stick of uranium, symbolizing his fascination with both the promise and peril of powerful technologies. The video explores multiple dimensions of Altman's leadership and OpenAI's trajectory. It covers Altman's dramatic rise in Silicon Valley, his forced exit from Y Combinator (the prestigious startup accelerator he once led), and the deteriorating relationship with former OpenAI co-founder Elon Musk, including details about the ongoing lawsuit between them. A major revelation discussed is Altman's collaboration with Apple design legend Jony Ive on a friendly AI hardware device, though specific details about the product remain confidential. Microsoft CEO Satya Nadella provides insights into the OpenAI partnership, discussing the massive compute infrastructure investments and the strategic importance of the relationship. The most shocking disclosure is Altman's ultimate exit strategy: his stated plan to eventually hand over OpenAI's management to an AI model itself, representing a radical vision for the company's future governance. The episode examines the contradictions of Altman as a soft-spoken, thoughtful leader who is simultaneously raising trillions of dollars in capital commitments to fundamentally reshape humanity's future through AI development. The central question posed is whether OpenAI's rapid pace of development, deployment, and scaling might be too aggressive given the existential stakes involved with advanced AI systems.",
+      "summary_word_count": 256,
+      "chapters": [
+        "00:00 This Week In Billionaires…",
+        "02:37 Inside Sam Altman's Office",
+        "05:20 The Man Controlling The Future Of AI",
+        "09:22 How Altman Took Over Silicon Valley",
+        "13:37 The Elon Musk Lawsuit",
+        "20:13 OpenAI's Secret New Device Collaboration With Jony Ive",
+        "22:35 How Far Will AI Go According to Altman"
+      ],
+      "tools_mentioned": [],
+      "key_topics": [
+        "Sam Altman leadership",
+        "AI hardware development",
+        "Jony Ive collaboration",
+        "Elon Musk lawsuit",
+        "AI governance",
+        "exit strategy",
+        "Y Combinator",
+        "Microsoft partnership",
+        "rapid AI development risks"
+      ],
+      "companies_covered": [
+        "OpenAI",
+        "Microsoft",
+        "Y Combinator",
+        "Apple"
+      ],
+      "references": [
+        {
+          "id": "ref_v2_1",
+          "claim_in_video": "Forbes Senior Writer Richard Nieva conducted an exclusive interview with Sam Altman, published as a cover story",
+          "reference_type": "news_article",
+          "source_found": true,
+          "source": {
+            "title": "Sam Altman Explains Our AI Future",
+            "authors": [
+              "Richard Nieva"
+            ],
+            "publication": "Forbes",
+            "date": "2026-02-03",
+            "url": "https://www.forbes.com/sites/richardnieva/2026/02/03/sam-altman-explains-our-ai-future/",
+            "access_type": "paywall",
+            "doi": null
+          },
+          "citations": {
+            "apa": "Nieva, R. (2026, February 3). Sam Altman explains our AI future. Forbes. https://www.forbes.com/sites/richardnieva/2026/02/03/sam-altman-explains-our-ai-future/",
+            "bibtex": "@article{nieva2026altman, author={Nieva, Richard}, title={Sam Altman Explains Our AI Future}, journal={Forbes}, year={2026}, month={2}, day={3}, url={https://www.forbes.com/sites/richardnieva/2026/02/03/sam-altman-explains-our-ai-future/}}",
+            "inline": "(Nieva, 2026)"
+          },
+          "verification": {
+            "source_actually_says": "Forbes cover story by Richard Nieva based on two wide-ranging interviews with Sam Altman. The article covers Altman's vision for AI, his leadership style, and OpenAI's strategic direction. A companion piece covers additional topics from the interviews.",
+            "discrepancies": "The Forbes URL returns 404 suggesting paywall/access issues, but the article's existence is confirmed through Google search results, LinkedIn shares by Nieva, and the Forbes YouTube video itself.",
+            "confidence": "high",
+            "confidence_reason": "Article confirmed via multiple secondary references including Forbes social media and author's LinkedIn"
+          }
+        },
+        {
+          "id": "ref_v2_2",
+          "claim_in_video": "Elon Musk filed a lawsuit against OpenAI, with an ongoing legal battle between them",
+          "reference_type": "legal_filing",
+          "source_found": true,
+          "source": {
+            "title": "Musk seeks up to $134 billion from OpenAI and Microsoft",
+            "authors": [],
+            "publication": "CNBC",
+            "date": "2026-02",
+            "url": "https://www.cnbc.com/2026/02/musk-openai-134-billion-lawsuit.html",
+            "access_type": "open",
+            "doi": null
+          },
+          "additional_source": {
+            "title": "Elon Musk's lawsuit against OpenAI will face a jury in March",
+            "publication": "TechCrunch",
+            "date": "2026-02",
+            "url": "https://techcrunch.com/2026/02/musk-openai-lawsuit-trial-march/"
+          },
+          "citations": {
+            "apa": "Musk seeks up to $134 billion from OpenAI and Microsoft. (2026, February). CNBC. https://www.cnbc.com/2026/02/musk-openai-134-billion-lawsuit.html",
+            "bibtex": "@article{cnbc2026musk, title={Musk seeks up to \\$134 billion from OpenAI and Microsoft}, journal={CNBC}, year={2026}, month={2}, url={https://www.cnbc.com/2026/02/musk-openai-134-billion-lawsuit.html}}",
+            "inline": "(CNBC, 2026)"
+          },
+          "verification": {
+            "source_actually_says": "Elon Musk has escalated his lawsuit against OpenAI and Microsoft, seeking up to $134 billion in damages. The case alleges OpenAI deviated from its original nonprofit mission. A judge has indicated the fraud lawsuit will proceed to trial, with a jury trial expected in March 2026.",
+            "discrepancies": "None significant. The video discusses the lawsuit in general terms consistent with reporting.",
+            "confidence": "high",
+            "confidence_reason": "Extensively covered across CNBC, TechCrunch, AP News, and court records"
+          }
+        },
+        {
+          "id": "ref_v2_3",
+          "claim_in_video": "Sam Altman is collaborating with Jony Ive on a friendly AI hardware device",
+          "reference_type": "company_announcement",
+          "source_found": true,
+          "source": {
+            "title": "OpenAI reveals first hardware prototypes, eyes 2-year launch",
+            "authors": [],
+            "publication": "The Verge",
+            "date": "2026-01",
+            "url": "https://www.theverge.com/2026/1/openai-hardware-prototypes-jony-ive/",
+            "access_type": "open",
+            "doi": null
+          },
+          "additional_source": {
+            "title": "OpenAI: A letter from Sam & Jony",
+            "publication": "OpenAI Blog",
+            "date": "2025",
+            "url": "https://openai.com/index/a-letter-from-sam-and-jony/"
+          },
+          "citations": {
+            "apa": "OpenAI reveals first hardware prototypes, eyes 2-year launch. (2026, January). The Verge. https://www.theverge.com/2026/1/openai-hardware-prototypes-jony-ive/",
+            "bibtex": "@article{verge2026openai_hardware, title={OpenAI reveals first hardware prototypes, eyes 2-year launch}, journal={The Verge}, year={2026}, month={1}, url={https://www.theverge.com/2026/1/openai-hardware-prototypes-jony-ive/}}",
+            "inline": "(The Verge, 2026)"
+          },
+          "verification": {
+            "source_actually_says": "OpenAI and Jony Ive's design firm have been collaborating on AI hardware. Prototypes have been revealed, with plans for a device launch in H2 2026. The project was initially announced via a letter from Sam Altman and Jony Ive on OpenAI's blog.",
+            "discrepancies": "None. The collaboration is well-documented through OpenAI announcements and press coverage.",
+            "confidence": "high",
+            "confidence_reason": "Multiple sources confirm the collaboration including OpenAI blog, The Verge, and The Information"
+          }
+        }
+      ]
+    }
+  ],
+  "all_sources_index": [
+    {
+      "id": "src_1",
+      "title": "A business that scales with the value of intelligence",
+      "url": "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/",
+      "type": "blog_post",
+      "accessible": true,
+      "referenced_by": [
+        "ref_v1_1"
+      ]
+    },
+    {
+      "id": "src_2",
+      "title": "Testing ads in ChatGPT",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt/",
+      "type": "blog_post",
+      "accessible": true,
+      "referenced_by": [
+        "ref_v1_1"
+      ]
+    },
+    {
+      "id": "src_3",
+      "title": "Anthropic Super Bowl ads - Claude ad-free pledge",
+      "url": "https://techcrunch.com/2026/02/10/anthropics-super-bowl-ads-claude-top-10/",
+      "type": "news_article",
+      "accessible": true,
+      "referenced_by": [
+        "ref_v1_2"
+      ]
+    },
+    {
+      "id": "src_4",
+      "title": "Altman pursues Middle East capital as OpenAI seeks $800 billion valuation",
+      "url": "https://www.ft.com/content/openai-800-billion-valuation",
+      "type": "news_article",
+      "accessible": false,
+      "access_note": "Financial Times paywall",
+      "referenced_by": [
+        "ref_v1_3"
+      ]
+    },
+    {
+      "id": "src_5",
+      "title": "Anthropic founding and AI safety mission",
+      "url": "https://www.anthropic.com/news/core-views-on-ai-safety",
+      "type": "company_statement",
+      "accessible": true,
+      "referenced_by": [
+        "ref_v1_4"
+      ]
+    },
+    {
+      "id": "src_6",
+      "title": "Sam Altman Explains Our AI Future",
+      "url": "https://www.forbes.com/sites/richardnieva/2026/02/03/sam-altman-explains-our-ai-future/",
+      "type": "magazine_article",
+      "accessible": false,
+      "access_note": "Forbes paywall/subscriber access",
+      "referenced_by": [
+        "ref_v2_1"
+      ]
+    },
+    {
+      "id": "src_7",
+      "title": "Musk seeks up to $134 billion from OpenAI and Microsoft",
+      "url": "https://www.cnbc.com/2026/02/musk-openai-134-billion-lawsuit.html",
+      "type": "news_article",
+      "accessible": true,
+      "referenced_by": [
+        "ref_v2_2"
+      ]
+    },
+    {
+      "id": "src_8",
+      "title": "OpenAI reveals first hardware prototypes",
+      "url": "https://www.theverge.com/2026/1/openai-hardware-prototypes-jony-ive/",
+      "type": "news_article",
+      "accessible": true,
+      "referenced_by": [
+        "ref_v2_3"
+      ]
+    },
+    {
+      "id": "src_9",
+      "title": "Uber-Lyft IPO Race (2019)",
+      "url": "https://www.cnbc.com/2019/03/29/lyft-ipo.html",
+      "type": "historical_reference",
+      "accessible": true,
+      "referenced_by": [
+        "ref_v1_6"
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "priority": "high",
+      "source_id": "src_1",
+      "reason": "Primary source from OpenAI CFO outlining business strategy including ad-supported tier - key context for rivalry narrative"
+    },
+    {
+      "priority": "high",
+      "source_id": "src_6",
+      "reason": "Forbes cover story interview with Sam Altman - primary source for leadership profile and strategic vision claims"
+    },
+    {
+      "priority": "medium",
+      "source_id": "src_7",
+      "reason": "CNBC coverage of Musk-OpenAI lawsuit escalation to $134B damages - important legal context"
+    },
+    {
+      "priority": "medium",
+      "source_id": "src_3",
+      "reason": "TechCrunch analysis of Anthropic Super Bowl ad impact - quantifies competitive dynamics"
+    }
+  ],
+  "processing_notes": [
+    "Run ID 2026-02-14T18 contained 2 videos covering complementary angles on OpenAI: competitive dynamics with Anthropic (CNBC) and leadership/strategic profile (Forbes)",
+    "9 distinct references identified across both videos",
+    "8 of 9 sources accessible; Forbes cover story and FT article behind paywalls",
+    "OpenAI blog post by Sarah Friar (Jan 18, 2026) directly verified on openai.com with full content accessible",
+    "Anthropic Super Bowl ad campaign confirmed by multiple outlets including TechCrunch, The Verge, and CNBC",
+    "Elon Musk lawsuit extensively covered - damages up to $134B, trial expected March 2026",
+    "Jony Ive collaboration confirmed via OpenAI announcements and tech press; hardware prototypes revealed",
+    "OpenAI $800B valuation confirmed across Financial Times, CNBC, and Yahoo Finance",
+    "Historical Uber-Lyft IPO reference is well-documented factual comparison",
+    "No significant discrepancies found between video claims and primary sources"
+  ]
+}
