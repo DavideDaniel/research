@@ -1,0 +1,76 @@
+{
+    "meta": {
+          "collection_date": "2026-02-14T23:35:00Z",
+          "run_id": "2026-02-14T23",
+          "date_range": "2026-02-14 to 2026-02-14",
+          "videos_collected": 2,
+          "creators": ["AI Perspectives", "nullmicgo"],
+          "sources": ["youtube_search"],
+          "companies_covered": ["Google", "DeepMind", "Meta", "OpenAI", "Anthropic", "Waymo", "Rutgers University", "Duke University"]
+    },
+    "videos": [
+          {
+                  "video_id": "rVPQPoz5PbA",
+                  "title": "Gemini 3 Deep Think: AI With 3,455 Elo Rating Destroys Math Olympics (Better Than Humans)",
+                  "url": "https://www.youtube.com/watch?v=rVPQPoz5PbA",
+                  "creator": "AI Perspectives",
+                  "channel_url": "https://www.youtube.com/@aiperspectivess",
+                  "published_date": "2026-02-14",
+                  "duration": "8:14",
+                  "views": 26,
+                  "source": "youtube_search",
+                  "description": "Gemini 3 Deep Think just changed everything we thought AI could do. Google's latest AI reasoning model solved 18 previously unsolved research problems, caught mistakes in peer-reviewed papers, and achieved gold medal performance across multiple scientific olympiads. In this video, I break down exactly what makes Deep Think different from OpenAI's o1 and why researchers are calling this a game-changer.",
+                  "detailed_summary": "This video provides comprehensive analysis of Google DeepMind's Gemini 3 Deep Think, a breakthrough AI reasoning model that represents a major advancement in artificial intelligence capabilities. The model achieved unprecedented performance across multiple scientific benchmarks, including a record-breaking 48.4% on Humanity's Last Exam, 84.6% on ARC-AGI-2 (an unprecedented achievement), and an impressive 3,455 Elo rating on Codeforces, placing it at Legendary Grandmaster level. Deep Think earned gold medals across multiple international olympiads including Mathematics, Physics, and Chemistry competitions in 2025, demonstrating superhuman performance in complex scientific reasoning. The model is built around System 2 thinking architecture, which enables deeper reasoning and extended computation time compared to traditional fast-response AI systems. Real-world applications are already emerging: at Rutgers University, professor Lisa Carbone used Deep Think to detect errors in peer-reviewed mathematical research papers. At Duke University's Wang Lab, the model contributed to semiconductor crystal growth research breakthroughs. The model successfully solved a 10-year-old mathematical conjecture and tackled 18 previously unsolved research-level problems across multiple scientific domains. The video extensively compares Deep Think against competitors including OpenAI's o1 and o1 Pro models, Anthropic's Claude Sonnet, and GPT-4.5 Pro, positioning Deep Think as superior for scientific and mathematical reasoning tasks. Google has made the model accessible through the AI Ultra subscription tier in the Gemini App, and researchers and enterprises can apply for early API access through a dedicated application form. The presenter discusses the Aletheia Agent for mathematical research and references multiple official resources from Google's blog and DeepMind's research publications. The video emphasizes that Deep Think is specifically designed for scientists, engineers, and researchers working on complex technical problems requiring extended reasoning capabilities.",
+                  "summary_word_count": 292,
+                  "chapters": [
+                            "00:00 - Shocking Hook: AI Catches Harvard Mistakes",
+                            "00:36 - What You'll Learn in This Video",
+                            "00:53 - What is Gemini 3 Deep Think?",
+                            "01:03 - System 2 Thinking Explained",
+                            "01:30 - Built for Scientists & Engineers",
+                            "02:01 - Benchmark Performance (Mind-Blowing Numbers)",
+                            "02:31 - Real-World Applications Begin",
+                            "03:03 - Duke University Breakthrough",
+                            "03:28 - 18 Unsolved Problems SOLVED",
+                            "04:07 - Deep Think vs OpenAI o1 vs Claude",
+                            "04:37 - What This Means for the Future",
+                            "05:10 - How to Access Deep Think Now",
+                            "05:27 - Final Thoughts & Question"
+                  ],
+                  "tools_mentioned": ["Gemini App", "Gemini API", "Aletheia Agent"],
+                  "key_topics": ["Gemini 3 Deep Think", "System 2 thinking", "mathematical reasoning", "scientific research", "olympiad competitions", "benchmark performance", "peer review", "semiconductor research", "AI reasoning models", "model comparison"],
+                  "companies_covered": ["Google", "DeepMind", "OpenAI", "Anthropic", "Rutgers University", "Duke University"]
+          },
+          {
+                  "video_id": "SSvAV0MgPWw",
+                  "title": "AI News Feb 15 |AI Agents Open Real PRs, LLM=CPU, Meta Afterlife Patent, HK Robotaxi |",
+                  "url": "https://www.youtube.com/watch?v=SSvAV0MgPWw",
+                  "creator": "nullmicgo",
+                  "channel_url": "https://www.youtube.com/@nullmicgo",
+                  "published_date": "2026-02-14",
+                  "duration": "20:41",
+                  "views": 17,
+                  "source": "youtube_search",
+                  "description": "February 15, 2026 – AI news roundup: AI agents now open real pull requests in major open-source projects (Socket.dev); Agent Hypervisor – reality virtualization for AI agents to block prompt injection & ZombieAgent (sv-pro); AI Station Navigator – LLM=CPU, Agents=Processes, Skills=Apps (canishowtime); cgrep – local, code-aware search for AI coding agents, 95% token reduction (meghendra6); Meta patents AI to post on behalf of deceased users (Business Insider); Mathematicians launch First Proof – math exam for AI (Scientific American); Oxford study: AI medical chatbots no better than search (Unwire); Hong Kong plans commercial robotaxi without backup driver (Unwire); Waymo pays gig workers ~$11 to close car doors (Unwire); OpenAI Python SDK v2.21.0 adds container network_policy & skills.",
+      "detailed_summary": "This comprehensive AI news roundup covers multiple significant developments across the artificial intelligence industry on February 15, 2026. A major development is AI agents now autonomously opening real pull requests in major open-source projects, as reported by Socket.dev, marking a new era of AI participation in collaborative software development. The Agent Hypervisor project (by sv-pro on GitHub) introduces reality virtualization technology specifically designed for AI agents to block prompt injection attacks and introduces ZombieAgent capabilities for enhanced security. The AI Station Navigator project (by canishowtime) presents a revolutionary conceptual framework comparing LLMs to CPUs, AI agents to processes, and skills to applications, offering a new mental model for understanding AI system architecture. The cgrep tool (by meghendra6) provides local, code-aware search functionality optimized for AI coding agents with an impressive 95% token reduction, significantly improving efficiency for AI-assisted development. Meta has filed a controversial patent for AI technology that would enable posting on behalf of deceased users, raising significant ethical questions about digital afterlife and consent, as reported by Business Insider. Mathematicians have launched First Proof, a specialized mathematical examination designed specifically to test AI capabilities, as covered by Scientific American, representing the mathematics community's effort to create standardized AI benchmarks. An Oxford University study reveals that AI medical chatbots perform no better than traditional web search for medical information, challenging assumptions about AI's near-term utility in healthcare, per Unwire.hk reporting. Hong Kong announced plans for commercial robotaxi services operating without backup human drivers, representing a significant regulatory advancement for autonomous vehicle deployment in Asia. Waymo is paying gig workers approximately $11 per task to close car doors and perform minor vehicle maintenance tasks, highlighting the human labor still required to support autonomous vehicle fleets. OpenAI released Python SDK version 2.21.0 with new features including container network_policy configurations and skills framework, advancing the tooling available for developers building AI applications.",
+      "summary_word_count": 322,
+      "chapters": [],
+      "tools_mentioned": ["Socket.dev", "Agent Hypervisor", "ZombieAgent", "AI Station Navigator", "cgrep", "OpenAI Python SDK v2.21.0"],
+      "key_topics": ["AI agents", "pull requests", "open source", "prompt injection", "LLM architecture", "code search", "Meta patents", "digital afterlife", "AI benchmarks", "medical chatbots", "robotaxi", "autonomous vehicles", "Waymo", "OpenAI SDK"],
+      "companies_covered": ["Socket.dev", "Meta", "OpenAI", "Waymo", "Oxford University"]
+}
+],
+  "excluded_videos": [],
+  "new_creators_found": ["AI Perspectives", "nullmicgo"],
+  "processing_notes": [
+        "Found 2 qualifying videos within 48-hour window (last 12 hours)",
+        "Videos cover different companies: Google/DeepMind (video 1) and Meta/OpenAI/Waymo (video 2)",
+        "Good diversity in content types: deep dive technical analysis vs news roundup",
+        "Both videos from new creators not in previous collection (CNBC and Forbes were covered in 2026-02-14T18)",
+        "Video 1 focuses on Google's Gemini 3 Deep Think breakthrough in AI reasoning",
+        "Video 2 provides broad industry news coverage including Meta patent controversy",
+        "Transcripts were accessed successfully for both videos",
+        "Total views: 43 (26 + 17)",
+        "Both videos very recently published: 11-12 hours ago at collection time"
+  ]
+}
