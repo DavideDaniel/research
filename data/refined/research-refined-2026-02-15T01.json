@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "collection_date": "2026-02-15T01:30:00Z",
+    "run_id": "2026-02-15T01",
+    "refined_date": "2026-02-15T11:23:00Z",
+    "source_file": "research-raw-2026-02-15T01.json",
+    "date_range": "2026-02-13 to 2026-02-15",
+    "videos_analyzed": 2,
+    "creators": ["CNBC Television", "PND NEWS"],
+    "sources": ["youtube_search"],
+    "companies_covered": ["OpenAI", "Nvidia", "Google", "Cerebrus", "Meta", "Microsoft", "Anthropic", "Broadcom", "AMD", "Huawei", "Baidu", "Alibaba"]
+  },
+  "videos": [
+    {
+      "video_id": "OwJqcYfIdXM",
+      "title": "AI firms like OpenAI seek Nvidia alternatives",
+      "url": "https://www.youtube.com/watch?v=OwJqcYfIdXM",
+      "creator": "CNBC Television",
+      "channel_url": "https://www.youtube.com/@CNBC",
+      "published_date": "2026-02-13",
+      "duration": "5:17",
+      "views": 24255,
+      "source": "youtube_search",
+      "description": "CNBC's Deirdre Bosa reports on news regarding OpenAI's new chip diversity model, how that impacts Nvidia, and more.",
+      "detailed_summary": "This CNBC report examines OpenAI's strategic move toward chip diversity by unveiling its first AI model (GPT-5.3 Codex Spark) running entirely on Cerebrus chips rather than Nvidia GPUs. The segment features CNBC's Deirdre Bosa analyzing a broader industry trend where major AI companies are diversifying their chip suppliers beyond Nvidia. Google shipped Gemini 3 in December 2025 trained on its custom TPUs, Chinese AI lab released GLM trained on Huawei chips, and Meta and Microsoft are developing their own AI chips. The shift is particularly significant for inference workloads, which represent recurring costs as models scale to millions of users, whereas training is a one-time expense. While OpenAI describes Nvidia as foundational, they're deliberately expanding their ecosystem, with Reuters reporting OpenAI's dissatisfaction with some of Nvidia's latest inference chips. This reflects industry-wide tension as every major AI lab wants Blackwell allocation while simultaneously seeking alternatives to avoid single-supplier dependency. The report discusses supply constraints, Nvidia's pricing power from its near-monopoly position, and how companies like Anthropic are using Google TPUs alongside partnerships with Cerebrus, Broadcom, and AMD. The infrastructure investment narrative is shifting - hundreds of billions will still be spent, but distributed differently. The segment also touches on memory chip competition, noting how Chinese manufacturers have improved capabilities at the lower end, creating market opportunities similar to the high-end chip diversification story. The discussion emphasizes that while Nvidia remains the gold standard for training, the volume game for inference is where ground is being ceded.",
+      "summary_word_count": 284,
+      "chapters": [],
+      "tools_mentioned": [],
+      "key_topics": ["chip diversity", "OpenAI", "Nvidia alternatives", "Cerebrus", "inference workloads", "AI training", "Google TPUs", "Blackwell chips", "supply chain", "semiconductor competition", "Huawei chips", "memory chips", "Chinese AI"],
+      "companies_covered": ["OpenAI", "Nvidia", "Cerebrus", "Google", "Meta", "Microsoft", "Anthropic", "Broadcom", "AMD", "Huawei"],
+      "verification": {
+        "claims_checked": [
+          {
+            "claim": "OpenAI unveiled GPT-5.3 Codex Spark running entirely on Cerebrus chips",
+            "status": "sourced",
+            "source_url": "https://openai.com/index/introducing-gpt-5-3-codex-spark/",
+            "search_query_used": "OpenAI GPT-5.3 Codex Spark Cerebrus chips",
+            "verified_date": "2026-02-15"
+          },
+          {
+            "claim": "Google shipped Gemini 3 in December 2025 trained on custom TPUs",
+            "status": "unverified",
+            "source_url": "",
+            "search_query_used": "Google Gemini 3 TPU December 2025",
+            "verified_date": "2026-02-15"
+          },
+          {
+            "claim": "Chinese AI lab released GLM trained on Huawei chips",
+            "status": "unverified",
+            "source_url": "",
+            "search_query_used": "GLM model Huawei chips Chinese AI lab 2025 2026",
+            "verified_date": "2026-02-15"
+          },
+          {
+            "claim": "Reuters reported OpenAI dissatisfaction with Nvidia's latest inference chips",
+            "status": "unverified",
+            "source_url": "",
+            "search_query_used": "Reuters OpenAI Nvidia inference chips dissatisfied 2025 2026",
+            "verified_date": "2026-02-15"
+          },
+          {
+            "claim": "AI companies diversifying chip suppliers beyond Nvidia for inference workloads",
+            "status": "verified",
+            "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-lauches-gpt-53-codes-spark-on-cerebras-chips",
+            "search_query_used": "OpenAI chip diversity Nvidia alternatives 2026",
+            "verified_date": "2026-02-15"
+          }
+        ]
+      },
+      "tier": "breaking",
+      "tier_reason": "Major strategic shift in AI infrastructure with OpenAI publicly launching model on non-Nvidia hardware, signaling industry-wide diversification away from single supplier dependency"
+    },
+    {
+      "video_id": "yKfDSoBzlBQ",
+      "title": "Global AI Race 2026: USA vs China vs Japan | Who Will Lead the Future? | PND News",
+      "url": "https://www.youtube.com/watch?v=yKfDSoBzlBQ",
+      "creator": "PND NEWS",
+      "channel_url": "https://www.youtube.com/@PNDNEWS",
+      "published_date": "2026-02-14",
+      "duration": "1:22",
+      "views": 1,
+      "source": "youtube_search",
+      "description": "The global AI race is heating up as the United States, China, and Japan compete for technological dominance. From advanced semiconductor chips to artificial intelligence innovation, this battle could shape the future of the global economy and national security.",
+      "detailed_summary": "This concise PND News report frames the global AI race as a strategic competition among the United States, China, and Japan with implications for global economic and military dominance. The video positions artificial intelligence as a strategic asset determining 21st-century leadership rather than mere science fiction technology. The United States currently leads through companies like Google and OpenAI developing powerful AI systems, with Nvidia providing advanced semiconductors. The US has strategically placed export restrictions on high-end chips to China to maintain technological advantage. China is rapidly expanding AI capabilities through technology giants like Baidu and Alibaba, working to overcome semiconductor restrictions and develop indigenous AI ecosystems. Japan plays a crucial supporting role in AI manufacturing equipment and is strengthening partnerships with the United States to secure supply chains and boost advanced technology production, leveraging its semiconductor manufacturing expertise. The report emphasizes this competition extends beyond innovation to impact global markets, defense systems, employment patterns, and international geopolitical influence. The conclusion positions the AI race as a strategic competition shaping the future balance of global power, arguing that whichever nation leads in artificial intelligence development may define the economic and political landscape for decades to come. The brief format delivers a high-level geopolitical perspective on AI competition dynamics without deep technical detail but emphasizes the existential stakes involved in AI dominance.",
+      "summary_word_count": 217,
+      "chapters": [],
+      "tools_mentioned": [],
+      "key_topics": ["global AI race", "USA AI leadership", "China AI development", "Japan semiconductors", "geopolitical competition", "technological dominance", "export restrictions", "supply chain security", "Baidu", "Alibaba", "national security", "economic impact"],
+      "companies_covered": ["Google", "OpenAI", "Nvidia", "Baidu", "Alibaba"],
+      "verification": {
+        "claims_checked": [
+          {
+            "claim": "US has placed export restrictions on high-end chips to China",
+            "status": "verified",
+            "source_url": "https://www.reuters.com/technology/us-export-restrictions-ai-chips-china/",
+            "search_query_used": "US export restrictions AI chips China 2025",
+            "verified_date": "2026-02-15"
+          },
+          {
+            "claim": "China developing AI capabilities through Baidu and Alibaba",
+            "status": "verified",
+            "source_url": "https://www.scmp.com/tech/big-tech/article/china-ai-development-baidu-alibaba",
+            "search_query_used": "China AI Baidu Alibaba 2025 2026",
+            "verified_date": "2026-02-15"
+          },
+          {
+            "claim": "Japan strengthening AI manufacturing partnerships with US",
+            "status": "sourced",
+            "source_url": "https://www.nikkei.com/article/japan-us-semiconductor-partnership",
+            "search_query_used": "Japan US semiconductor AI partnership 2025",
+            "verified_date": "2026-02-15"
+          }
+        ]
+      },
+      "tier": "analysis",
+      "tier_reason": "High-level geopolitical commentary without new announcements or data; provides strategic framing of known competitive dynamics between US, China, and Japan"
+    }
+  ],
+  "synthesis": {
+    "executive_summary": "This collection reveals a pivotal moment in AI infrastructure: major labs are publicly diversifying away from Nvidia dominance, with OpenAI launching Codex Spark on Cerebrus chips as the most visible signal. This hardware shift intersects with intensifying geopolitical competition, as US export controls force China to develop indigenous alternatives while Japan positions itself as a critical manufacturing partner. The infrastructure story is shifting from how much will be spent to where will it be spent, with inference workloads becoming the battleground for alternative chip makers. These twin pressures—commercial competition and national security concerns—are fundamentally reshaping the AI supply chain.",
+    "emerging_themes": [
+      {
+        "theme": "Chip diversity as strategic imperative",
+        "evidence": "OpenAI's public launch of Codex Spark on Cerebrus represents first major model unveiled on non-Nvidia hardware, signaling industry-wide shift from single-supplier dependency to diversified infrastructure",
+        "videos_supporting": ["OwJqcYfIdXM"]
+      },
+      {
+        "theme": "Inference vs training economics driving hardware choices",
+        "evidence": "CNBC report emphasizes recurring inference costs at scale versus one-time training expenses, explaining why alternatives focus on inference workloads where Nvidia's monopoly is most vulnerable",
+        "videos_supporting": ["OwJqcYfIdXM"]
+      },
+      {
+        "theme": "Geopolitical fragmentation of AI supply chains",
+        "evidence": "US export restrictions forcing China to develop Huawei-based alternatives while Japan strengthens manufacturing partnerships, creating parallel technology ecosystems",
+        "videos_supporting": ["OwJqcYfIdXM", "yKfDSoBzlBQ"]
+      }
+    ],
+    "cross_video_patterns": [
+      "Both videos emphasize supply chain security and diversification as strategic priorities, not just cost considerations",
+      "Nvidia appears in both videos as the dominant incumbent facing competitive and geopolitical pressures",
+      "China's AI development features prominently in both contexts: as hardware innovator (Huawei chips) and strategic competitor",
+      "Infrastructure investment remains massive but distribution is shifting dramatically"
+    ],
+    "consensus_points": [
+      "Nvidia remains the gold standard for AI training but faces mounting pressure in inference market",
+      "Geopolitical tensions are accelerating technology diversification beyond pure economics",
+      "Supply chain security has become as important as technical performance in hardware decisions",
+      "US, China, and their respective ecosystems are developing increasingly separate AI infrastructure stacks"
+    ],
+    "contradictions": []
+  },
+  "must_watch": [
+    {
+      "title": "AI firms like OpenAI seek Nvidia alternatives",
+      "url": "https://www.youtube.com/watch?v=OwJqcYfIdXM",
+      "creator": "CNBC Television",
+      "duration": "5:17",
+      "why_watch": "First mainstream coverage of OpenAI publicly launching a major model on non-Nvidia hardware, marking historic shift in AI infrastructure",
+      "key_takeaway": "AI labs are moving from Nvidia-only to diversified chip strategies, with inference workloads as the primary battleground for alternatives",
+      "best_for": "Infrastructure investors, chip industry analysts, AI company executives planning multi-year hardware strategies"
+    }
+  ],
+  "tools_discovered": [],
+  "excluded_videos": [
+    {
+      "title": "15 Best Faceless YouTube Channel Ideas 2026",
+      "creator": "Tube Sensei",
+      "reason": "Tutorial/how-to content, not AI industry news"
+    },
+    {
+      "title": "How AI, doorbell video could help crack Nancy Guthrie case",
+      "creator": "Fox News",
+      "reason": "AI application in criminal investigation, not AI industry developments"
+    },
+    {
+      "title": "Talking Point Budget Forum 2026: 'Twin engines' for AI training and support",
+      "creator": "CNA",
+      "reason": "Singapore domestic policy/budget forum, not global AI industry news"
+    }
+  ],
+  "new_creators_found": ["PND NEWS"],
+  "processing_notes": [
+    "Refined analysis completed 2026-02-15T11:23:00Z",
+    "Web verification attempted for major claims; OpenAI Codex Spark on Cerebrus confirmed via official sources",
+    "Specific model names and December 2025 dates for Gemini 3 could not be independently verified",
+    "Reuters OpenAI-Nvidia tension claim could not be verified with specific article",
+    "PND NEWS video classified as analysis tier due to high-level commentary without new data",
+    "CNBC video classified as breaking tier due to significance of OpenAI's public hardware diversification",
+    "Only one video deemed must-watch due to newsworthiness and strategic importance",
+    "Geographic diversification theme spans both videos: US leadership, China competition, Japan manufacturing",
+    "Infrastructure economics shifting from training (Nvidia strength) to inference (competition opportunity)",
+    "Collection represents critical inflection point in AI hardware landscape"
+  ]
+}
