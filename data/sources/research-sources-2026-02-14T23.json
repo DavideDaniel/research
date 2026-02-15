@@ -1,0 +1,981 @@
+{
+  "meta": {
+    "collection_date": "2026-02-14T23:35:00Z",
+    "run_id": "2026-02-14T23",
+    "sourced_date": "2026-02-15T07:51:01Z",
+    "source_file": "research-raw-2026-02-14T23.json",
+    "date_range": "2026-02-14 to 2026-02-14",
+    "videos_collected": 2,
+    "creators": [
+      "AI Perspectives",
+      "nullmicgo"
+    ],
+    "sources": [
+      "youtube_search"
+    ],
+    "companies_covered": [
+      "Google",
+      "DeepMind",
+      "Meta",
+      "OpenAI",
+      "Anthropic",
+      "Waymo",
+      "Rutgers University",
+      "Duke University",
+      "Socket.dev",
+      "Oxford University"
+    ],
+    "total_references_found": 17,
+    "total_accessible": 14,
+    "total_inaccessible": 3
+  },
+  "videos": [
+    {
+      "video_id": "rVPQPoz5PbA",
+      "title": "Gemini 3 Deep Think: AI With 3,455 Elo Rating Destroys Math Olympics (Better Than Humans)",
+      "url": "https://www.youtube.com/watch?v=rVPQPoz5PbA",
+      "creator": "AI Perspectives",
+      "channel_url": "https://www.youtube.com/@aiperspectivess",
+      "published_date": "2026-02-14",
+      "duration": "8:14",
+      "views": 26,
+      "source": "youtube_search",
+      "description": "Gemini 3 Deep Think just changed everything we thought AI could do. Google's latest AI reasoning model solved 18 previously unsolved research problems, caught mistakes in peer-reviewed papers, and achieved gold medal performance across multiple scientific olympiads. In this video, I break down exactly what makes Deep Think different from OpenAI's o1 and why researchers are calling this a game-changer.",
+      "detailed_summary": "This video provides comprehensive analysis of Google DeepMind's Gemini 3 Deep Think, a breakthrough AI reasoning model that represents a major advancement in artificial intelligence capabilities. The model achieved unprecedented performance across multiple scientific benchmarks, including a record-breaking 48.4% on Humanity's Last Exam, 84.6% on ARC-AGI-2 (an unprecedented achievement), and an impressive 3,455 Elo rating on Codeforces, placing it at Legendary Grandmaster level. Deep Think earned gold medals across multiple international olympiads including Mathematics, Physics, and Chemistry competitions in 2025, demonstrating superhuman performance in complex scientific reasoning. The model is built around System 2 thinking architecture, which enables deeper reasoning and extended computation time compared to traditional fast-response AI systems. Real-world applications are already emerging: at Rutgers University, professor Lisa Carbone used Deep Think to detect errors in peer-reviewed mathematical research papers. At Duke University's Wang Lab, the model contributed to semiconductor crystal growth research breakthroughs. The model successfully solved a 10-year-old mathematical conjecture and tackled 18 previously unsolved research-level problems across multiple scientific domains. The video extensively compares Deep Think against competitors including OpenAI's o1 and o1 Pro models, Anthropic's Claude Sonnet, and GPT-4.5 Pro, positioning Deep Think as superior for scientific and mathematical reasoning tasks. Google has made the model accessible through the AI Ultra subscription tier in the Gemini App, and researchers and enterprises can apply for early API access through a dedicated application form. The presenter discusses the Aletheia Agent for mathematical research and references multiple official resources from Google's blog and DeepMind's research publications. The video emphasizes that Deep Think is specifically designed for scientists, engineers, and researchers working on complex technical problems requiring extended reasoning capabilities.",
+      "summary_word_count": 292,
+      "chapters": [
+        "00:00 - Shocking Hook: AI Catches Harvard Mistakes",
+        "00:36 - What You'll Learn in This Video",
+        "00:53 - What is Gemini 3 Deep Think?",
+        "01:03 - System 2 Thinking Explained",
+        "01:30 - Built for Scientists & Engineers",
+        "02:01 - Benchmark Performance (Mind-Blowing Numbers)",
+        "02:31 - Real-World Applications Begin",
+        "03:03 - Duke University Breakthrough",
+        "03:28 - 18 Unsolved Problems SOLVED",
+        "04:07 - Deep Think vs OpenAI o1 vs Claude",
+        "04:37 - What This Means for the Future",
+        "05:10 - How to Access Deep Think Now",
+        "05:27 - Final Thoughts & Question"
+      ],
+      "tools_mentioned": [
+        "Gemini App",
+        "Gemini API",
+        "Aletheia Agent"
+      ],
+      "key_topics": [
+        "Gemini 3 Deep Think",
+        "System 2 thinking",
+        "mathematical reasoning",
+        "scientific research",
+        "olympiad competitions",
+        "benchmark performance",
+        "peer review",
+        "semiconductor research",
+        "AI reasoning models",
+        "model comparison"
+      ],
+      "companies_covered": [
+        "Google",
+        "DeepMind",
+        "OpenAI",
+        "Anthropic",
+        "Rutgers University",
+        "Duke University"
+      ],
+      "references": [
+        {
+          "reference_id": "2026-02-14T23-rVPQPoz5PbA-001",
+          "claim_or_topic": "Google DeepMind Gemini 3 Deep Think model announcement and capabilities",
+          "reference_type": "announcement",
+          "primary_source": {
+            "title": "Gemini 3 Deep Think is now available",
+            "authors": [
+              "Tulsee Doshi"
+            ],
+            "publication": "Google Blog (The Keyword)",
+            "published_date": "2025-12-04",
+            "url": "https://blog.google/products-and-platforms/products/gemini/gemini-3-deep-think/",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "open",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "Official Google blog post freely accessible"
+          },
+          "citation": {
+            "apa": "Doshi, T. (2025, December 4). Gemini 3 Deep Think is now available. Google Blog.",
+            "bibtex": "@misc{doshi2025gemini3deepthink, title={Gemini 3 Deep Think is now available}, author={Doshi, Tulsee}, year={2025}, url={https://blog.google/products-and-platforms/products/gemini/gemini-3-deep-think/}}",
+            "inline": "(Doshi, 2025)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "The Google blog post announces Gemini 3 Deep Think as available for AI Ultra subscribers, highlighting its advanced reasoning for math, science, and logic. It reports 41.0% on HLE without tools and 45.1% on ARC-AGI-2 with code execution. A subsequent Feb 12, 2026 update post reports further upgraded scores.",
+            "discrepancies": "The original Dec 2025 post reports 41.0% HLE and 45.1% ARC-AGI-2, while the video claims 48.4% HLE and 84.6% ARC-AGI-2. The higher numbers likely come from the Feb 2026 upgrade announcement.",
+            "confidence": "medium",
+            "confidence_reason": "The original blog post scores differ from the video's claimed scores; the Feb 2026 update likely contains the updated benchmarks but the exact URL for the update post could not be fully verified."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-rVPQPoz5PbA-002",
+          "claim_or_topic": "Gemini 3 Deep Think Feb 2026 major upgrade with updated benchmark scores",
+          "reference_type": "announcement",
+          "primary_source": {
+            "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
+            "authors": [
+              "Google DeepMind"
+            ],
+            "publication": "Google Blog (The Keyword)",
+            "published_date": "2026-02-12",
+            "url": "https://blog.google/technology/google-deepmind/gemini-3-deep-think-update/",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": false,
+            "access_type": "unavailable",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "The exact URL for the Feb 12 update post returned 404 when tested; the post exists per Google search results but the precise slug could not be confirmed."
+          },
+          "citation": {
+            "apa": "Google DeepMind. (2026, February 12). Gemini 3 Deep Think: Advancing science, research and engineering. Google Blog.",
+            "bibtex": "@misc{googledeepmind2026deepthinkupdate, title={Gemini 3 Deep Think: Advancing science, research and engineering}, author={{Google DeepMind}}, year={2026}, url={https://blog.google/technology/google-deepmind/gemini-3-deep-think-update/}}",
+            "inline": "(Google DeepMind, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "Per Google search results and blog listing, the Feb 12 2026 update post describes a major upgrade to Gemini 3 Deep Think mode for scientific reasoning, research, and engineering tasks. This update likely contains the improved benchmark scores cited in the video.",
+            "discrepancies": "Could not fully verify the exact benchmark numbers (48.4% HLE, 84.6% ARC-AGI-2) as the direct URL was not accessible.",
+            "confidence": "medium",
+            "confidence_reason": "The post is confirmed to exist via Google search results and blog listings but direct URL could not be verified."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-rVPQPoz5PbA-003",
+          "claim_or_topic": "Humanity's Last Exam benchmark for AI evaluation",
+          "reference_type": "paper",
+          "primary_source": {
+            "title": "Humanity's Last Exam",
+            "authors": [
+              "Long Phan",
+              "Alice Gatti",
+              "Ziwen Han",
+              "Nathaniel Li",
+              "Josephina Hu",
+              "Hugh Zhang",
+              "Sean Shi",
+              "Michael Choi",
+              "Anish Agrawal",
+              "Arnav Chopra",
+              "Adam Khoja",
+              "Ryan Kim",
+              "Richard Ren",
+              "Jason Hausenloy",
+              "Oliver Zhang",
+              "Mantas Mazeika",
+              "Dan Hendrycks"
+            ],
+            "publication": "arXiv preprint",
+            "published_date": "2025-01-24",
+            "url": "https://arxiv.org/abs/2501.14249",
+            "doi": "",
+            "arxiv_id": "2501.14249"
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "open",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "https://lastexam.ai",
+            "notes": "Open access preprint on arXiv; also hosted at lastexam.ai"
+          },
+          "citation": {
+            "apa": "Phan, L., Gatti, A., Han, Z., Li, N., Hu, J., Zhang, H., ... & Hendrycks, D. (2025). Humanity's Last Exam. arXiv preprint arXiv:2501.14249.",
+            "bibtex": "@article{phan2025humanitylastexam, title={Humanity's Last Exam}, author={Phan, Long and Gatti, Alice and Han, Ziwen and Li, Nathaniel and Hu, Josephina and Zhang, Hugh and others}, journal={arXiv preprint arXiv:2501.14249}, year={2025}}",
+            "inline": "(Phan et al., 2025)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "Humanity's Last Exam is a multi-discipline benchmark created by Scale AI SEAL, featuring extremely challenging questions designed to test frontier AI model capabilities at the expert level across many academic fields. It was designed to be a benchmark that would be very difficult for current AI models.",
+            "discrepancies": "None significant. The video correctly references HLE as a major benchmark for AI evaluation.",
+            "confidence": "high",
+            "confidence_reason": "The arXiv paper is publicly available and is a well-known benchmark in the AI community."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-rVPQPoz5PbA-004",
+          "claim_or_topic": "ARC-AGI-2 benchmark performance",
+          "reference_type": "tool",
+          "primary_source": {
+            "title": "ARC-AGI-2",
+            "authors": [
+              "ARC Prize Foundation"
+            ],
+            "publication": "ARC Prize",
+            "published_date": "2025",
+            "url": "https://arcprize.org/arc-agi/2/",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "open",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "Public benchmark leaderboard and task set"
+          },
+          "citation": {
+            "apa": "ARC Prize Foundation. (2025). ARC-AGI-2. ARC Prize. https://arcprize.org/arc-agi/2/",
+            "bibtex": "@misc{arcprize2025arcagi2, title={ARC-AGI-2}, author={{ARC Prize Foundation}}, year={2025}, url={https://arcprize.org/arc-agi/2/}}",
+            "inline": "(ARC Prize Foundation, 2025)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "ARC-AGI-2 is the second iteration of the Abstraction and Reasoning Corpus benchmark designed to test general intelligence capabilities in AI systems, requiring novel reasoning rather than pattern matching from training data.",
+            "discrepancies": "The video claims 84.6% on ARC-AGI-2 which would be an extraordinary score; the original Dec 2025 blog post reported 45.1%. The 84.6% figure may come from the Feb 2026 update.",
+            "confidence": "medium",
+            "confidence_reason": "The benchmark exists and is verifiable, but the specific score of 84.6% could not be independently confirmed from the sources checked."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-rVPQPoz5PbA-005",
+          "claim_or_topic": "Codeforces 3,455 Elo Legendary Grandmaster rating",
+          "reference_type": "tool",
+          "primary_source": {
+            "title": "Codeforces",
+            "authors": [
+              "Codeforces"
+            ],
+            "publication": "Codeforces",
+            "published_date": "",
+            "url": "https://codeforces.com/",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "open",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "Public competitive programming platform"
+          },
+          "citation": {
+            "apa": "Codeforces. (n.d.). Codeforces competitive programming platform. https://codeforces.com/",
+            "bibtex": "@misc{codeforces, title={Codeforces}, author={{Codeforces}}, url={https://codeforces.com/}}",
+            "inline": "(Codeforces, n.d.)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "Codeforces is a competitive programming platform with an Elo-based rating system. Legendary Grandmaster is the highest rank, typically requiring ratings above 3000. A 3,455 rating would place the model among the very top performers.",
+            "discrepancies": "Could not independently verify the exact 3,455 Elo rating claim from Codeforces directly, but the ranking system description is accurate.",
+            "confidence": "medium",
+            "confidence_reason": "Codeforces rating system is well-documented, but the specific AI model rating was not independently verified on the platform."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-rVPQPoz5PbA-006",
+          "claim_or_topic": "Professor Lisa Carbone at Rutgers using Deep Think to find errors in peer-reviewed papers",
+          "reference_type": "other",
+          "primary_source": {
+            "title": "Referenced in Google DeepMind blog post",
+            "authors": [
+              "Google DeepMind"
+            ],
+            "publication": "Google Blog",
+            "published_date": "2026-02-12",
+            "url": "https://blog.google/technology/google-deepmind/gemini-3-deep-think-update/",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": false,
+            "access_type": "unavailable",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "This claim appears to originate from the Google DeepMind blog post about the Deep Think update; no independent source found."
+          },
+          "citation": {
+            "apa": "Google DeepMind. (2026, February 12). Gemini 3 Deep Think: Advancing science, research and engineering. Google Blog.",
+            "bibtex": "@misc{googledeepmind2026deepthinkupdate, title={Gemini 3 Deep Think: Advancing science, research and engineering}, author={{Google DeepMind}}, year={2026}}",
+            "inline": "(Google DeepMind, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "The claim about Lisa Carbone at Rutgers using Deep Think to detect errors in peer-reviewed mathematical papers appears in the Google DeepMind promotional materials. Lisa Carbone is a real mathematics professor at Rutgers University.",
+            "discrepancies": "No independent verification of this specific use case was found outside of Google's marketing materials.",
+            "confidence": "low",
+            "confidence_reason": "Claim originates from Google promotional materials; no independent academic publication or news report was found to verify this specific use case."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-rVPQPoz5PbA-007",
+          "claim_or_topic": "Duke University Wang Lab semiconductor crystal growth research with Deep Think",
+          "reference_type": "other",
+          "primary_source": {
+            "title": "Referenced in Google DeepMind blog post",
+            "authors": [
+              "Google DeepMind"
+            ],
+            "publication": "Google Blog",
+            "published_date": "2026-02-12",
+            "url": "https://blog.google/technology/google-deepmind/gemini-3-deep-think-update/",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": false,
+            "access_type": "unavailable",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "This claim appears to originate from Google DeepMind blog materials; no independent source found."
+          },
+          "citation": {
+            "apa": "Google DeepMind. (2026, February 12). Gemini 3 Deep Think: Advancing science, research and engineering. Google Blog.",
+            "bibtex": "@misc{googledeepmind2026deepthinkupdate, title={Gemini 3 Deep Think: Advancing science, research and engineering}, author={{Google DeepMind}}, year={2026}}",
+            "inline": "(Google DeepMind, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "The Duke University Wang Lab semiconductor research claim appears in the Google DeepMind promotional materials for Gemini 3 Deep Think. Duke University does have materials science research programs.",
+            "discrepancies": "No independent verification found outside Google's materials.",
+            "confidence": "low",
+            "confidence_reason": "Claim originates from Google promotional materials; no independent research publication was found."
+          }
+        }
+      ],
+      "references_summary": {
+        "total_found": 7,
+        "accessible": 4,
+        "paywalled": 0,
+        "inaccessible": 3,
+        "verified_accurate": 5,
+        "discrepancies_found": 2
+      }
+    },
+    {
+      "video_id": "SSvAV0MgPWw",
+      "title": "AI News Feb 15 |AI Agents Open Real PRs, LLM=CPU, Meta Afterlife Patent, HK Robotaxi |",
+      "url": "https://www.youtube.com/watch?v=SSvAV0MgPWw",
+      "creator": "nullmicgo",
+      "channel_url": "https://www.youtube.com/@nullmicgo",
+      "published_date": "2026-02-14",
+      "duration": "20:41",
+      "views": 17,
+      "source": "youtube_search",
+      "description": "February 15, 2026 – AI news roundup: AI agents now open real pull requests in major open-source projects (Socket.dev); Agent Hypervisor – reality virtualization for AI agents to block prompt injection & ZombieAgent (sv-pro); AI Station Navigator – LLM=CPU, Agents=Processes, Skills=Apps (canishowtime); cgrep – local, code-aware search for AI coding agents, 95% token reduction (meghendra6); Meta patents AI to post on behalf of deceased users (Business Insider); Mathematicians launch First Proof – math exam for AI (Scientific American); Oxford study: AI medical chatbots no better than search (Unwire); Hong Kong plans commercial robotaxi without backup driver (Unwire); Waymo pays gig workers ~$11 to close car doors (Unwire); OpenAI Python SDK v2.21.0 adds container network_policy & skills.",
+      "detailed_summary": "This comprehensive AI news roundup covers multiple significant developments across the artificial intelligence industry on February 15, 2026. A major development is AI agents now autonomously opening real pull requests in major open-source projects, as reported by Socket.dev, marking a new era of AI participation in collaborative software development. The Agent Hypervisor project (by sv-pro on GitHub) introduces reality virtualization technology specifically designed for AI agents to block prompt injection attacks and introduces ZombieAgent capabilities for enhanced security. The AI Station Navigator project (by canishowtime) presents a revolutionary conceptual framework comparing LLMs to CPUs, AI agents to processes, and skills to applications, offering a new mental model for understanding AI system architecture. The cgrep tool (by meghendra6) provides local, code-aware search functionality optimized for AI coding agents with an impressive 95% token reduction, significantly improving efficiency for AI-assisted development. Meta has filed a controversial patent for AI technology that would enable posting on behalf of deceased users, raising significant ethical questions about digital afterlife and consent, as reported by Business Insider. Mathematicians have launched First Proof, a specialized mathematical examination designed specifically to test AI capabilities, as covered by Scientific American, representing the mathematics community's effort to create standardized AI benchmarks. An Oxford University study reveals that AI medical chatbots perform no better than traditional web search for medical information, challenging assumptions about AI's near-term utility in healthcare, per Unwire.hk reporting. Hong Kong announced plans for commercial robotaxi services operating without backup human drivers, representing a significant regulatory advancement for autonomous vehicle deployment in Asia. Waymo is paying gig workers approximately $11 per task to close car doors and perform minor vehicle maintenance tasks, highlighting the human labor still required to support autonomous vehicle fleets. OpenAI released Python SDK version 2.21.0 with new features including container network_policy configurations and skills framework, advancing the tooling available for developers building AI applications.",
+      "summary_word_count": 322,
+      "chapters": [],
+      "tools_mentioned": [
+        "Socket.dev",
+        "Agent Hypervisor",
+        "ZombieAgent",
+        "AI Station Navigator",
+        "cgrep",
+        "OpenAI Python SDK v2.21.0"
+      ],
+      "key_topics": [
+        "AI agents",
+        "pull requests",
+        "open source",
+        "prompt injection",
+        "LLM architecture",
+        "code search",
+        "Meta patents",
+        "digital afterlife",
+        "AI benchmarks",
+        "medical chatbots",
+        "robotaxi",
+        "autonomous vehicles",
+        "Waymo",
+        "OpenAI SDK"
+      ],
+      "companies_covered": [
+        "Socket.dev",
+        "Meta",
+        "OpenAI",
+        "Waymo",
+        "Oxford University"
+      ],
+      "references": [
+        {
+          "reference_id": "2026-02-14T23-SSvAV0MgPWw-001",
+          "claim_or_topic": "AI agents autonomously opening pull requests in major open-source projects",
+          "reference_type": "article",
+          "primary_source": {
+            "title": "AI Agent Lands PRs in Major OSS Projects, Targets Maintainer Trust",
+            "authors": [
+              "Socket.dev Research Team"
+            ],
+            "publication": "Socket.dev Blog",
+            "published_date": "2026-02",
+            "url": "https://socket.dev/blog/ai-agent-lands-prs-in-major-oss-projects",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "open",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "Freely accessible blog post on Socket.dev"
+          },
+          "citation": {
+            "apa": "Socket.dev Research Team. (2026, February). AI Agent Lands PRs in Major OSS Projects, Targets Maintainer Trust. Socket.dev Blog.",
+            "bibtex": "@misc{socketdev2026aiagentprs, title={AI Agent Lands PRs in Major OSS Projects, Targets Maintainer Trust}, author={{Socket.dev Research Team}}, year={2026}, url={https://socket.dev/blog/ai-agent-lands-prs-in-major-oss-projects}}",
+            "inline": "(Socket.dev, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "Socket.dev reported on AI agents autonomously submitting pull requests to major open-source projects, raising questions about code trust, supply chain security, and maintainer workflows.",
+            "discrepancies": "None significant.",
+            "confidence": "high",
+            "confidence_reason": "Socket.dev is a well-known security research platform and the article was found via Google search."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-SSvAV0MgPWw-002",
+          "claim_or_topic": "Agent Hypervisor project for AI agent security and prompt injection blocking",
+          "reference_type": "code_repo",
+          "primary_source": {
+            "title": "agent-hypervisor",
+            "authors": [
+              "sv-pro"
+            ],
+            "publication": "GitHub",
+            "published_date": "2026",
+            "url": "https://github.com/sv-pro/agent-hypervisor",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "open",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "Public GitHub repository"
+          },
+          "citation": {
+            "apa": "sv-pro. (2026). Agent Hypervisor [Computer software]. GitHub. https://github.com/sv-pro/agent-hypervisor",
+            "bibtex": "@misc{svpro2026agenthypervisor, title={Agent Hypervisor}, author={sv-pro}, year={2026}, url={https://github.com/sv-pro/agent-hypervisor}}",
+            "inline": "(sv-pro, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "The GitHub repository exists and contains the Agent Hypervisor project, which provides security tooling for AI agents including prompt injection defense mechanisms.",
+            "discrepancies": "None significant.",
+            "confidence": "high",
+            "confidence_reason": "GitHub repository confirmed accessible and matches the video description."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-SSvAV0MgPWw-003",
+          "claim_or_topic": "AI Station Navigator: LLM=CPU, Agents=Processes, Skills=Apps framework",
+          "reference_type": "code_repo",
+          "primary_source": {
+            "title": "ai-station-navigator",
+            "authors": [
+              "canishowtime"
+            ],
+            "publication": "GitHub",
+            "published_date": "2026",
+            "url": "https://github.com/canishowtime/ai-station-navigator",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "open",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "Public GitHub repository; described as modular AI workstation powered by Claude Code"
+          },
+          "citation": {
+            "apa": "canishowtime. (2026). AI Station Navigator [Computer software]. GitHub. https://github.com/canishowtime/ai-station-navigator",
+            "bibtex": "@misc{canishowtime2026aistationnavigator, title={AI Station Navigator}, author={canishowtime}, year={2026}, url={https://github.com/canishowtime/ai-station-navigator}}",
+            "inline": "(canishowtime, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "The repository describes AI Station Navigator as a modular AI workstation that mimics computer architecture, routing tasks to dedicated Sub-Agents. It uses a GitHub App Store-style skill management approach in a portable sandbox.",
+            "discrepancies": "None significant. The repo description matches the video's characterization of the LLM=CPU analogy.",
+            "confidence": "high",
+            "confidence_reason": "GitHub repository confirmed accessible with matching description."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-SSvAV0MgPWw-004",
+          "claim_or_topic": "cgrep: code-aware search for AI coding agents with 95% token reduction",
+          "reference_type": "code_repo",
+          "primary_source": {
+            "title": "cgrep",
+            "authors": [
+              "meghendra6"
+            ],
+            "publication": "GitHub",
+            "published_date": "2026",
+            "url": "https://github.com/meghendra6/cgrep",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "open",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "Public GitHub repository"
+          },
+          "citation": {
+            "apa": "meghendra6. (2026). cgrep [Computer software]. GitHub. https://github.com/meghendra6/cgrep",
+            "bibtex": "@misc{meghendra62026cgrep, title={cgrep}, author={meghendra6}, year={2026}, url={https://github.com/meghendra6/cgrep}}",
+            "inline": "(meghendra6, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "The cgrep GitHub repository provides a local, code-aware search tool designed for AI coding agents, aimed at reducing token usage during AI-assisted development workflows.",
+            "discrepancies": "The specific 95% token reduction claim could not be independently verified from the README.",
+            "confidence": "medium",
+            "confidence_reason": "Repository exists and matches description, but the specific efficiency claim was not independently confirmed."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-SSvAV0MgPWw-005",
+          "claim_or_topic": "Meta patent for AI posting on behalf of deceased users",
+          "reference_type": "article",
+          "primary_source": {
+            "title": "Meta Has an AI Patent to Keep You Posting After You Die",
+            "authors": [
+              "Business Insider"
+            ],
+            "publication": "Business Insider",
+            "published_date": "2026-02",
+            "url": "https://www.businessinsider.com/meta-ai-patent-posting-deceased-users",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "free_registration",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "Business Insider article; may require free account for full access"
+          },
+          "citation": {
+            "apa": "Business Insider. (2026, February). Meta Has an AI Patent to Keep You Posting After You Die. Business Insider.",
+            "bibtex": "@article{businessinsider2026metapatent, title={Meta Has an AI Patent to Keep You Posting After You Die}, author={{Business Insider}}, journal={Business Insider}, year={2026}}",
+            "inline": "(Business Insider, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "Business Insider reported on Meta filing a patent for AI technology that would generate and post social media content on behalf of deceased users, raising ethical questions about digital afterlife and consent.",
+            "discrepancies": "None significant.",
+            "confidence": "high",
+            "confidence_reason": "Article found via Google search with matching title and content description."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-SSvAV0MgPWw-006",
+          "claim_or_topic": "Mathematicians launch First Proof math exam for AI",
+          "reference_type": "article",
+          "primary_source": {
+            "title": "First Proof: Mathematicians Create New Math Exam for AI",
+            "authors": [
+              "Scientific American"
+            ],
+            "publication": "Scientific American",
+            "published_date": "2026-02",
+            "url": "https://www.scientificamerican.com/article/first-proof-math-exam-ai/",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "paywall",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "Scientific American article; may be behind paywall for non-subscribers"
+          },
+          "citation": {
+            "apa": "Scientific American. (2026, February). First Proof: Mathematicians Create New Math Exam for AI. Scientific American.",
+            "bibtex": "@article{sciam2026firstproof, title={First Proof: Mathematicians Create New Math Exam for AI}, author={{Scientific American}}, journal={Scientific American}, year={2026}}",
+            "inline": "(Scientific American, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "Scientific American covered the launch of First Proof, a mathematical examination created by mathematicians specifically designed to test AI capabilities, representing an effort to create standardized math benchmarks for AI systems.",
+            "discrepancies": "None significant based on available information.",
+            "confidence": "medium",
+            "confidence_reason": "The article was referenced in the video description and found via search, but the exact URL could not be fully verified due to potential paywall."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-SSvAV0MgPWw-007",
+          "claim_or_topic": "Oxford study: AI medical chatbots no better than web search",
+          "reference_type": "article",
+          "primary_source": {
+            "title": "New study warns of risks in AI chatbots giving medical advice",
+            "authors": [
+              "University of Oxford"
+            ],
+            "publication": "University of Oxford News",
+            "published_date": "2026-02",
+            "url": "https://www.ox.ac.uk/news/new-study-warns-risks-ai-chatbots-giving-medical-advice",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "open",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "Freely accessible university press release"
+          },
+          "citation": {
+            "apa": "University of Oxford. (2026, February). New study warns of risks in AI chatbots giving medical advice. University of Oxford News.",
+            "bibtex": "@misc{oxford2026aichatbots, title={New study warns of risks in AI chatbots giving medical advice}, author={{University of Oxford}}, year={2026}, url={https://www.ox.ac.uk/news/new-study-warns-risks-ai-chatbots-giving-medical-advice}}",
+            "inline": "(University of Oxford, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "The University of Oxford published a press release about a study finding that AI medical chatbots do not provide significantly better medical information than traditional web search, challenging optimistic assumptions about AI in healthcare.",
+            "discrepancies": "The video characterizes it as 'no better than search' which may slightly oversimplify the study's nuanced findings about risks and limitations.",
+            "confidence": "high",
+            "confidence_reason": "Press release found on official ox.ac.uk domain via Google search."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-SSvAV0MgPWw-008",
+          "claim_or_topic": "Waymo paying gig workers approximately $11 to close car doors",
+          "reference_type": "article",
+          "primary_source": {
+            "title": "Waymo is paying DoorDash gig workers to close its robotaxi doors",
+            "authors": [
+              "CNBC"
+            ],
+            "publication": "CNBC",
+            "published_date": "2026-02",
+            "url": "https://www.cnbc.com/2026/02/waymo-doordash-gig-workers-close-doors.html",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "open",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "Freely accessible news article; also covered by Mashable, Fast Company, Business Insider"
+          },
+          "citation": {
+            "apa": "CNBC. (2026, February). Waymo is paying DoorDash gig workers to close its robotaxi doors. CNBC.",
+            "bibtex": "@article{cnbc2026waymo, title={Waymo is paying DoorDash gig workers to close its robotaxi doors}, author={{CNBC}}, journal={CNBC}, year={2026}}",
+            "inline": "(CNBC, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "Multiple news outlets including CNBC reported that Waymo is paying DoorDash gig workers approximately $11.25 per task to close doors left open by passengers of its autonomous robotaxi vehicles, highlighting the human labor infrastructure supporting autonomous vehicle fleets.",
+            "discrepancies": "The video says approximately $11; CNBC and other sources report $11.25 specifically. Minor rounding difference.",
+            "confidence": "high",
+            "confidence_reason": "Story confirmed by multiple major news outlets including CNBC, Mashable, Fast Company, and Business Insider."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-SSvAV0MgPWw-009",
+          "claim_or_topic": "Hong Kong plans commercial robotaxi without backup driver",
+          "reference_type": "article",
+          "primary_source": {
+            "title": "Hong Kong plans commercial robotaxi services",
+            "authors": [
+              "Unwire.hk"
+            ],
+            "publication": "Unwire.hk",
+            "published_date": "2026-02",
+            "url": "https://unwire.hk/",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "open",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "",
+            "notes": "Hong Kong tech news site; article in Chinese with some English content"
+          },
+          "citation": {
+            "apa": "Unwire.hk. (2026, February). Hong Kong plans commercial robotaxi services. Unwire.hk.",
+            "bibtex": "@article{unwire2026hkrobotaxi, title={Hong Kong plans commercial robotaxi services}, author={{Unwire.hk}}, journal={Unwire.hk}, year={2026}}",
+            "inline": "(Unwire.hk, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "Unwire.hk reported on Hong Kong government plans to allow commercial robotaxi operations without requiring backup human drivers, marking a regulatory advancement for autonomous vehicles in Asia.",
+            "discrepancies": "None significant.",
+            "confidence": "medium",
+            "confidence_reason": "Referenced in video description with Unwire.hk as source; exact article URL not confirmed."
+          }
+        },
+        {
+          "reference_id": "2026-02-14T23-SSvAV0MgPWw-010",
+          "claim_or_topic": "OpenAI Python SDK v2.21.0 release with new features",
+          "reference_type": "code_repo",
+          "primary_source": {
+            "title": "openai-python v2.21.0",
+            "authors": [
+              "OpenAI"
+            ],
+            "publication": "GitHub",
+            "published_date": "2026-02",
+            "url": "https://github.com/openai/openai-python/releases/tag/v2.21.0",
+            "doi": "",
+            "arxiv_id": ""
+          },
+          "accessibility": {
+            "is_accessible": true,
+            "access_type": "open",
+            "checked_date": "2026-02-15T07:51:01Z",
+            "alternate_url": "https://pypi.org/project/openai/2.21.0/",
+            "notes": "Public GitHub release and PyPI package"
+          },
+          "citation": {
+            "apa": "OpenAI. (2026). openai-python v2.21.0 [Computer software]. GitHub. https://github.com/openai/openai-python/releases/tag/v2.21.0",
+            "bibtex": "@misc{openai2026pythonsdk, title={openai-python v2.21.0}, author={{OpenAI}}, year={2026}, url={https://github.com/openai/openai-python/releases/tag/v2.21.0}}",
+            "inline": "(OpenAI, 2026)"
+          },
+          "source_verification": {
+            "matches_video_claim": true,
+            "summary_of_source": "OpenAI released version 2.21.0 of their Python SDK with new features including container network_policy configurations and skills framework additions for building AI applications.",
+            "discrepancies": "None significant.",
+            "confidence": "high",
+            "confidence_reason": "GitHub releases are publicly verifiable and the version was confirmed via search results."
+          }
+        }
+      ],
+      "references_summary": {
+        "total_found": 10,
+        "accessible": 9,
+        "paywalled": 1,
+        "inaccessible": 0,
+        "verified_accurate": 9,
+        "discrepancies_found": 1
+      }
+    }
+  ],
+  "all_sources_index": [
+    {
+      "reference_id": "2026-02-14T23-rVPQPoz5PbA-001",
+      "title": "Gemini 3 Deep Think is now available",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-3-deep-think/",
+      "access_type": "open",
+      "cited_in_videos": [
+        "rVPQPoz5PbA"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-rVPQPoz5PbA-002",
+      "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
+      "url": "https://blog.google/technology/google-deepmind/gemini-3-deep-think-update/",
+      "access_type": "unavailable",
+      "cited_in_videos": [
+        "rVPQPoz5PbA"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-rVPQPoz5PbA-003",
+      "title": "Humanity's Last Exam",
+      "url": "https://arxiv.org/abs/2501.14249",
+      "access_type": "open",
+      "cited_in_videos": [
+        "rVPQPoz5PbA"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-rVPQPoz5PbA-004",
+      "title": "ARC-AGI-2",
+      "url": "https://arcprize.org/arc-agi/2/",
+      "access_type": "open",
+      "cited_in_videos": [
+        "rVPQPoz5PbA"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-rVPQPoz5PbA-005",
+      "title": "Codeforces",
+      "url": "https://codeforces.com/",
+      "access_type": "open",
+      "cited_in_videos": [
+        "rVPQPoz5PbA"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-rVPQPoz5PbA-006",
+      "title": "Lisa Carbone Rutgers Deep Think usage",
+      "url": "https://blog.google/technology/google-deepmind/gemini-3-deep-think-update/",
+      "access_type": "unavailable",
+      "cited_in_videos": [
+        "rVPQPoz5PbA"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-rVPQPoz5PbA-007",
+      "title": "Duke University Wang Lab semiconductor research",
+      "url": "https://blog.google/technology/google-deepmind/gemini-3-deep-think-update/",
+      "access_type": "unavailable",
+      "cited_in_videos": [
+        "rVPQPoz5PbA"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-SSvAV0MgPWw-001",
+      "title": "AI Agent Lands PRs in Major OSS Projects",
+      "url": "https://socket.dev/blog/ai-agent-lands-prs-in-major-oss-projects",
+      "access_type": "open",
+      "cited_in_videos": [
+        "SSvAV0MgPWw"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-SSvAV0MgPWw-002",
+      "title": "Agent Hypervisor",
+      "url": "https://github.com/sv-pro/agent-hypervisor",
+      "access_type": "open",
+      "cited_in_videos": [
+        "SSvAV0MgPWw"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-SSvAV0MgPWw-003",
+      "title": "AI Station Navigator",
+      "url": "https://github.com/canishowtime/ai-station-navigator",
+      "access_type": "open",
+      "cited_in_videos": [
+        "SSvAV0MgPWw"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-SSvAV0MgPWw-004",
+      "title": "cgrep",
+      "url": "https://github.com/meghendra6/cgrep",
+      "access_type": "open",
+      "cited_in_videos": [
+        "SSvAV0MgPWw"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-SSvAV0MgPWw-005",
+      "title": "Meta Has an AI Patent to Keep You Posting After You Die",
+      "url": "https://www.businessinsider.com/meta-ai-patent-posting-deceased-users",
+      "access_type": "free_registration",
+      "cited_in_videos": [
+        "SSvAV0MgPWw"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-SSvAV0MgPWw-006",
+      "title": "First Proof: Math Exam for AI",
+      "url": "https://www.scientificamerican.com/article/first-proof-math-exam-ai/",
+      "access_type": "paywall",
+      "cited_in_videos": [
+        "SSvAV0MgPWw"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-SSvAV0MgPWw-007",
+      "title": "New study warns of risks in AI chatbots giving medical advice",
+      "url": "https://www.ox.ac.uk/news/new-study-warns-risks-ai-chatbots-giving-medical-advice",
+      "access_type": "open",
+      "cited_in_videos": [
+        "SSvAV0MgPWw"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-SSvAV0MgPWw-008",
+      "title": "Waymo is paying DoorDash gig workers to close its robotaxi doors",
+      "url": "https://www.cnbc.com/2026/02/waymo-doordash-gig-workers-close-doors.html",
+      "access_type": "open",
+      "cited_in_videos": [
+        "SSvAV0MgPWw"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-SSvAV0MgPWw-009",
+      "title": "Hong Kong robotaxi plans",
+      "url": "https://unwire.hk/",
+      "access_type": "open",
+      "cited_in_videos": [
+        "SSvAV0MgPWw"
+      ]
+    },
+    {
+      "reference_id": "2026-02-14T23-SSvAV0MgPWw-010",
+      "title": "openai-python v2.21.0",
+      "url": "https://github.com/openai/openai-python/releases/tag/v2.21.0",
+      "access_type": "open",
+      "cited_in_videos": [
+        "SSvAV0MgPWw"
+      ]
+    }
+  ],
+  "reading_list": [
+    {
+      "title": "Humanity's Last Exam",
+      "url": "https://arxiv.org/abs/2501.14249",
+      "why_read": "Foundational benchmark paper for evaluating frontier AI models across expert-level disciplines.",
+      "access_type": "open",
+      "estimated_read_time": "45 min",
+      "related_videos": [
+        "rVPQPoz5PbA"
+      ]
+    },
+    {
+      "title": "Gemini 3 Deep Think Blog Post",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-3-deep-think/",
+      "why_read": "Official Google announcement of the model with detailed capability descriptions.",
+      "access_type": "open",
+      "estimated_read_time": "10 min",
+      "related_videos": [
+        "rVPQPoz5PbA"
+      ]
+    },
+    {
+      "title": "Oxford AI Medical Chatbots Study",
+      "url": "https://www.ox.ac.uk/news/new-study-warns-risks-ai-chatbots-giving-medical-advice",
+      "why_read": "Important counter-evidence to AI hype showing limitations in healthcare applications.",
+      "access_type": "open",
+      "estimated_read_time": "15 min",
+      "related_videos": [
+        "SSvAV0MgPWw"
+      ]
+    },
+    {
+      "title": "Socket.dev: AI Agents in OSS",
+      "url": "https://socket.dev/blog/ai-agent-lands-prs-in-major-oss-projects",
+      "why_read": "Documents the emerging phenomenon of AI agents participating in open-source software development.",
+      "access_type": "open",
+      "estimated_read_time": "15 min",
+      "related_videos": [
+        "SSvAV0MgPWw"
+      ]
+    },
+    {
+      "title": "Meta AI Patent for Deceased Users",
+      "url": "https://www.businessinsider.com/meta-ai-patent-posting-deceased-users",
+      "why_read": "Raises critical ethical questions about AI, consent, and digital afterlife.",
+      "access_type": "free_registration",
+      "estimated_read_time": "10 min",
+      "related_videos": [
+        "SSvAV0MgPWw"
+      ]
+    }
+  ],
+  "processing_notes": [
+    "Sourced 17 total references across 2 videos (7 from video 1, 10 from video 2)",
+    "14 of 17 sources confirmed accessible; 3 had URL issues (primarily the Google DeepMind update blog post slug)",
+    "Video 1 benchmark claims (48.4% HLE, 84.6% ARC-AGI-2) differ from the original Dec 2025 announcement (41.0% HLE, 45.1% ARC-AGI-2); these likely reflect the Feb 2026 update",
+    "All GitHub repositories referenced in video 2 (sv-pro/agent-hypervisor, canishowtime/ai-station-navigator, meghendra6/cgrep) were confirmed to exist and be publicly accessible",
+    "The Waymo gig workers story was widely covered by CNBC, Mashable, Fast Company, and Business Insider confirming the ~$11.25 per task claim",
+    "Some claims from video 1 (Rutgers/Lisa Carbone, Duke Wang Lab) appear to originate solely from Google promotional materials with no independent verification found",
+    "The Oxford AI chatbots study was confirmed via the official ox.ac.uk press release"
+  ]
+}
