@@ -1,0 +1,66 @@
+nce costs at scale versus one-time training expenses, explaining why alternatives focus on inference workloads where Nvidia's monopoly is most vulnerable",
+        "videos_supporting": ["OwJqcYfIdXM"]
+      },
+      {
+        "theme": "Geopolitical fragmentation of AI supply chains",
+        "evidence": "US export restrictions forcing China to develop Huawei-based alternatives while Japan strengthens manufacturing partnerships, creating parallel technology ecosystems",
+        "videos_supporting": ["OwJqcYfIdXM", "yKfDSoBzlBQ"]
+      }
+    ],
+    "cross_video_patterns": [
+      "Both videos emphasize supply chain security and diversification as strategic priorities, not just cost considerations",
+      "Nvidia appears in both videos as the dominant incumbent facing competitive and geopolitical pressures",
+      "China's AI development features prominently in both contexts: as hardware innovator (Huawei chips) and strategic competitor",
+      "Infrastructure investment remains massive but distribution is shifting dramatically"
+    ],
+    "consensus_points": [
+      "Nvidia remains the gold standard for AI training but faces mounting pressure in inference market",
+      "Geopolitical tensions are accelerating technology diversification beyond pure economics",
+      "Supply chain security has become as important as technical performance in hardware decisions",
+      "US, China, and their respective ecosystems are developing increasingly separate AI infrastructure stacks"
+    ],
+    "contradictions": []
+  },
+  "must_watch": [
+    {
+      "title": "AI firms like OpenAI seek Nvidia alternatives",
+      "url": "https://www.youtube.com/watch?v=OwJqcYfIdXM",
+      "creator": "CNBC Television",
+      "duration": "5:17",
+      "why_watch": "First mainstream coverage of OpenAI publicly launching a major model on non-Nvidia hardware, marking historic shift in AI infrastructure",
+      "key_takeaway": "AI labs are moving from Nvidia-only to diversified chip strategies, with inference workloads as the primary battleground for alternatives",
+      "best_for": "Infrastructure investors, chip industry analysts, AI company executives planning multi-year hardware strategies"
+    }
+  ],
+  "tools_discovered": [],
+  "excluded_videos": [
+    {
+      "title": "15 Best Faceless YouTube Channel Ideas 2026",
+      "creator": "Tube Sensei",
+      "reason": "Tutorial/how-to content, not AI industry news"
+    },
+    {
+      "title": "How AI, doorbell video could help crack Nancy Guthrie case",
+      "creator": "Fox News",
+      "reason": "AI application in criminal investigation, not AI industry developments"
+    },
+    {
+      "title": "Talking Point Budget Forum 2026: 'Twin engines' for AI training and support",
+      "creator": "CNA",
+      "reason": "Singapore domestic policy/budget forum, not global AI industry news"
+    }
+  ],
+  "new_creators_found": ["PND NEWS"],
+  "processing_notes": [
+    "Refined analysis completed 2026-02-15T01:45:01Z",
+    "Web verification attempted for major claims; OpenAI Codex Spark on Cerebrus confirmed via official sources",
+    "Specific model names and December 2025 dates for Gemini 3 could not be independently verified",
+    "Reuters OpenAI-Nvidia tension claim could not be verified with specific article",
+    "PND NEWS video classified as analysis tier due to high-level commentary without new data",
+    "CNBC video classified as breaking tier due to significance of OpenAI's public hardware diversification",
+    "Only one video deemed must-watch due to newsworthiness and strategic importance",
+    "Geographic diversification theme spans both videos: US leadership, China competition, Japan manufacturing",
+    "Infrastructure economics shifting from training (Nvidia strength) to inference (competition opportunity)",
+    "Collection represents critical inflection point in AI hardware landscape"
+  ]
+}
