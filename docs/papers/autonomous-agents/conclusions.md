@@ -1,6 +1,7 @@
 ---
 title: Conclusions and References
 description: Where autonomous loops outperform interactive assistance and where they fall short, the case for investing in infrastructure now, and complete reference list.
+date: 2026-02-01
 ---
 
 # Conclusions and References

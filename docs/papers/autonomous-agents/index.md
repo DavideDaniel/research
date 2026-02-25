@@ -1,6 +1,7 @@
 ---
 title: "Autonomous AI Agents: Execution Loops vs Interactive Assistance"
 description: Evidence synthesis comparing autonomous AI agent execution loops against interactive human-in-the-loop assistance. Covers SWE-bench benchmarks, the METR RCT, industry telemetry, adjacent domain evidence, and mechanisms.
+date: 2026-02-01
 ---
 
 # Autonomous AI Agents: Execution Loops vs Interactive Assistance
@@ -47,6 +48,11 @@ For architectural analysis of the tools that implement these patterns, see [Agen
 - Autonomous agent PRs that pass automated tests still fail human code review standards
 - Adjacent domains (game AI, autonomous driving, medical screening) confirm autonomous iteration advantages under specific conditions
 - The defensible operational position is structured autonomy with automated verification, not unsupervised deployment
+
+## Related Content
+
+- [The Autonomous Agents Loop](/articles/autonomous-agents-loop/) — Why AI agents produce better output when they run autonomously
+- [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/) — Architectural comparison of Claude Code, Goose, Cursor, and GitHub Copilot
 
 ---
 

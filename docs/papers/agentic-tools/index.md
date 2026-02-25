@@ -139,6 +139,11 @@ This paper will be updated periodically to reflect:
 
 **Next Scheduled Review:** April 2026
 
+## Related Content
+
+- [The Autonomous Agents Loop](/articles/autonomous-agents-loop/) — Why AI agents produce better output when they run autonomously
+- [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/) — Comprehensive comparison of BMAD, SpecKit, and OpenSpec
+
 ---
 
 *This research was created with AI assistance. Tools analyzed: Claude Code, Goose, Cursor, and GitHub Copilot from official documentation and public materials. Data as of January 2026.*

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+  <rect x="60" y="60" width="1080" height="510" rx="12" fill="none" stroke="#2d2d4a" stroke-width="2"/>
+  <text x="600" y="270" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="700" fill="#ffffff">Research Papers &amp; Articles</text>
+  <line x1="400" y1="310" x2="800" y2="310" stroke="#3eaf7c" stroke-width="3"/>
+  <text x="600" y="370" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#a0a0b8">Technical Analysis on Software Development</text>
+  <text x="600" y="430" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#6b6b80">daviddaniel.tech/research</text>
+</svg>

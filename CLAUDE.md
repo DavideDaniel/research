@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a technical research repository hosting comprehensive research papers on software development frameworks, AI-powered development, and modern engineering practices. The repository uses VitePress to publish professional documentation at https://davidedaniel.github.io/research/.
+This is a technical research repository hosting comprehensive research papers on software development frameworks, AI-powered development, and modern engineering practices. The repository uses VitePress to publish professional documentation at https://daviddaniel.tech/research/.
 
 ## Repository Purpose
 
@@ -176,7 +176,7 @@ What readers will learn.
 ### Deployment
 - Automatic via GitHub Actions on push to `main`
 - Workflow: `.github/workflows/deploy.yml`
-- Live site: https://davidedaniel.github.io/research/
+- Live site: https://daviddaniel.tech/research/
 - Build time: 2-3 minutes
 
 ## Content Guidelines for AI Assistants
@@ -220,6 +220,7 @@ Every markdown file must include YAML frontmatter with:
 ---
 title: Page Title (50-60 characters ideal)
 description: Page description for meta tags (150-160 characters ideal)
+date: YYYY-MM-DD (publication date, used in structured data)
 ---
 ```
 
@@ -228,6 +229,7 @@ Example for paper pages:
 ---
 title: Spec-Driven Development Framework Patterns
 description: Comprehensive analysis of BMAD, SpecKit, and OpenSpec frameworks for specification-driven development. Includes framework comparison and adoption guidance.
+date: 2026-01-07
 ---
 ```
 
@@ -259,6 +261,7 @@ When creating new pages:
 - Sitemap: Auto-generated at `/research/sitemap.xml`
 - Robots.txt: Located at `docs/public/robots.txt`
 - Both are configured and should not need manual updates
+- Note: robots.txt deploys to `/research/robots.txt` due to VitePress base path. The sitemap is submitted directly via Google Search Console to work around this.
 
 ### SEO Files Reference
 
@@ -266,7 +269,14 @@ When creating new pages:
 |------|---------|
 | `docs/.vitepress/config.js` | Sitemap config, meta tags, transformPageData hook |
 | `docs/public/robots.txt` | Search engine crawler instructions |
-| Page frontmatter | Per-page title and description |
+| Page frontmatter | Per-page title, description, and date |
+
+### SEO Validation (Post-Build)
+
+After running `npm run docs:build`, verify:
+- `sitemap.xml` in `docs/.vitepress/dist/` contains all expected page URLs with correct `https://daviddaniel.tech/research/` prefix
+- No page in `docs/.vitepress/dist/` has duplicate `<link rel="canonical">` tags in rendered HTML
+- Structured data `datePublished` and `dateModified` values come from frontmatter `date` and `lastUpdated`, not hardcoded values
 
 ## Future Paper Ideas
 
@@ -309,20 +319,20 @@ Potential topics for expansion:
 ## Current Tasks and Next Steps
 
 ### Immediate (Now)
-- [ ] Push repository to GitHub
-- [ ] Enable GitHub Pages
-- [ ] Verify deployment successful
-- [ ] Test all navigation links
-- [ ] Confirm search functionality
+- [x] Push repository to GitHub
+- [x] Enable GitHub Pages
+- [x] Verify deployment successful
+- [x] Test all navigation links
+- [x] Confirm search functionality
 
 ### Short-term (This Month)
-- [ ] Add paper navigation improvements
+- [x] Add paper navigation improvements
 - [ ] Create paper templates
-- [ ] Begin research for second paper
+- [x] Begin research for second paper
 - [ ] Gather community feedback
 
 ### Long-term (This Quarter)
-- [ ] Publish second research paper
+- [x] Publish second research paper
 - [ ] Add advanced search features
 - [ ] Create visual diagrams for frameworks
 - [ ] Build paper recommendation system
@@ -360,6 +370,6 @@ When using Claude Code to work on this repository:
 
 ---
 
-**Last Updated:** January 2026
+**Last Updated:** February 2026
 **Repository Status:** Production
-**Current Papers:** 2 (SDD Frameworks, Agentic Tools)
+**Current Papers:** 3 (SDD Frameworks, Agentic Tools, Autonomous Agents)
