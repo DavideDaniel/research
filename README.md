@@ -7,7 +7,7 @@ A collection of technical research papers and documentation on software developm
 ### Spec-Driven Development Frameworks (January 2026)
 Comprehensive analysis of enterprise-grade specification-driven development frameworks including BMAD, SpecKit, and OpenSpec. Covers foundational theory, framework comparisons, and ecosystem integration.
 
-[Read the paper →](https://davidedaniel.github.io/research/papers/sdd-frameworks/)
+[Read the paper →](https://daviddaniel.tech/research/papers/sdd-frameworks/)
 
 ## About This Repository
 
@@ -15,7 +15,7 @@ This repository contains in-depth technical research aimed at software architect
 
 ## Documentation Site
 
-Visit the full documentation site: [davidedaniel.github.io/research](https://davidedaniel.github.io/research/)
+Visit the full documentation site: [daviddaniel.tech/research](https://daviddaniel.tech/research/)
 
 ## Building Locally
 

@@ -244,8 +244,13 @@ If citing this research in academic or professional work, please use:
 
 ```
 Daniel, David (2026). Spec-Driven Development Framework Patterns.
-Retrieved from https://davidedaniel.github.io/research/papers/sdd-frameworks/
+Retrieved from https://daviddaniel.tech/research/papers/sdd-frameworks/
 ```
+
+## Related Content
+
+- [The Specification Layer](/articles/specification-layer/) — Why enterprises need explicit specifications to scale agentic development
+- [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/) — Architectural comparison of Claude Code, Goose, Cursor, and GitHub Copilot
 
 ---
 

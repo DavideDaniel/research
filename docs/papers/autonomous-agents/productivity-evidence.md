@@ -1,6 +1,7 @@
 ---
 title: Developer Productivity Evidence
 description: Analysis of the METR RCT, Faros AI telemetry, Stack Overflow survey data, and DORA reports on real-world developer productivity with AI tools.
+date: 2026-02-01
 ---
 
 # Developer Productivity Evidence

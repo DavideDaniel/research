@@ -61,9 +61,6 @@ export default withMermaid(
       ['meta', { name: 'keywords', content: 'spec-driven development, software architecture, development frameworks, BDD, contract testing, agentic tools, AI development, Claude Code, Cursor' }],
       ['meta', { name: 'robots', content: 'index, follow' }],
 
-      // Canonical base (pages will override with specific URLs)
-      ['link', { rel: 'canonical', href: `${siteUrl}/` }],
-
       // Open Graph base tags
       ['meta', { property: 'og:site_name', content: siteName }],
       ['meta', { property: 'og:type', content: 'website' }],
@@ -72,6 +69,10 @@ export default withMermaid(
       // Twitter card base tags
       ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
       ['meta', { name: 'twitter:site', content: '@davidedaniel' }],
+
+      // Default OG image
+      ['meta', { property: 'og:image', content: 'https://daviddaniel.tech/research/og-image.svg' }],
+      ['meta', { name: 'twitter:image', content: 'https://daviddaniel.tech/research/og-image.svg' }],
 
       // Theme color
       ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -122,8 +123,14 @@ export default withMermaid(
             name: 'David Daniel'
           },
           url: canonicalUrl,
-          datePublished: '2026-01-01',
-          dateModified: new Date().toISOString().split('T')[0]
+          datePublished: pageData.frontmatter.date
+            ? new Date(pageData.frontmatter.date).toISOString().split('T')[0]
+            : '2026-01-01',
+          dateModified: pageData.lastUpdated
+            ? new Date(pageData.lastUpdated).toISOString().split('T')[0]
+            : (pageData.frontmatter.date
+              ? new Date(pageData.frontmatter.date).toISOString().split('T')[0]
+              : '2026-01-01')
         }
 
         head.push([

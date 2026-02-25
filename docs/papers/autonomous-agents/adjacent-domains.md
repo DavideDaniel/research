@@ -1,6 +1,7 @@
 ---
 title: Adjacent Domains and Mechanisms
 description: Evidence for autonomous iteration advantages from game AI, autonomous driving, and medical screening, plus analysis of interruption costs and scaling laws.
+date: 2026-02-01
 ---
 
 # Adjacent Domains and Mechanisms
