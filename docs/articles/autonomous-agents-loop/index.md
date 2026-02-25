@@ -1,5 +1,6 @@
 ---
 title: "The Autonomous Agents Loop: Why AI Agents Produce Better Output When You Stop Interrupting Them"
+date: 2026-02-13
 description: Why autonomous AI execution loops outperform interactive assistance, and how enterprises can build the execution environment, context management, and multi-agent infrastructure to capture those gains.
 ---
 
@@ -148,6 +149,12 @@ And they'll let their agents run.
 *For the empirical evidence base, see [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/). For architectural analysis of the tools discussed here, see [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/). For SDD framework comparisons, see [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/).*
 
 *This article is part of an ongoing research project tracking AI tooling, software engineering practices, and cross-functional workflows at [daviddaniel.tech/research](https://daviddaniel.tech/research).*
+
+## Related Content
+
+- [Autonomous Agents](/papers/autonomous-agents/) - Evidence synthesis on when autonomous loops beat interactive assistance and where limits remain.
+- [Agentic Tools](/papers/agentic-tools/) - Tool architecture comparison across Claude Code, Goose, Cursor, and GitHub Copilot.
+- [Part 1: The Specification Layer](/articles/specification-layer/) - Why machine-readable specifications are prerequisite infrastructure for reliable loops.
 
 ---
 

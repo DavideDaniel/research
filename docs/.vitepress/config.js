@@ -61,17 +61,16 @@ export default withMermaid(
       ['meta', { name: 'keywords', content: 'spec-driven development, software architecture, development frameworks, BDD, contract testing, agentic tools, AI development, Claude Code, Cursor' }],
       ['meta', { name: 'robots', content: 'index, follow' }],
 
-      // Canonical base (pages will override with specific URLs)
-      ['link', { rel: 'canonical', href: `${siteUrl}/` }],
-
       // Open Graph base tags
       ['meta', { property: 'og:site_name', content: siteName }],
       ['meta', { property: 'og:type', content: 'website' }],
       ['meta', { property: 'og:locale', content: 'en_US' }],
+      ['meta', { property: 'og:image', content: `${siteUrl}/og-image.svg` }],
 
       // Twitter card base tags
       ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
       ['meta', { name: 'twitter:site', content: '@davidedaniel' }],
+      ['meta', { name: 'twitter:image', content: `${siteUrl}/og-image.svg` }],
 
       // Theme color
       ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -87,7 +86,15 @@ export default withMermaid(
         .replace(/\.md$/, '')
 
       // Build page-specific head tags
-      const head = pageData.frontmatter.head || []
+      const head = (pageData.frontmatter.head || []).filter((tag) => {
+        return !(tag[0] === 'link' && tag[1]?.rel === 'canonical')
+      })
+
+      const formatDateToIso = (value) => {
+        if (!value) return null
+        const parsed = new Date(value)
+        return Number.isNaN(parsed.getTime()) ? null : parsed.toISOString().split('T')[0]
+      }
 
       // Add canonical URL
       head.push(['link', { rel: 'canonical', href: canonicalUrl }])
@@ -108,6 +115,8 @@ export default withMermaid(
       const isPaperPage = pageData.relativePath.includes('papers/') && !pageData.relativePath.endsWith('papers/index.md')
       const isArticlePage = pageData.relativePath.includes('articles/') && !pageData.relativePath.endsWith('articles/index.md')
       if (isPaperPage || isArticlePage) {
+        const datePublished = formatDateToIso(pageData.frontmatter.date) || '2026-01-01'
+        const dateModified = formatDateToIso(pageData.lastUpdated) || datePublished
         const structuredData = {
           '@context': 'https://schema.org',
           '@type': 'TechArticle',
@@ -122,8 +131,8 @@ export default withMermaid(
             name: 'David Daniel'
           },
           url: canonicalUrl,
-          datePublished: '2026-01-01',
-          dateModified: new Date().toISOString().split('T')[0]
+          datePublished,
+          dateModified
         }
 
         head.push([

@@ -247,6 +247,11 @@ Daniel, David (2026). Spec-Driven Development Framework Patterns.
 Retrieved from https://davidedaniel.github.io/research/papers/sdd-frameworks/
 ```
 
+## Related Content
+
+- [The Specification Layer](/articles/specification-layer/) - Why explicit specifications are the operational foundation for enterprise-scale agentic development.
+- [Agentic Tools](/papers/agentic-tools/) - Comparative analysis of execution architectures used to run specification-driven workflows.
+
 ---
 
 *This research was created with AI assistance. Frameworks analyzed: BMAD, SpecKit, and OpenSpec from official GitHub repositories. Theoretical foundations derived from TDD, BDD, and CDC literature. Ecosystem analysis includes MetaGPT, Momentic, Pact, Cucumber, and related technologies as of January 2026.*

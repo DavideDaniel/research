@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a technical research repository hosting comprehensive research papers on software development frameworks, AI-powered development, and modern engineering practices. The repository uses VitePress to publish professional documentation at https://davidedaniel.github.io/research/.
+This is a technical research repository hosting comprehensive research papers on software development frameworks, AI-powered development, and modern engineering practices. The repository uses VitePress to publish professional documentation at https://daviddaniel.tech/research/.
 
 ## Repository Purpose
 
@@ -176,7 +176,7 @@ What readers will learn.
 ### Deployment
 - Automatic via GitHub Actions on push to `main`
 - Workflow: `.github/workflows/deploy.yml`
-- Live site: https://davidedaniel.github.io/research/
+- Live site: https://daviddaniel.tech/research/
 - Build time: 2-3 minutes
 
 ## Content Guidelines for AI Assistants
@@ -220,6 +220,7 @@ Every markdown file must include YAML frontmatter with:
 ---
 title: Page Title (50-60 characters ideal)
 description: Page description for meta tags (150-160 characters ideal)
+date: YYYY-MM-DD publication date
 ---
 ```
 
@@ -228,6 +229,7 @@ Example for paper pages:
 ---
 title: Spec-Driven Development Framework Patterns
 description: Comprehensive analysis of BMAD, SpecKit, and OpenSpec frameworks for specification-driven development. Includes framework comparison and adoption guidance.
+date: 2026-01-07
 ---
 ```
 
@@ -250,15 +252,23 @@ The VitePress config (`docs/.vitepress/config.js`) automatically generates:
 When creating new pages:
 1. Add `title` frontmatter (required)
 2. Add `description` frontmatter (required, 150-160 chars)
-3. Use descriptive H1 heading (should match or relate to title)
-4. Include internal links to related content
-5. Verify page appears in sitemap after build
+3. Add `date` frontmatter (required, ISO format `YYYY-MM-DD`)
+4. Use descriptive H1 heading (should match or relate to title)
+5. Include internal links to related content
+6. Verify page appears in sitemap after build
+
+### SEO Validation (Post-Build)
+
+- Verify `sitemap.xml` contains all expected page URLs
+- Verify no page has duplicate canonical tags in rendered HTML
+- Verify structured data dates come from frontmatter, not hardcoded values
 
 ### Sitemap and Robots
 
 - Sitemap: Auto-generated at `/research/sitemap.xml`
 - Robots.txt: Located at `docs/public/robots.txt`
 - Both are configured and should not need manual updates
+- Note: robots.txt deploys to `/research/robots.txt` due to VitePress base path. The sitemap is submitted directly via Google Search Console to work around this.
 
 ### SEO Files Reference
 
@@ -309,11 +319,11 @@ Potential topics for expansion:
 ## Current Tasks and Next Steps
 
 ### Immediate (Now)
-- [ ] Push repository to GitHub
-- [ ] Enable GitHub Pages
-- [ ] Verify deployment successful
-- [ ] Test all navigation links
-- [ ] Confirm search functionality
+- [x] Push repository to GitHub
+- [x] Enable GitHub Pages
+- [x] Verify deployment successful
+- [x] Test all navigation links
+- [x] Confirm search functionality
 
 ### Short-term (This Month)
 - [ ] Add paper navigation improvements

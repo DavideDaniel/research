@@ -1,5 +1,6 @@
 ---
 title: "The Specification Layer: Why Enterprises Can't Scale AI Development Without It"
+date: 2026-02-13
 description: Why explicit, machine-readable specifications are the missing infrastructure for scaling agentic development across enterprise teams. Covers AGENTS.md, CLAUDE.md, SDD frameworks, and the four-tier specification architecture.
 ---
 
@@ -126,6 +127,12 @@ The individual developers at the forefront of this shift have already figured th
 *For the empirical evidence base supporting autonomous execution loops, see [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/).*
 
 *This article is part of an ongoing research project tracking AI tooling, software engineering practices, and cross-functional workflows at [daviddaniel.tech/research](https://daviddaniel.tech/research). For architectural analysis of the tools discussed here, see [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/). For SDD framework comparisons, see [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/).*
+
+## Related Content
+
+- [SDD Frameworks](/papers/sdd-frameworks/) - Comprehensive comparison of BMAD, SpecKit, and OpenSpec for enterprise specification workflows.
+- [Agentic Tools](/papers/agentic-tools/) - Architectural analysis of execution models, autonomy boundaries, and governance tradeoffs.
+- [Part 2: The Autonomous Agents Loop](/articles/autonomous-agents-loop/) - Why uninterrupted plan-execute-verify-iterate loops improve agent output quality.
 
 ---
 

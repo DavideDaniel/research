@@ -1,5 +1,6 @@
 ---
 title: SWE-bench and Multi-Agent Execution
+date: 2026-02-01
 description: Analysis of SWE-bench benchmark results showing how agentic scaffolding produces order-of-magnitude improvements, plus the Anthropic C compiler multi-agent experiment.
 ---
 

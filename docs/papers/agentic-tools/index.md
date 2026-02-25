@@ -139,6 +139,11 @@ This paper will be updated periodically to reflect:
 
 **Next Scheduled Review:** April 2026
 
+## Related Content
+
+- [The Autonomous Agents Loop](/articles/autonomous-agents-loop/) - Practical execution-loop patterns for turning specifications into shipped code.
+- [SDD Frameworks](/papers/sdd-frameworks/) - Framework-level guidance for specification governance across teams and repositories.
+
 ---
 
 *This research was created with AI assistance. Tools analyzed: Claude Code, Goose, Cursor, and GitHub Copilot from official documentation and public materials. Data as of January 2026.*
