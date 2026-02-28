@@ -1,7 +1,8 @@
 ---
 title: Research Papers
-date: 2026-01-07
 description: Browse technical research papers on spec-driven development, agentic tools, software architecture, and modern engineering practices.
+author: David Daniel
+date: 2026-01-07
 ---
 
 # Research Papers

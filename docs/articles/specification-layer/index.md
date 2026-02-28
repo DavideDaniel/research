@@ -1,6 +1,7 @@
 ---
 title: "The Specification Layer: Why Enterprises Can't Scale AI Development Without It"
 description: Why explicit, machine-readable specifications are the missing infrastructure for scaling agentic development across enterprise teams. Covers AGENTS.md, CLAUDE.md, SDD frameworks, and the four-tier specification architecture.
+author: David Daniel
 date: 2026-02-13
 ---
 

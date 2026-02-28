@@ -1,7 +1,8 @@
 ---
 title: Foundational Theory - Understanding Spec-Driven Development
-date: 2026-01-07
 description: Deep dive into TDD, BDD, Test Pyramid, and Consumer-Driven Contract testing. Theoretical foundations underlying modern specification-driven development frameworks.
+author: David Daniel
+date: 2026-01-07
 ---
 
 # Foundational Theory: Understanding Spec-Driven Development

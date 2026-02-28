@@ -1,7 +1,8 @@
 ---
 title: Agentic Development Tools and Execution Architectures
-date: 2026-01-07
 description: Architectural comparison of Claude Code, Goose, Cursor, and GitHub Copilot. Analysis of execution models, autonomy boundaries, and context management for enterprise adoption.
+author: David Daniel
+date: 2026-01-07
 ---
 
 # Agentic Development Tools and Execution Architectures

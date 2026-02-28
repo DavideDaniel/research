@@ -1,6 +1,7 @@
 ---
 title: "The Autonomous Agents Loop: Why AI Agents Produce Better Output When You Stop Interrupting Them"
 description: Why autonomous AI execution loops outperform interactive assistance, and how enterprises can build the execution environment, context management, and multi-agent infrastructure to capture those gains.
+author: David Daniel
 date: 2026-02-13
 ---
 

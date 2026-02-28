@@ -208,9 +208,28 @@ flowchart TD
 
 Use `<br/>` for line breaks within node labels. Prefer `flowchart TD` (top-down) for hierarchical diagrams.
 
-## SEO Requirements
+## Content Policy (CRITICAL)
+
+- NEVER modify existing markdown body content, prose, headings, research text, or any visible text without explicit user approval
+- Frontmatter YAML changes (between `---` fences) are safe for metadata fields
+- VitePress config changes for `<head>` injection are safe
+- Treat all markdown body content below the frontmatter as frozen
+- If unsure whether a change affects visible content, ask before proceeding
+
+## SEO Requirements (MANDATORY -- do not regress)
 
 All pages must follow SEO best practices to ensure proper indexing and discoverability.
+
+### Critical Invariants
+
+- `docs/public/robots.txt` must exist and must NOT contain `Disallow: /`
+- VitePress sitemap generation must be enabled with `hostname: 'https://daviddaniel.tech'`
+- All canonical URLs must use `https://daviddaniel.tech/research/` -- NEVER `davidedaniel.github.io/research/`
+- Every page must have exactly ONE canonical tag (no duplicates from global + per-page config conflicts)
+- Every `.md` file in `docs/papers/` and `docs/articles/` must have frontmatter with: `title`, `description`, `author`, `date`
+- JSON-LD structured data must be maintained via `transformPageData` (TechArticle for papers/articles, WebPage for index pages, BreadcrumbList for all pages)
+- `titleTemplate` must include "David Daniel Research" for branding
+- When adding new pages: add frontmatter with all required fields, verify sitemap includes the new page, verify canonical URL is correct
 
 ### Frontmatter Requirements (Mandatory)
 
@@ -220,6 +239,7 @@ Every markdown file must include YAML frontmatter with:
 ---
 title: Page Title (50-60 characters ideal)
 description: Page description for meta tags (150-160 characters ideal)
+author: David Daniel
 date: YYYY-MM-DD (publication date, used in structured data)
 ---
 ```
@@ -229,6 +249,7 @@ Example for paper pages:
 ---
 title: Spec-Driven Development Framework Patterns
 description: Comprehensive analysis of BMAD, SpecKit, and OpenSpec frameworks for specification-driven development. Includes framework comparison and adoption guidance.
+author: David Daniel
 date: 2026-01-07
 ---
 ```
@@ -243,18 +264,21 @@ date: 2026-01-07
 
 The VitePress config (`docs/.vitepress/config.js`) automatically generates:
 - Canonical URLs per page
-- Open Graph tags (`og:title`, `og:description`, `og:url`)
+- Open Graph tags (`og:title`, `og:description`, `og:url`, `og:type`)
 - Twitter card tags
-- JSON-LD structured data for paper pages (TechArticle schema)
+- JSON-LD structured data (TechArticle for papers/articles, WebPage for index pages, BreadcrumbList for all pages)
+- Dynamic `og:type` (`article` for papers/articles, `website` for other pages)
 
 ### SEO Checklist for New Pages
 
 When creating new pages:
 1. Add `title` frontmatter (required)
 2. Add `description` frontmatter (required, 150-160 chars)
-3. Use descriptive H1 heading (should match or relate to title)
-4. Include internal links to related content
-5. Verify page appears in sitemap after build
+3. Add `author: David Daniel` frontmatter (required)
+4. Add `date` frontmatter (required, YYYY-MM-DD)
+5. Use descriptive H1 heading (should match or relate to title)
+6. Include internal links to related content
+7. Verify page appears in sitemap after build
 
 ### Sitemap and Robots
 
@@ -267,16 +291,21 @@ When creating new pages:
 
 | File | Purpose |
 |------|---------|
-| `docs/.vitepress/config.js` | Sitemap config, meta tags, transformPageData hook |
+| `docs/.vitepress/config.js` | Sitemap config, meta tags, transformPageData hook, JSON-LD structured data |
 | `docs/public/robots.txt` | Search engine crawler instructions |
-| Page frontmatter | Per-page title, description, and date |
+| Page frontmatter | Per-page title, description, author, and date |
 
-### SEO Validation (Post-Build)
+### Build Verification
 
-After running `npm run docs:build`, verify:
-- `sitemap.xml` in `docs/.vitepress/dist/` contains all expected page URLs with correct `https://daviddaniel.tech/research/` prefix
-- No page in `docs/.vitepress/dist/` has duplicate `<link rel="canonical">` tags in rendered HTML
+After any config change, run: `npm run docs:build`
+
+Check built HTML for:
+- Exactly one `<link rel="canonical">` tag per page with correct `daviddaniel.tech` URL
+- Valid `sitemap.xml` present in `docs/.vitepress/dist/`
+- `robots.txt` present in `docs/.vitepress/dist/`
+- No HTML file references `davidedaniel.github.io`
 - Structured data `datePublished` and `dateModified` values come from frontmatter `date` and `lastUpdated`, not hardcoded values
+- JSON-LD blocks present for TechArticle (papers/articles), WebPage (index pages), and BreadcrumbList (all pages)
 
 ## Future Paper Ideas
 

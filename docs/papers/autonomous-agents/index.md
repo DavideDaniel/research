@@ -1,6 +1,7 @@
 ---
 title: "Autonomous AI Agents: Execution Loops vs Interactive Assistance"
 description: Evidence synthesis comparing autonomous AI agent execution loops against interactive human-in-the-loop assistance. Covers SWE-bench benchmarks, the METR RCT, industry telemetry, adjacent domain evidence, and mechanisms.
+author: David Daniel
 date: 2026-02-01
 ---
 

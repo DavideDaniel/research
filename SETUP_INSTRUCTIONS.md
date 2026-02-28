@@ -61,13 +61,13 @@ git push origin main
 
 1. Go to repository Actions tab
 2. Wait for "Deploy VitePress site to Pages" workflow to complete
-3. Once complete, visit: https://davidedaniel.github.io/research/
+3. Once complete, visit: https://daviddaniel.tech/research/
 
 ## Step 5: Update Repository Settings (Optional)
 
 1. Go to repository Settings
 2. Add topics: `research`, `documentation`, `spec-driven-development`, `software-architecture`
-3. Set website URL: https://davidedaniel.github.io/research/
+3. Set website URL: https://daviddaniel.tech/research/
 4. Add description and tags as needed
 
 ## Local Development
@@ -148,7 +148,7 @@ research/
 
 After setup is complete:
 
-1. Review live site at https://davidedaniel.github.io/research/
+1. Review live site at https://daviddaniel.tech/research/
 2. Test all navigation links
 3. Verify search functionality works
 4. Check mobile responsiveness

@@ -1,7 +1,8 @@
 ---
 title: Agentic Tools References and Resources
-date: 2026-01-07
 description: Conclusion and official documentation links for Claude Code, Goose, Cursor, and GitHub Copilot. Resources for further exploration of agentic development tools.
+author: David Daniel
+date: 2026-01-07
 ---
 
 # References and Resources
@@ -134,7 +135,7 @@ If citing this research in academic or professional work, please use:
 
 ```
 Daniel, David (2026). Agentic Development Tools and Execution Architectures.
-Retrieved from https://davidedaniel.github.io/research/papers/agentic-tools/
+Retrieved from https://daviddaniel.tech/research/papers/agentic-tools/
 ```
 
 ---

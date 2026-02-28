@@ -26,6 +26,7 @@ export default withMermaid(
   defineConfig({
     title: siteName,
     description: siteDescription,
+    titleTemplate: ':title | David Daniel Research',
     base: '/research/',
 
     // Sitemap configuration
@@ -62,8 +63,7 @@ export default withMermaid(
       ['meta', { name: 'robots', content: 'index, follow' }],
 
       // Open Graph base tags
-      ['meta', { property: 'og:site_name', content: siteName }],
-      ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { property: 'og:site_name', content: 'David Daniel Research' }],
       ['meta', { property: 'og:locale', content: 'en_US' }],
 
       // Twitter card base tags
@@ -93,21 +93,26 @@ export default withMermaid(
       // Add canonical URL
       head.push(['link', { rel: 'canonical', href: canonicalUrl }])
 
-      // Add Open Graph tags
+      // Page metadata
       const title = pageData.frontmatter.title || pageData.title || siteName
       const description = pageData.frontmatter.description || siteDescription
 
+      // Determine page type
+      const isPaperPage = pageData.relativePath.includes('papers/') && !pageData.relativePath.endsWith('papers/index.md')
+      const isArticlePage = pageData.relativePath.includes('articles/') && !pageData.relativePath.endsWith('articles/index.md')
+      const isContentPage = isPaperPage || isArticlePage
+
+      // Open Graph tags (og:type is dynamic: 'article' for individual papers/articles, 'website' for listing/index pages)
       head.push(['meta', { property: 'og:title', content: title }])
       head.push(['meta', { property: 'og:description', content: description }])
       head.push(['meta', { property: 'og:url', content: canonicalUrl }])
+      head.push(['meta', { property: 'og:type', content: isContentPage ? 'article' : 'website' }])
 
       // Twitter card tags
       head.push(['meta', { name: 'twitter:title', content: title }])
       head.push(['meta', { name: 'twitter:description', content: description }])
 
-      // Add structured data for paper and article pages
-      const isPaperPage = pageData.relativePath.includes('papers/') && !pageData.relativePath.endsWith('papers/index.md')
-      const isArticlePage = pageData.relativePath.includes('articles/') && !pageData.relativePath.endsWith('articles/index.md')
+      // Structured data: TechArticle for individual paper and article pages
       if (isPaperPage || isArticlePage) {
         const structuredData = {
           '@context': 'https://schema.org',
@@ -116,7 +121,8 @@ export default withMermaid(
           description: description,
           author: {
             '@type': 'Person',
-            name: 'David Daniel'
+            name: 'David Daniel',
+            url: 'https://daviddaniel.tech'
           },
           publisher: {
             '@type': 'Person',
@@ -139,6 +145,61 @@ export default withMermaid(
           JSON.stringify(structuredData)
         ])
       }
+
+      // Structured data: WebPage for index and listing pages
+      if (pageData.relativePath === 'index.md' || pageData.relativePath === 'papers/index.md' || pageData.relativePath === 'articles/index.md') {
+        head.push([
+          'script',
+          { type: 'application/ld+json' },
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: title,
+            description: description,
+            url: canonicalUrl,
+            author: {
+              '@type': 'Person',
+              name: 'David Daniel',
+              url: 'https://daviddaniel.tech'
+            }
+          })
+        ])
+      }
+
+      // Structured data: BreadcrumbList for navigation
+      const breadcrumbItems = [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: 'https://daviddaniel.tech'
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Research',
+          item: `${siteUrl}/`
+        }
+      ]
+
+      if (isContentPage) {
+        breadcrumbItems.push({
+          '@type': 'ListItem',
+          position: 3,
+          name: title,
+          item: canonicalUrl
+        })
+      }
+
+      head.push([
+        'script',
+        { type: 'application/ld+json' },
+        JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: breadcrumbItems
+        })
+      ])
 
       pageData.frontmatter.head = head
     },
