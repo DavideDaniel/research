@@ -1,7 +1,8 @@
 ---
 title: Articles
-date: 2026-02-13
 description: Practitioner-focused articles on scaling agentic development, specification infrastructure, and autonomous execution patterns for enterprise teams.
+author: David Daniel
+date: 2026-02-13
 ---
 
 # Articles

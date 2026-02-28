@@ -1,7 +1,8 @@
 ---
 title: Agentic Tools Terminology and Taxonomy
-date: 2026-01-07
 description: Key definitions and architectural taxonomy for categorizing agentic development tools. Distinguishes assistive AI, IDE-native agents, platform-embedded agents, and multi-context systems.
+author: David Daniel
+date: 2026-01-07
 ---
 
 # Terminology and Taxonomy

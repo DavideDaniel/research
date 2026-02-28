@@ -1,8 +1,9 @@
 ---
 layout: home
 title: Spec-Driven Development & Agentic AI Tools Research
-date: 2026-02-13
 description: In-depth technical analysis on software development frameworks, AI-powered development tools, and engineering practices for architects and engineering professionals.
+author: David Daniel
+date: 2026-02-13
 
 hero:
   name: Research Papers & Articles
