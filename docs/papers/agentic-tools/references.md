@@ -135,7 +135,7 @@ If citing this research in academic or professional work, please use:
 
 ```
 Daniel, David (2026). Agentic Development Tools and Execution Architectures.
-Retrieved from https://davidedaniel.github.io/research/papers/agentic-tools/
+Retrieved from https://daviddaniel.tech/research/papers/agentic-tools/
 ```
 
 ---
