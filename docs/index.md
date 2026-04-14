@@ -24,6 +24,15 @@ features:
   - title: The Autonomous Agents Loop
     details: Why AI agents produce better output when they run autonomously against clear specifications
     link: /articles/autonomous-agents-loop/
+  - title: The Security Debt of Always-On Agents
+    details: Why the enterprise security stack collapses when AI agents interact with data directly, and what a data-first defensive architecture looks like in practice
+    link: /articles/security-debt-always-on-agents/
+  - title: From Copilot to Principal
+    details: Why persistent always-on agents do not shrink the human role, they invert it, and why most organizations are not structurally ready for the principal role this creates
+    link: /articles/copilot-to-principal/
+  - title: Always-On Enterprise Agents
+    details: Research taxonomy of persistent agent patterns covering session-anchored architecture, identity-bound governance, and the cycle-time productivity hypothesis
+    link: /papers/always-on-agents/
   - title: Autonomous AI Agents
     details: Evidence synthesis on execution loops vs interactive assistance, covering SWE-bench, METR, and industry telemetry
     link: /papers/autonomous-agents/
