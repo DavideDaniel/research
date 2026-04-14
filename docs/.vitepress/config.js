@@ -277,7 +277,8 @@ export default withMermaid(
               { text: 'Reference Architecture', link: '/papers/always-on-agents/#reference-architecture' },
               { text: 'Productivity Hypothesis', link: '/papers/always-on-agents/#the-productivity-hypothesis' },
               { text: 'Comparison Table', link: '/papers/always-on-agents/#comparison-table' },
-              { text: 'Conclusion & References', link: '/papers/always-on-agents/#conclusion' }
+              { text: 'Conclusion & References', link: '/papers/always-on-agents/#conclusion' },
+              { text: 'Citation', link: '/papers/always-on-agents/#citation' }
             ]
           }
         ]

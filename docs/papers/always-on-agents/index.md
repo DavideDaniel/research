@@ -363,6 +363,16 @@ The transition from interactive copilots to persistent agents is not incremental
 - [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/)
 - [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/)
 
+## Citation
+
+If citing this research in academic or professional work:
+
+```
+Daniel, David (2026). Always-On Enterprise Agents: Persistent Architecture,
+Delegated Identity, and the Productivity Hypothesis.
+Retrieved from https://daviddaniel.tech/research/papers/always-on-agents/
+```
+
 ---
 
 *This paper is Part 3 of a series on scaling agentic development for enterprise teams. Part 1, [The Specification Layer](/articles/specification-layer/), covers why specifications are the missing enterprise scaling strategy. Part 2, [The Autonomous Agents Loop](/articles/autonomous-agents-loop/), covers why autonomous execution loops outperform interactive assistance. For the empirical evidence base on autonomous execution, see the companion paper [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/).*
