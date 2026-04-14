@@ -7,7 +7,7 @@ date: 2026-04-13
 
 # Always-On Enterprise Agents: Persistent Architecture, Delegated Identity, and the Productivity Hypothesis
 
-*Part 3 of Scaling Agentic Development for Enterprise Teams*
+*From the Scaling Agentic Development for Enterprise Teams research series*
 
 **Published:** April 2026 | **Author:** David Daniel
 
@@ -27,7 +27,7 @@ The analysis draws on primary documentation from OpenClaw, NVIDIA NemoClaw, Anth
 
 ## Introduction
 
-The first two parts of this series proposed a framework for enterprise AI scaling, identifying three interdependent factors that together determine reliable output at scale: specification quality, loop autonomy, and context management. Part 1 argued that machine-readable specifications are the missing foundation for agentic scaling. Part 2 argued that longer autonomous execution with multi-agent context management outperforms interactive assistance. This paper extends both arguments into persistent territory: what happens when autonomous execution persists across sessions, hours, and organizational boundaries.
+Earlier work in this research series proposed a framework for enterprise AI scaling, identifying three interdependent factors that together determine reliable output at scale: specification quality, loop autonomy, and context management. The companion article [The Specification Layer](/articles/specification-layer/) argued that machine-readable specifications are the missing foundation for agentic scaling. The companion article [The Autonomous Agents Loop](/articles/autonomous-agents-loop/) argued that longer autonomous execution with multi-agent context management outperforms interactive assistance. This paper extends both arguments into persistent territory: what happens when autonomous execution persists across sessions, hours, and organizational boundaries.
 
 Persistent agents represent a shift in the shape of enterprise automation. Instead of request/response interaction constrained to a chat session, persistent agents retain durable context and produce durable work products across time: plans, tickets, diffs, runbooks, approvals, and tool-executed side effects. Anthropic's Claude Managed Agents is explicitly positioned as "best for long-running tasks and asynchronous work," and its engineering documentation formalizes long-running operation as a durable session log plus a harness that can resume after failure and a sandboxed execution layer that can be replaced without losing the session. Databricks is productizing stateful and long-running agent operation in a governed data platform: Agent Bricks explicitly supports scheduling agents on recurring workflows, capturing tool calls and invocations, and giving agents persistent memory via Lakebase. OpenClaw provides an inspectable open-source example of always-on operation with explicit session lifecycle policies and file-backed memory persistence.
 
@@ -302,7 +302,7 @@ Persistent agents are a structural evolution of enterprise automation. They exte
 
 This paper has argued that always-on agents become deployable, not merely technically possible, when three conditions are met. First, persistence is externalized: sessions, memory, and task state live outside the model context window in durable, inspectable stores. The evidence from OpenClaw, Anthropic, and Databricks demonstrates convergence on this pattern. Second, execution is identity-bound: every action traces to a human subject through a delegation chain that can be audited, scoped, and revoked. Identity standards (RFC 8693, CAEP) and vendor implementations (Okta, Microsoft Entra, Ping Identity) provide the protocol infrastructure. Third, tool boundaries are governed: a gateway and policy engine mediate all side effects, enforcing allow/approve/block decisions independently of the agent's reasoning.
 
-These three conditions map directly to the framework established earlier in the series. Specification quality defines what an agent should do. Loop autonomy defines how it executes. Persistent context management sustains execution across time. And identity-bound governance ensures that sustained execution remains aligned with human intent, not through prompt discipline, but through structural enforcement.
+These three conditions map directly to the framework established in earlier work in this series. Specification quality defines what an agent should do. Loop autonomy defines how it executes. Persistent context management sustains execution across time. And identity-bound governance ensures that sustained execution remains aligned with human intent, not through prompt discipline, but through structural enforcement.
 
 The productivity hypothesis, that always-on agents compress cycle time by converting idle hours into execution hours, is grounded in the architectural capabilities described in this paper, not in empirical proof of enterprise-scale gains. It is, however, not yet validated at enterprise scale. Organizations evaluating persistent agent deployments should instrument for cycle time, throughput, and review load rather than relying on self-reported productivity gains.
 
@@ -375,7 +375,7 @@ Retrieved from https://daviddaniel.tech/research/papers/always-on-agents/
 
 ---
 
-*This paper is Part 3 of a series on scaling agentic development for enterprise teams. Part 1, [The Specification Layer](/articles/specification-layer/), covers why specifications are the missing enterprise scaling strategy. Part 2, [The Autonomous Agents Loop](/articles/autonomous-agents-loop/), covers why autonomous execution loops outperform interactive assistance. For the empirical evidence base on autonomous execution, see the companion paper [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/).*
+*This paper is part of an ongoing research series on scaling agentic development for enterprise teams. Related work includes the companion paper [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/) for the empirical evidence base on autonomous execution, along with the practitioner articles [The Specification Layer](/articles/specification-layer/) on machine-readable specifications as enterprise scaling infrastructure and [The Autonomous Agents Loop](/articles/autonomous-agents-loop/) on why autonomous execution loops outperform interactive assistance.*
 
 *This paper is part of an ongoing research project tracking AI tooling, software engineering practices, and cross-functional workflows at [daviddaniel.tech/research](https://daviddaniel.tech/research).*
 
