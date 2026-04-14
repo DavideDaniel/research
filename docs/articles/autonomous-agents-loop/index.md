@@ -7,7 +7,7 @@ date: 2026-02-13
 
 # The Autonomous Agents Loop: Why AI Agents Produce Better Output When You Stop Interrupting Them
 
-*Part 2 of 2: Scaling Agentic Development for Enterprise Teams*
+*Part 2 of the "Scaling Agentic Development" series*
 
 **Published:** February 2026 | **Author:** David Daniel
 
@@ -145,7 +145,7 @@ And they'll let their agents run.
 
 ---
 
-*This is Part 2 of a two-part series on scaling agentic development for enterprise teams. Part 1, [The Specification Layer](/articles/specification-layer/), covers why specifications and structured instructions are the missing enterprise scaling strategy.*
+*This is Part 2 of the "Scaling Agentic Development" series on scaling agentic development for enterprise teams. Part 1, [The Specification Layer](/articles/specification-layer/), covers why specifications and structured instructions are the missing enterprise scaling strategy. Part 3, [The Security Debt of Always-On Agents](/articles/security-debt-always-on-agents/), covers the governance boundary persistent agents require once they run against real systems.*
 
 *For the empirical evidence base, see [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/). For architectural analysis of the tools discussed here, see [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/). For SDD framework comparisons, see [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/).*
 
@@ -156,6 +156,7 @@ And they'll let their agents run.
 - [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/) — Evidence synthesis on execution loops vs interactive assistance
 - [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/) — Architectural comparison of Claude Code, Goose, Cursor, and GitHub Copilot
 - [The Specification Layer](/articles/specification-layer/) — Part 1: Why enterprises need explicit specifications to scale agentic development
+- [The Security Debt of Always-On Agents](/articles/security-debt-always-on-agents/) — Part 3: Why the enterprise security stack collapses when agents interact with data directly
 
 ---
 

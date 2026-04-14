@@ -52,8 +52,12 @@ export default withMermaid(
     // Clean URLs without .html extension
     cleanUrls: true,
 
-    // Ignore dead links to external anchor targets that may not resolve at build time
-    ignoreDeadLinks: [],
+    // Ignore dead links to external anchor targets that may not resolve at build time.
+    // Part 4 of the "Scaling Agentic Development" article series is in preparation; its
+    // link is referenced from Part 3 and should be tolerated until Part 4 lands.
+    ignoreDeadLinks: [
+      /^\/articles\/copilot-to-principal(\/|\/index)?$/
+    ],
 
     // Global head configuration
     head: [
@@ -217,7 +221,8 @@ export default withMermaid(
             text: 'Scaling Agentic Development',
             items: [
               { text: 'The Specification Layer', link: '/articles/specification-layer/' },
-              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' }
+              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' },
+              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' }
             ]
           }
         ],
@@ -226,7 +231,18 @@ export default withMermaid(
             text: 'Scaling Agentic Development',
             items: [
               { text: 'The Specification Layer', link: '/articles/specification-layer/' },
-              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' }
+              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' },
+              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' }
+            ]
+          }
+        ],
+        '/articles/security-debt-always-on-agents/': [
+          {
+            text: 'Scaling Agentic Development',
+            items: [
+              { text: 'The Specification Layer', link: '/articles/specification-layer/' },
+              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' },
+              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' }
             ]
           }
         ],

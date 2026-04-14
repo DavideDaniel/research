@@ -7,7 +7,7 @@ date: 2026-02-13
 
 # The Specification Layer: Why Enterprises Can't Scale AI Development Without It
 
-*Part 1 of 2: Scaling Agentic Development for Enterprise Teams*
+*Part 1 of the "Scaling Agentic Development" series*
 
 **Published:** February 2026 | **Author:** David Daniel
 
@@ -123,7 +123,7 @@ The individual developers at the forefront of this shift have already figured th
 
 ---
 
-*Part 2, [The Autonomous Agents Loop](/articles/autonomous-agents-loop/), explores the execution patterns, recursive loops, multi-agent orchestration, and context management, that turn specifications into shipped software.*
+*Part 2, [The Autonomous Agents Loop](/articles/autonomous-agents-loop/), explores the execution patterns, recursive loops, multi-agent orchestration, and context management, that turn specifications into shipped software. Part 3, [The Security Debt of Always-On Agents](/articles/security-debt-always-on-agents/), examines the governance boundary persistent agents require once they run against real systems.*
 
 *For the empirical evidence base supporting autonomous execution loops, see [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/).*
 
@@ -134,6 +134,7 @@ The individual developers at the forefront of this shift have already figured th
 - [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/) — Comprehensive comparison of BMAD, SpecKit, and OpenSpec
 - [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/) — Architectural comparison of Claude Code, Goose, Cursor, and GitHub Copilot
 - [The Autonomous Agents Loop](/articles/autonomous-agents-loop/) — Part 2: Why AI agents produce better output when they run autonomously
+- [The Security Debt of Always-On Agents](/articles/security-debt-always-on-agents/) — Part 3: Why the enterprise security stack collapses when agents interact with data directly
 
 ---
 
