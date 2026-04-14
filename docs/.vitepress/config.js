@@ -217,7 +217,9 @@ export default withMermaid(
             text: 'Scaling Agentic Development',
             items: [
               { text: 'The Specification Layer', link: '/articles/specification-layer/' },
-              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' }
+              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' },
+              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' },
+              { text: 'From Copilot to Principal', link: '/articles/copilot-to-principal/' }
             ]
           }
         ],
@@ -226,7 +228,31 @@ export default withMermaid(
             text: 'Scaling Agentic Development',
             items: [
               { text: 'The Specification Layer', link: '/articles/specification-layer/' },
-              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' }
+              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' },
+              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' },
+              { text: 'From Copilot to Principal', link: '/articles/copilot-to-principal/' }
+            ]
+          }
+        ],
+        '/articles/security-debt-always-on-agents/': [
+          {
+            text: 'Scaling Agentic Development',
+            items: [
+              { text: 'The Specification Layer', link: '/articles/specification-layer/' },
+              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' },
+              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' },
+              { text: 'From Copilot to Principal', link: '/articles/copilot-to-principal/' }
+            ]
+          }
+        ],
+        '/articles/copilot-to-principal/': [
+          {
+            text: 'Scaling Agentic Development',
+            items: [
+              { text: 'The Specification Layer', link: '/articles/specification-layer/' },
+              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' },
+              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' },
+              { text: 'From Copilot to Principal', link: '/articles/copilot-to-principal/' }
             ]
           }
         ],
@@ -263,6 +289,22 @@ export default withMermaid(
               { text: 'Developer Productivity Evidence', link: '/papers/autonomous-agents/productivity-evidence' },
               { text: 'Adjacent Domains & Mechanisms', link: '/papers/autonomous-agents/adjacent-domains' },
               { text: 'Conclusions & References', link: '/papers/autonomous-agents/conclusions' }
+            ]
+          }
+        ],
+        '/papers/always-on-agents/': [
+          {
+            text: 'Always-On Enterprise Agents',
+            items: [
+              { text: 'Overview', link: '/papers/always-on-agents/' },
+              { text: 'Enterprise Agent Archetypes', link: '/papers/always-on-agents/#enterprise-agent-archetypes' },
+              { text: 'Evidence from Current Systems', link: '/papers/always-on-agents/#evidence-from-current-systems' },
+              { text: 'The Identity Anchor', link: '/papers/always-on-agents/#the-identity-anchor-agents-as-delegated-actors' },
+              { text: 'Reference Architecture', link: '/papers/always-on-agents/#reference-architecture' },
+              { text: 'Productivity Hypothesis', link: '/papers/always-on-agents/#the-productivity-hypothesis' },
+              { text: 'Comparison Table', link: '/papers/always-on-agents/#comparison-table' },
+              { text: 'Conclusion & References', link: '/papers/always-on-agents/#conclusion' },
+              { text: 'Citation', link: '/papers/always-on-agents/#citation' }
             ]
           }
         ]

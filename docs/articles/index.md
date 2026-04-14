@@ -1,8 +1,8 @@
 ---
 title: Articles
-description: Practitioner-focused articles on scaling agentic development, specification infrastructure, and autonomous execution patterns for enterprise teams.
+description: Practitioner-focused articles on scaling agentic development, specification infrastructure, autonomous execution, and the security debt of always-on agents for enterprise teams.
 author: David Daniel
-date: 2026-02-13
+date: 2026-04-13
 ---
 
 # Articles
@@ -31,12 +31,33 @@ Why autonomous AI execution loops outperform interactive assistance, and how ent
 
 ---
 
+### [The Security Debt of Always-On Agents](/articles/security-debt-always-on-agents/)
+
+Why the enterprise security stack collapses when AI agents interact with data directly, and what a data-first defensive architecture for persistent agents looks like in practice. Covers identity-bound delegation, harness-level governance, and the tool/data enforcement points that bound persistent execution.
+
+**Topics:** Persistent agents, identity-bound delegation, harness governance, tool gateways, data-layer controls, OpenClaw
+
+[Read →](/articles/security-debt-always-on-agents/)
+
+---
+
+### [From Copilot to Principal: How Always-On Agents Reorganize Knowledge Work](/articles/copilot-to-principal/)
+
+Why persistent always-on AI agents do not shrink the human role, they invert it, and why most organizations are not structurally ready for the principal role this creates. Covers the overnight test, judgment bandwidth as the new bottleneck, and why delegation under governance is the next productivity frontier.
+
+**Topics:** Principal-agent model, delegation under governance, coverage over speed, judgment bandwidth, enterprise operating model
+
+[Read →](/articles/copilot-to-principal/)
+
+---
+
 ## About
 
-These articles are companion pieces to the [research papers](/papers/), translating empirical findings into actionable guidance for engineering leaders and practitioners. They are part of a two-part series on scaling agentic development for enterprise teams.
+These articles are companion pieces to the [research papers](/papers/), translating empirical findings into actionable guidance for engineering leaders and practitioners. They are part of an ongoing series on scaling agentic development for enterprise teams.
 
 ## Related Research
 
+- [Always-On Enterprise Agents: Persistent Architecture, Delegated Identity, and the Productivity Hypothesis](/papers/always-on-agents/) — reference architecture for persistent, identity-bound agent systems
 - [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/) — the empirical evidence base
 - [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/) — architectural analysis of the tools discussed
 - [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/) — framework comparison and adoption guidance

@@ -11,6 +11,16 @@ In-depth technical analysis to help engineers evaluate frameworks, tools, and pr
 
 ---
 
+### [Always-On Enterprise Agents: Persistent Architecture, Delegated Identity, and the Productivity Hypothesis](/papers/always-on-agents/)
+
+A research taxonomy of persistent agent patterns for enterprise deployments, grounded in primary vendor documentation. Covers session-anchored architecture, identity-bound governance, and the cycle-time productivity hypothesis.
+
+**Topics:** Persistent agents, identity-bound delegation, tool-boundary governance, reference architecture, cycle-time productivity
+
+[Read →](/papers/always-on-agents/)
+
+---
+
 ### [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/)
 
 Evidence synthesis comparing autonomous AI agent execution loops against interactive human-in-the-loop assistance, covering SWE-bench benchmarks, the METR RCT, industry telemetry, and adjacent domain evidence.
