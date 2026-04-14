@@ -52,12 +52,8 @@ export default withMermaid(
     // Clean URLs without .html extension
     cleanUrls: true,
 
-    // Ignore dead links to external anchor targets that may not resolve at build time.
-    // Part 4 of the "Scaling Agentic Development" article series is in preparation; its
-    // link is referenced from Part 3 and should be tolerated until Part 4 lands.
-    ignoreDeadLinks: [
-      /^\/articles\/copilot-to-principal(\/|\/index)?$/
-    ],
+    // Ignore dead links to external anchor targets that may not resolve at build time
+    ignoreDeadLinks: [],
 
     // Global head configuration
     head: [
@@ -222,7 +218,8 @@ export default withMermaid(
             items: [
               { text: 'The Specification Layer', link: '/articles/specification-layer/' },
               { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' },
-              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' }
+              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' },
+              { text: 'From Copilot to Principal', link: '/articles/copilot-to-principal/' }
             ]
           }
         ],
@@ -232,7 +229,8 @@ export default withMermaid(
             items: [
               { text: 'The Specification Layer', link: '/articles/specification-layer/' },
               { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' },
-              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' }
+              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' },
+              { text: 'From Copilot to Principal', link: '/articles/copilot-to-principal/' }
             ]
           }
         ],
@@ -242,7 +240,19 @@ export default withMermaid(
             items: [
               { text: 'The Specification Layer', link: '/articles/specification-layer/' },
               { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' },
-              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' }
+              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' },
+              { text: 'From Copilot to Principal', link: '/articles/copilot-to-principal/' }
+            ]
+          }
+        ],
+        '/articles/copilot-to-principal/': [
+          {
+            text: 'Scaling Agentic Development',
+            items: [
+              { text: 'The Specification Layer', link: '/articles/specification-layer/' },
+              { text: 'The Autonomous Agents Loop', link: '/articles/autonomous-agents-loop/' },
+              { text: 'The Security Debt of Always-On Agents', link: '/articles/security-debt-always-on-agents/' },
+              { text: 'From Copilot to Principal', link: '/articles/copilot-to-principal/' }
             ]
           }
         ],

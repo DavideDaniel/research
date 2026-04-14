@@ -360,6 +360,7 @@ The transition from interactive copilots to persistent agents is not incremental
 - [The Specification Layer](/articles/specification-layer/)
 - [The Autonomous Agents Loop](/articles/autonomous-agents-loop/)
 - [The Security Debt of Always-On Agents](/articles/security-debt-always-on-agents/)
+- [From Copilot to Principal: How Always-On Agents Reorganize Knowledge Work](/articles/copilot-to-principal/)
 - [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/)
 - [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/)
 - [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/)

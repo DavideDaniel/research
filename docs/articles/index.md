@@ -41,6 +41,16 @@ Why the enterprise security stack collapses when AI agents interact with data di
 
 ---
 
+### [From Copilot to Principal: How Always-On Agents Reorganize Knowledge Work](/articles/copilot-to-principal/)
+
+Why persistent always-on AI agents do not shrink the human role, they invert it, and why most organizations are not structurally ready for the principal role this creates. Covers the overnight test, judgment bandwidth as the new bottleneck, and why delegation under governance is the next productivity frontier.
+
+**Topics:** Principal-agent model, delegation under governance, coverage over speed, judgment bandwidth, enterprise operating model
+
+[Read →](/articles/copilot-to-principal/)
+
+---
+
 ## About
 
 These articles are companion pieces to the [research papers](/papers/), translating empirical findings into actionable guidance for engineering leaders and practitioners. They are part of an ongoing series on scaling agentic development for enterprise teams.

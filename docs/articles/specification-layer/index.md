@@ -123,7 +123,7 @@ The individual developers at the forefront of this shift have already figured th
 
 ---
 
-*Part 2, [The Autonomous Agents Loop](/articles/autonomous-agents-loop/), explores the execution patterns, recursive loops, multi-agent orchestration, and context management, that turn specifications into shipped software. Part 3, [The Security Debt of Always-On Agents](/articles/security-debt-always-on-agents/), examines the governance boundary persistent agents require once they run against real systems.*
+*Part 2, [The Autonomous Agents Loop](/articles/autonomous-agents-loop/), explores the execution patterns, recursive loops, multi-agent orchestration, and context management, that turn specifications into shipped software. Part 3, [The Security Debt of Always-On Agents](/articles/security-debt-always-on-agents/), examines the governance boundary persistent agents require once they run against real systems. Part 4, [From Copilot to Principal](/articles/copilot-to-principal/), examines how persistent agents reorganize knowledge work and the emerging role of the human as principal rather than producer.*
 
 *For the empirical evidence base supporting autonomous execution loops, see [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/).*
 
@@ -135,6 +135,7 @@ The individual developers at the forefront of this shift have already figured th
 - [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/) — Architectural comparison of Claude Code, Goose, Cursor, and GitHub Copilot
 - [The Autonomous Agents Loop](/articles/autonomous-agents-loop/) — Part 2: Why AI agents produce better output when they run autonomously
 - [The Security Debt of Always-On Agents](/articles/security-debt-always-on-agents/) — Part 3: Why the enterprise security stack collapses when agents interact with data directly
+- [From Copilot to Principal](/articles/copilot-to-principal/) — Part 4: How persistent always-on agents reorganize knowledge work
 
 ---
 

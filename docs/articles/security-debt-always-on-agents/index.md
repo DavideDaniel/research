@@ -15,7 +15,7 @@ date: 2026-04-13
 
 Persistent agents introduce a failure mode that does not exist in interactive systems: execution that outlives the intent that initiated it.
 
-The same loop that makes persistent agents economically interesting — autonomous execution across time, durable memory, tool access, reduced need for human supervision — also makes them operationally dangerous. That is not a moral observation. It is an architectural one. The properties that make these systems useful to enterprises also make them useful to attackers, and the security model most enterprises currently operate was not designed for this shape of work.
+The same loop that makes persistent agents economically interesting (autonomous execution across time, durable memory, tool access, reduced need for human supervision) also makes them operationally dangerous. That is not a moral observation. It is an architectural one. The properties that make these systems useful to enterprises also make them useful to attackers, and the security model most enterprises currently operate was not designed for this shape of work.
 
 That is the security debt of always-on agents.
 
@@ -25,7 +25,7 @@ Traditional enterprise security assumes a human workflow. A person authenticates
 
 Persistent agents do not operate that way. They call APIs directly. They ingest data at machine speed. They follow links, parse instructions embedded in content, and execute tool calls without the visible interaction path that front-end monitoring tools were built to observe. From the agent's perspective, a calendar app is an API with events. A document platform is a corpus to search. A messaging platform is an inbound instruction stream. A browser is an automation substrate.
 
-Once that is true, applications effectively collapse into data stores and tool interfaces. A large part of the existing security model risks becoming secondary, because the controls were built to govern the layer the agent is no longer using. If your defenses depend on click paths, application navigation, or front-end usage patterns, they are no longer sitting where the agent actually works. This framing is directionally consistent with data-centric security analyses from vendors such as Varonis — whose Atlas platform launch materials (March 2026) position data-layer controls as the primary enforcement point for agentic workloads — though the degree to which application-layer controls actually degrade under agent workloads has not yet been rigorously measured across enterprise environments.
+Once that is true, applications effectively collapse into data stores and tool interfaces. A large part of the existing security model risks becoming secondary, because the controls were built to govern the layer the agent is no longer using. If your defenses depend on click paths, application navigation, or front-end usage patterns, they are no longer sitting where the agent actually works. This framing is directionally consistent with data-centric security analyses from vendors such as Varonis, whose Atlas platform launch materials (March 2026) position data-layer controls as the primary enforcement point for agentic workloads, though the degree to which application-layer controls actually degrade under agent workloads has not yet been rigorously measured across enterprise environments.
 
 ## Execution Without Presence
 
@@ -33,11 +33,11 @@ There is a second problem layered on top of the first, and it is the one that ma
 
 Interactive systems are constrained by human presence. Persistent systems are not. That means an always-on agent can continue operating after priorities have changed, after policies have been updated, after device posture has shifted, or after the original reason for access is no longer valid.
 
-This might sound like ordinary over-permissioning, and it compounds that problem, but it is something more specific. A misconfigured cron job that keeps running after policies change is executing fixed instructions without judgment. A persistent agent is making contextual decisions — choosing which files to read, which tools to invoke, which actions to take — while operating under authority that may no longer reflect the intent of the person who delegated it. The agent is not just repeating. It is deciding. And it is deciding under stale authorization.
+This might sound like ordinary over-permissioning, and it compounds that problem, but it is something more specific. A misconfigured cron job that keeps running after policies change is executing fixed instructions without judgment. A persistent agent is making contextual decisions (choosing which files to read, which tools to invoke, which actions to take) while operating under authority that may no longer reflect the intent of the person who delegated it. The agent is not just repeating. It is deciding. And it is deciding under stale authorization.
 
 That is the point where agent security stops being an application or endpoint problem and becomes a governance problem. The system has to know not only whether the agent *can* act, but whether it should still be allowed to act on behalf of the human who initiated the work.
 
-This is why identity-bound delegation matters — a constraint explored in detail in the companion research paper's [identity anchor analysis](/papers/always-on-agents/#the-identity-anchor-agents-as-delegated-actors). If execution cannot be attributed, scoped, and revoked over time, then persistent agents remain operationally unsafe even when every individual tool call appears legitimate in isolation.
+This is why identity-bound delegation matters, a constraint explored in detail in the companion research paper's [identity anchor analysis](/papers/always-on-agents/#the-identity-anchor-agents-as-delegated-actors). If execution cannot be attributed, scoped, and revoked over time, then persistent agents remain operationally unsafe even when every individual tool call appears legitimate in isolation.
 
 ## What the OpenClaw Moment Revealed
 
@@ -57,7 +57,7 @@ The real attack surface emerges from the combination of untrusted input, persist
 
 A frontier model judging whether content is suspicious may help. A blocklist for known malicious patterns may help. A human approval step for sensitive actions may help. None of those is sufficient by itself, because the system has to assume hostile content will eventually reach the agent and design for bounded impact when it does.
 
-This is why layered defenses matter more than any single protection, and why Anthropic's framing of the control problem across four layers — model, harness, tools, and environment — as articulated in "Building Effective Agents" (2025) and extended in "Trustworthy Agents in Practice" (2026) — is a more realistic model of enterprise risk than "the AI was tricked." In practice, a well-behaved model can still be compromised by a poorly governed harness, an overly broad tool surface, or an execution environment that exposes the wrong credentials. The attack surface is systemic, not localized to any one layer.
+This is why layered defenses matter more than any single protection, and why Anthropic's framing of the control problem across four layers (model, harness, tools, and environment), as articulated in "Building Effective Agents" (2025) and extended in "Trustworthy Agents in Practice" (2026), is a more realistic model of enterprise risk than "the AI was tricked." In practice, a well-behaved model can still be compromised by a poorly governed harness, an overly broad tool surface, or an execution environment that exposes the wrong credentials. The attack surface is systemic, not localized to any one layer.
 
 While these patterns are consistently reported across vendors and security research, the long-term failure modes of persistent agents have not yet been studied at enterprise scale. The defensive posture described below is informed by current evidence, but should be treated as directional rather than definitive.
 
@@ -67,11 +67,11 @@ A usable defensive posture for persistent agents is starting to take shape, and 
 
 **Deterministic filtering before model reasoning.** External content should first pass through cheap, predictable controls that catch known-bad inputs or disallowed patterns before the agent processes them. Model-based inspection can sit behind that first layer to handle ambiguous cases. This is not elegant. It is practical.
 
-**Per-action permissions, not blanket tool authority.** The agent that can read should not automatically be able to send, delete, approve, or execute arbitrarily. Treating action boundaries as a first-class operational concern — not as a user preference — is what separates enterprise-grade agent deployments from consumer-grade experimentation.
+**Per-action permissions, not blanket tool authority.** The agent that can read should not automatically be able to send, delete, approve, or execute arbitrarily. Treating action boundaries as a first-class operational concern, not as a user preference, is what separates enterprise-grade agent deployments from consumer-grade experimentation.
 
 **Credential isolation outside the execution environment.** If generated code runs in the same environment where long-lived tokens are accessible, compromise becomes much easier. Credential access has to be structurally separated from agent execution, not just logically separated by prompt instructions.
 
-**Supply-chain scrutiny at the skill and tool layer.** If the agent can extend itself through plugins, skills, MCP servers, or downloaded tools, that layer becomes part of the production attack surface. It needs review, signing, provenance, and runtime policy — not just marketplace convenience.
+**Supply-chain scrutiny at the skill and tool layer.** If the agent can extend itself through plugins, skills, MCP servers, or downloaded tools, that layer becomes part of the production attack surface. It needs review, signing, provenance, and runtime policy, not just marketplace convenience.
 
 **Continuous observability.** Always-on agents require always-on auditability. Tool calls, approvals, policy blocks, state transitions, and unusual access patterns need to flow into the enterprise's actual security and observability systems from day one. This is the point where "AI feature" becomes "security-sensitive infrastructure."
 
@@ -83,7 +83,7 @@ It is that the harness is the security-critical layer.
 
 The model is increasingly substitutable. The runtime can often be standardized. The agent behavior can be specialized. But the harness is where the enterprise actually decides what tools exist, what authority an agent has, how long that authority lasts, how memory is scoped, what requires approval, what is logged, what is revocable, and who is accountable.
 
-If the harness encodes the principal-agent contract — and in practice it does — then inheriting someone else's harness means inheriting someone else's threat model. For some organizations that will be acceptable. For many, especially those operating under regulatory or compliance constraints, it will not.
+If the harness encodes the principal-agent contract (and in practice it does), then inheriting someone else's harness means inheriting someone else's threat model. For some organizations that will be acceptable. For many, especially those operating under regulatory or compliance constraints, it will not.
 
 That does not mean writing everything from scratch. It means assembling the execution model from well-understood components inside an enterprise-controlled boundary, with enterprise-controlled permissions, identity, and audit. The point is ownership of the contract, not handcrafted novelty.
 
@@ -125,4 +125,4 @@ The debt is payable. It just is not payable by pretending persistent agents are 
 
 ---
 
-*This article was created with AI assistance using Claude.*
+*This article was created with AI assistance. Sources include: Anthropic's "Building Effective Agents" (2025) and "Trustworthy Agents in Practice" (2026), Cisco / DJ Sampath's "I Run OpenClaw at Home. That's Exactly Why We Built DefenseClaw" (Cisco Blogs, March 23, 2026), Snyk OpenClaw and ClawHub vulnerability disclosures (2026), independent OpenClaw ecosystem security reporting and audit analyses (2026), and Varonis Atlas platform launch materials (March 2026). Data as of April 2026.*
