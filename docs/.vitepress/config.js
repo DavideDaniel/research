@@ -265,6 +265,21 @@ export default withMermaid(
               { text: 'Conclusions & References', link: '/papers/autonomous-agents/conclusions' }
             ]
           }
+        ],
+        '/papers/always-on-agents/': [
+          {
+            text: 'Always-On Enterprise Agents',
+            items: [
+              { text: 'Overview', link: '/papers/always-on-agents/' },
+              { text: 'Enterprise Agent Archetypes', link: '/papers/always-on-agents/#enterprise-agent-archetypes' },
+              { text: 'Evidence from Current Systems', link: '/papers/always-on-agents/#evidence-from-current-systems' },
+              { text: 'The Identity Anchor', link: '/papers/always-on-agents/#the-identity-anchor-agents-as-delegated-actors' },
+              { text: 'Reference Architecture', link: '/papers/always-on-agents/#reference-architecture' },
+              { text: 'Productivity Hypothesis', link: '/papers/always-on-agents/#the-productivity-hypothesis' },
+              { text: 'Comparison Table', link: '/papers/always-on-agents/#comparison-table' },
+              { text: 'Conclusion & References', link: '/papers/always-on-agents/#conclusion' }
+            ]
+          }
         ]
       },
 
