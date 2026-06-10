@@ -2,7 +2,7 @@
 title: "Harness Engineering: How Claude Code and Codex Became Long-Running Agentic-Engineering Systems"
 date: 2026-06-05
 author: David Daniel
-description: A survey of "harness engineering" as an emerging discipline — the pre-wired agentic loop, a borrowed nine-component harness anatomy (MindStudio's codification of a practitioner taxonomy, independently mirrored by Arize), three distinct separation patterns for long-running work, a CoALA-grounded memory mapping, and the copilot-to-operator shift — with evidence-status labels on every vendor and practitioner claim.
+description: "How Claude Code and Codex became long-running agentic systems: harness anatomy, separation patterns, the memory substrate, and the copilot-to-operator shift."
 ---
 
 # Harness Engineering: How Claude Code and Codex Became Long-Running Agentic-Engineering Systems

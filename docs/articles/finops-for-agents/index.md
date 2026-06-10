@@ -2,7 +2,7 @@
 title: "FinOps for Agents: A Practitioner Playbook for Routing, Gateways, and Prompt Caching"
 date: 2026-06-05
 author: David Daniel
-description: Long-running agents turn AI spend into a variable cost that scales with autonomy, not headcount. The near-term defense is operational, not architectural — a practitioner playbook for the four cost-control levers a platform team can deploy this quarter (spend caps, prompt caching, LLM gateways, and tiered routing) and the inference mechanics that explain why they work.
+description: "A practitioner playbook for controlling agentic AI spend: spend caps, prompt caching, LLM gateways, and tiered routing a platform team can deploy this quarter."
 ---
 
 # FinOps for Agents: A Practitioner Playbook for Routing, Gateways, and Prompt Caching

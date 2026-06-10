@@ -2,7 +2,7 @@
 title: "The Day Copilot Started Charging by the Token: Anatomy of a Pricing-Model Break"
 date: 2026-06-05
 author: David Daniel
-description: On April 27, 2026, GitHub announced that Copilot would abandon its flat-fee premium-request billing model for usage-based token pricing, naming multi-hour autonomous agentic sessions as the reason. The cleanest dated public instance of long-running agents breaking seat-based pricing — told as a news-hook, with Uber's four-month budget burn as the demand-side mirror.
+description: "On April 27, 2026, GitHub moved Copilot to usage-based token billing, citing multi-hour autonomous agentic sessions: the cleanest dated break of seat-based pricing."
 ---
 
 # The Day Copilot Started Charging by the Token: Anatomy of a Pricing-Model Break

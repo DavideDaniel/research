@@ -2,7 +2,7 @@
 title: "Harness vs Framework: Why 'Just Use LangChain' Stopped Being the Answer"
 date: 2026-06-05
 author: David Daniel
-description: An agent is a model plus everything around it — the loop, the tool registry, the context management, the permission layer. Whether you assemble that scaffolding yourself from a framework or inherit it pre-wired from a harness like Claude Code or Cursor is the first architectural fork in any agent project, and it shapes everything downstream. A practitioner orientation to the taxonomy.
+description: "Why teams now adopt pre-wired agent harnesses like Claude Code instead of assembling frameworks like LangChain, and how to tell which side of the fork you are on."
 ---
 
 # Harness vs Framework: Why 'Just Use LangChain' Stopped Being the Answer
