@@ -53,7 +53,7 @@ Why persistent always-on AI agents do not shrink the human role, they invert it,
 
 ### [Harness vs Framework: Why 'Just Use LangChain' Stopped Being the Answer](/articles/harness-vs-framework/)
 
-An agent is a model plus everything around it — the loop, the tool registry, the context management, the permission layer. Whether you assemble that scaffolding yourself from a framework or inherit it pre-wired from a harness like Claude Code or Cursor is the first architectural fork in any agent project.
+An agent is a model plus everything around it: the loop, the tool registry, the context management, the permission layer. Whether you assemble that scaffolding yourself from a framework or inherit it pre-wired from a harness like Claude Code or Cursor is the first architectural fork in any agent project.
 
 **Topics:** Agent harness, frameworks, build-versus-adopt, open harnesses, vendor lock-in
 
@@ -73,7 +73,7 @@ On April 27, 2026, GitHub announced that Copilot would abandon its flat-fee prem
 
 ### [More Turns, Bigger Bill: Why Agentic Architecture Is a Token Multiplier Independent of Price](/articles/token-multiplier/)
 
-The agentic cost spike isn't mainly a per-token-price story. It's an architecture story — autonomous loops take many more turns per task, so the same task costs multiples more even at a flat rate. The empirical counterpoint to "just route to a cheaper model."
+The agentic cost spike isn't mainly a per-token-price story. It's an architecture story: autonomous loops take many more turns per task, so the same task costs multiples more even at a flat rate. The empirical counterpoint to "just route to a cheaper model."
 
 **Topics:** Token multiplier, agentic turns, cost decomposition, price deflation, cadence and horizon
 
@@ -83,7 +83,7 @@ The agentic cost spike isn't mainly a per-token-price story. It's an architectur
 
 ### [FinOps for Agents: A Practitioner Playbook for Routing, Gateways, and Prompt Caching](/articles/finops-for-agents/)
 
-Long-running agents turn AI spend into a variable cost that scales with autonomy, not headcount. A practitioner playbook for the four cost-control levers a platform team can deploy this quarter — spend caps, prompt caching, LLM gateways, and tiered routing.
+Long-running agents turn AI spend into a variable cost that scales with autonomy, not headcount. A practitioner playbook for the four cost-control levers a platform team can deploy this quarter: spend caps, prompt caching, LLM gateways, and tiered routing.
 
 **Topics:** FinOps, spend caps, prompt caching, LLM gateways, tiered routing
 
@@ -97,9 +97,9 @@ These articles are companion pieces to the [research papers](/papers/), translat
 
 ## Related Research
 
-- [Harness Engineering: How Claude Code and Codex Became Long-Running Agentic-Engineering Systems](/papers/harness-engineering/) — the harness as the locus of capability gains
-- [When the Loop Never Stops: How Long-Running Agents Broke Seat-Based Pricing](/papers/agentic-pricing-break/) — the cost mechanism of long-running agents
-- [Always-On Enterprise Agents: Persistent Architecture, Delegated Identity, and the Productivity Hypothesis](/papers/always-on-agents/) — reference architecture for persistent, identity-bound agent systems
-- [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/) — the empirical evidence base
-- [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/) — architectural analysis of the tools discussed
-- [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/) — framework comparison and adoption guidance
+- [Harness Engineering: How Claude Code and Codex Became Long-Running Agentic-Engineering Systems](/papers/harness-engineering/): the harness as the locus of capability gains
+- [When the Loop Never Stops: How Long-Running Agents Broke Seat-Based Pricing](/papers/agentic-pricing-break/): the cost mechanism of long-running agents
+- [Always-On Enterprise Agents: Persistent Architecture, Delegated Identity, and the Productivity Hypothesis](/papers/always-on-agents/): reference architecture for persistent, identity-bound agent systems
+- [Autonomous AI Agents: Execution Loops vs Interactive Assistance](/papers/autonomous-agents/): the empirical evidence base
+- [Agentic Development Tools and Execution Architectures](/papers/agentic-tools/): architectural analysis of the tools discussed
+- [Spec-Driven Development Framework Patterns](/papers/sdd-frameworks/): framework comparison and adoption guidance

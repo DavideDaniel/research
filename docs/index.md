@@ -40,10 +40,10 @@ features:
     details: Why agentic architecture is a token multiplier independent of price, and why routing to a cheaper model alone cannot settle the budget
     link: /articles/token-multiplier/
   - title: FinOps for Agents
-    details: A practitioner playbook for the four cost-control levers a platform team can deploy this quarter — spend caps, prompt caching, LLM gateways, and tiered routing
+    details: "A practitioner playbook for the four cost-control levers a platform team can deploy this quarter: spend caps, prompt caching, LLM gateways, and tiered routing"
     link: /articles/finops-for-agents/
   - title: Harness Engineering
-    details: How Claude Code and Codex became long-running agentic-engineering systems, and why the harness — not the model — became the locus of capability gains
+    details: How Claude Code and Codex became long-running agentic-engineering systems, and why the harness, not the model, became the locus of capability gains
     link: /papers/harness-engineering/
   - title: When the Loop Never Stops
     details: How long-running agents broke seat-based pricing and created the AI value problem, traced link by link through dated public proof points
