@@ -2,7 +2,7 @@
 title: "More Turns, Bigger Bill: Why Agentic Architecture Is a Token Multiplier Independent of Price"
 date: 2026-06-05
 author: David Daniel
-description: The agentic cost spike isn't mainly a per-token-price story. It's an architecture story — autonomous loops take many more turns per task, so the same task costs multiples more even at a flat rate. The empirical counterpoint to "just route to a cheaper model."
+description: "Why agentic architecture multiplies token costs independent of price: autonomous loops take more turns per task, so bills rise even as per-token rates fall."
 ---
 
 # More Turns, Bigger Bill: Why Agentic Architecture Is a Token Multiplier Independent of Price

@@ -2,7 +2,7 @@
 title: "When the Loop Never Stops: How Long-Running Agents Broke Seat-Based Pricing and Created the AI Value Problem"
 date: 2026-06-05
 author: David Daniel
-description: A causal account of how long-running coding agents mechanically multiplied token consumption, forced the seat-to-token pricing pivot, exhausted enterprise AI budgets, and triggered the late-May 2026 cost reckoning — with every link in the chain traced to a dated, publicly verifiable proof point.
+description: "How long-running agents multiplied token consumption, broke seat-based pricing, exhausted enterprise AI budgets, and triggered the May 2026 cost reckoning."
 ---
 
 # When the Loop Never Stops: How Long-Running Agents Broke Seat-Based Pricing and Created the AI Value Problem
