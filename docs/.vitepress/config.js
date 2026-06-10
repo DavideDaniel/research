@@ -307,6 +307,84 @@ export default withMermaid(
               { text: 'Citation', link: '/papers/always-on-agents/#citation' }
             ]
           }
+        ],
+        '/papers/harness-engineering/': [
+          {
+            text: 'Harness Engineering & Agent Economics',
+            items: [
+              { text: 'Harness Engineering (Paper 1)', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops (Paper 2)', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
+              { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
+              { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' }
+            ]
+          }
+        ],
+        '/papers/agentic-pricing-break/': [
+          {
+            text: 'Harness Engineering & Agent Economics',
+            items: [
+              { text: 'Harness Engineering (Paper 1)', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops (Paper 2)', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
+              { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
+              { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' }
+            ]
+          }
+        ],
+        '/articles/harness-vs-framework/': [
+          {
+            text: 'Harness Engineering & Agent Economics',
+            items: [
+              { text: 'Harness Engineering (Paper 1)', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops (Paper 2)', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
+              { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
+              { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' }
+            ]
+          }
+        ],
+        '/articles/copilot-token-billing/': [
+          {
+            text: 'Harness Engineering & Agent Economics',
+            items: [
+              { text: 'Harness Engineering (Paper 1)', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops (Paper 2)', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
+              { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
+              { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' }
+            ]
+          }
+        ],
+        '/articles/token-multiplier/': [
+          {
+            text: 'Harness Engineering & Agent Economics',
+            items: [
+              { text: 'Harness Engineering (Paper 1)', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops (Paper 2)', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
+              { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
+              { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' }
+            ]
+          }
+        ],
+        '/articles/finops-for-agents/': [
+          {
+            text: 'Harness Engineering & Agent Economics',
+            items: [
+              { text: 'Harness Engineering (Paper 1)', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops (Paper 2)', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
+              { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
+              { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' }
+            ]
+          }
         ]
       },
 
