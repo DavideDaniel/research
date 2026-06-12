@@ -312,8 +312,8 @@ export default withMermaid(
           {
             text: 'Harness Engineering & Agent Economics',
             items: [
-              { text: 'Harness Engineering (Paper 1)', link: '/papers/harness-engineering/' },
-              { text: 'When the Loop Never Stops (Paper 2)', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness Engineering', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops', link: '/papers/agentic-pricing-break/' },
               { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
               { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
               { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
@@ -325,8 +325,8 @@ export default withMermaid(
           {
             text: 'Harness Engineering & Agent Economics',
             items: [
-              { text: 'Harness Engineering (Paper 1)', link: '/papers/harness-engineering/' },
-              { text: 'When the Loop Never Stops (Paper 2)', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness Engineering', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops', link: '/papers/agentic-pricing-break/' },
               { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
               { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
               { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
@@ -338,8 +338,8 @@ export default withMermaid(
           {
             text: 'Harness Engineering & Agent Economics',
             items: [
-              { text: 'Harness Engineering (Paper 1)', link: '/papers/harness-engineering/' },
-              { text: 'When the Loop Never Stops (Paper 2)', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness Engineering', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops', link: '/papers/agentic-pricing-break/' },
               { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
               { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
               { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
@@ -351,8 +351,8 @@ export default withMermaid(
           {
             text: 'Harness Engineering & Agent Economics',
             items: [
-              { text: 'Harness Engineering (Paper 1)', link: '/papers/harness-engineering/' },
-              { text: 'When the Loop Never Stops (Paper 2)', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness Engineering', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops', link: '/papers/agentic-pricing-break/' },
               { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
               { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
               { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
@@ -364,8 +364,8 @@ export default withMermaid(
           {
             text: 'Harness Engineering & Agent Economics',
             items: [
-              { text: 'Harness Engineering (Paper 1)', link: '/papers/harness-engineering/' },
-              { text: 'When the Loop Never Stops (Paper 2)', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness Engineering', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops', link: '/papers/agentic-pricing-break/' },
               { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
               { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
               { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
@@ -377,8 +377,8 @@ export default withMermaid(
           {
             text: 'Harness Engineering & Agent Economics',
             items: [
-              { text: 'Harness Engineering (Paper 1)', link: '/papers/harness-engineering/' },
-              { text: 'When the Loop Never Stops (Paper 2)', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness Engineering', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops', link: '/papers/agentic-pricing-break/' },
               { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
               { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
               { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
