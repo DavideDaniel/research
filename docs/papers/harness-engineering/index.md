@@ -261,7 +261,7 @@ Every orchestration choice in that endgame has a price. Hundreds of parallel sub
 
 ### Related Research on This Site
 
-- [When the Loop Never Stops: How Long-Running Agents Broke Seat-Based Pricing and Created the AI Value Problem](/papers/agentic-pricing-break/), companion bridge paper (Paper 2)
+- [When the Loop Never Stops: How Long-Running Agents Broke Seat-Based Pricing and Created the AI Value Problem](/papers/agentic-pricing-break/), the companion bridge paper on the cost side
 - [Harness vs Framework: Why "Just Use LangChain" Stopped Being the Answer](/articles/harness-vs-framework/), companion article expanding Section 2
 - Writer/Reviewer Separation as an Engineering Invariant, companion article expanding Section 3 <!-- TODO: link /articles/writer-reviewer-separation/ when that article is published -->
 
@@ -277,7 +277,7 @@ Retrieved from https://daviddaniel.tech/research/papers/harness-engineering/
 
 ---
 
-*This is Paper 1 of a two-paper sequence. This paper argues the architecture: what the harness is and why it became the locus of capability. The [companion bridge paper](/papers/agentic-pricing-break/) takes up the cost consequences of the never-stopping loop. Two practitioner articles accompany this paper: [Harness vs Framework](/articles/harness-vs-framework/) on the harness/framework decision boundary, and Writer/Reviewer Separation on implementing the separation invariants.* <!-- TODO: link Writer/Reviewer Separation (/articles/writer-reviewer-separation/) when that article is published -->
+*This paper is the architectural half of a two-paper sequence: what the harness is and why it became the locus of capability. The companion bridge paper, [When the Loop Never Stops](/papers/agentic-pricing-break/), takes up the cost consequences of the never-stopping loop. Two practitioner articles accompany this paper: [Harness vs Framework](/articles/harness-vs-framework/) on the harness/framework decision boundary, and Writer/Reviewer Separation on implementing the separation invariants.* <!-- TODO: link Writer/Reviewer Separation (/articles/writer-reviewer-separation/) when that article is published -->
 
 *This paper is part of an ongoing research project tracking AI tooling, software engineering practices, and cross-functional workflows at [daviddaniel.tech/research](https://daviddaniel.tech/research).*
 
