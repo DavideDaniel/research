@@ -88,6 +88,10 @@ The practitioner version of the lever is therefore a measurement loop, not a con
 
 A cheaper model that fails more can cost more end-to-end than the frontier model it replaced, because every retry re-runs the loop, re-bills the prefill, and re-consumes the very tokens you were trying to save. Routing is an architecture you adopt and then tune against your own task mix. Treat any pre-baked ratio as a starting hypothesis at most.
 
+One framing rule keeps this lever from becoming a liability: **route against cost per completed task at constant quality, never against tokens consumed.** The two metrics look interchangeable and behave oppositely. Cost per completed task is closed-loop: if a downgraded model degrades output, the verification you already run catches it, retries fire, and the metric itself punishes the downgrade. Raw token consumption is open-loop: it improves when you skip verification passes and trim the context that makes agents reliable, which is to say it improves fastest when the work is quietly getting worse.
+
+An organization that adopts this lever to satisfy a token-reduction mandate has taken the architecture and discarded its control system. The companion measurement work takes this failure mode up directly.
+
 ## Underneath Levers 1 Through 3: Prefill and the KV-Cache
 
 The three optimization levers look unrelated: a pricing feature, a network chokepoint, an architecture pattern. But they are pulling on the same underlying physics, and knowing the mechanics helps you predict which lever pays where.
@@ -110,7 +114,7 @@ There is also a longer arc worth naming, because it locates where this playbook 
 
 The reason it belongs here is the sequencing it implies. The four levers in this playbook are the platform-level layer a team can deploy now. Code-level consumption reduction is where the practice goes next, and Lever 1's prefix discipline is its first concrete instance.
 
-What it explicitly does not buy you is an answer to whether the spend was worth it. A 40-percent-cheaper agent that ships nothing of value is a smaller waste, not a win. An expensive agent that reliably ships real outcomes may be the bargain of the budget. Cost control and value measurement are different problems, and conflating them is how organizations end up optimizing the denominator of an ROI fraction whose numerator they never measured.
+What it explicitly does not buy you is an answer to whether the spend was worth it. A 40-percent-cheaper agent that ships nothing of value is a smaller waste, not a win. An expensive agent that reliably ships real outcomes may be the bargain of the budget. Cost control and value measurement are different problems, and conflating them is how organizations end up optimizing the denominator of an ROI fraction whose numerator they never measured. Lever 3 is where that mistake gets made first, which is why its metric rule (cost per completed task, never raw tokens) is the one sentence in this playbook that must survive any summary of it.
 
 The measurement problem is the subject of the companion paper: why single-metric ROI misleads for agentic work, why perceived gains diverge from measured output, and how to build value attribution you can defend. One framing note for that work: "what did the spend create" prices an input. The better question is what work was delivered and how fast, against what the same delivery used to cost and take. The sequencing argued for here is the one a platform team can actually execute. Get the cost layer observable and governed first, with the levers that exist today. Then measure what the work delivered.
 
