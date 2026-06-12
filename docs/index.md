@@ -30,6 +30,24 @@ features:
   - title: From Copilot to Principal
     details: Why persistent always-on agents do not shrink the human role, they invert it, and why most organizations are not structurally ready for the principal role this creates
     link: /articles/copilot-to-principal/
+  - title: Harness vs Framework
+    details: Whether you assemble agent scaffolding yourself from a framework or inherit it pre-wired from a harness is the first architectural fork in any agent project
+    link: /articles/harness-vs-framework/
+  - title: The Day Copilot Started Charging by the Token
+    details: Anatomy of the April 2026 pricing-model break, when multi-hour autonomous agentic sessions ended flat per-seat billing
+    link: /articles/copilot-token-billing/
+  - title: More Turns, Bigger Bill
+    details: Why agentic architecture is a token multiplier independent of price, and why routing to a cheaper model alone cannot settle the budget
+    link: /articles/token-multiplier/
+  - title: FinOps for Agents
+    details: "A practitioner playbook for the four cost-control levers a platform team can deploy this quarter: spend caps, prompt caching, LLM gateways, and tiered routing"
+    link: /articles/finops-for-agents/
+  - title: Harness Engineering
+    details: How Claude Code and Codex became long-running agentic-engineering systems, and why the harness, not the model, became the locus of capability gains
+    link: /papers/harness-engineering/
+  - title: When the Loop Never Stops
+    details: How long-running agents broke seat-based pricing and created the AI value problem, traced link by link through dated public proof points
+    link: /papers/agentic-pricing-break/
   - title: Always-On Enterprise Agents
     details: Research taxonomy of persistent agent patterns covering session-anchored architecture, identity-bound governance, and the cycle-time productivity hypothesis
     link: /papers/always-on-agents/
