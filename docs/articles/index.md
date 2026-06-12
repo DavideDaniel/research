@@ -11,6 +11,18 @@ Practitioner-focused analysis bridging research findings to enterprise adoption 
 
 ---
 
+### [Measure the Work, Not the Meter](/articles/measure-the-work/)
+
+*June 2026*
+
+Token billing itemized the cost of AI work and measures none of its value. Auditing token spend prices the new way of working with the old way of measuring. The answerable question is cost and cycle time per delivered change, against a baseline, and the baseline-capture window is open now.
+
+**Topics:** Delivery economics, cycle time, cost per delivered change, baselines, gateway attribution, Goodhart's law
+
+[Read →](/articles/measure-the-work/)
+
+---
+
 ### [Harness vs Framework: Why 'Just Use LangChain' Stopped Being the Answer](/articles/harness-vs-framework/)
 
 *June 2026*

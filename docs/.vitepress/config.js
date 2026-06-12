@@ -317,7 +317,8 @@ export default withMermaid(
               { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
               { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
               { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
-              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' }
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' },
+              { text: 'Measure the Work, Not the Meter', link: '/articles/measure-the-work/' }
             ]
           }
         ],
@@ -330,7 +331,8 @@ export default withMermaid(
               { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
               { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
               { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
-              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' }
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' },
+              { text: 'Measure the Work, Not the Meter', link: '/articles/measure-the-work/' }
             ]
           }
         ],
@@ -343,7 +345,8 @@ export default withMermaid(
               { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
               { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
               { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
-              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' }
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' },
+              { text: 'Measure the Work, Not the Meter', link: '/articles/measure-the-work/' }
             ]
           }
         ],
@@ -356,7 +359,8 @@ export default withMermaid(
               { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
               { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
               { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
-              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' }
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' },
+              { text: 'Measure the Work, Not the Meter', link: '/articles/measure-the-work/' }
             ]
           }
         ],
@@ -369,7 +373,8 @@ export default withMermaid(
               { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
               { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
               { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
-              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' }
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' },
+              { text: 'Measure the Work, Not the Meter', link: '/articles/measure-the-work/' }
             ]
           }
         ],
@@ -382,7 +387,22 @@ export default withMermaid(
               { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
               { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
               { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
-              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' }
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' },
+              { text: 'Measure the Work, Not the Meter', link: '/articles/measure-the-work/' }
+            ]
+          }
+        ],
+        '/articles/measure-the-work/': [
+          {
+            text: 'Harness Engineering & Agent Economics',
+            items: [
+              { text: 'Harness Engineering', link: '/papers/harness-engineering/' },
+              { text: 'When the Loop Never Stops', link: '/papers/agentic-pricing-break/' },
+              { text: 'Harness vs Framework', link: '/articles/harness-vs-framework/' },
+              { text: 'The Day Copilot Started Charging by the Token', link: '/articles/copilot-token-billing/' },
+              { text: 'More Turns, Bigger Bill', link: '/articles/token-multiplier/' },
+              { text: 'FinOps for Agents', link: '/articles/finops-for-agents/' },
+              { text: 'Measure the Work, Not the Meter', link: '/articles/measure-the-work/' }
             ]
           }
         ]
