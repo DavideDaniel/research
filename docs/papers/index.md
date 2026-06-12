@@ -1,6 +1,6 @@
 ---
 title: Research Papers
-description: Browse technical research papers on spec-driven development, agentic tools, software architecture, and modern engineering practices.
+description: Browse technical research papers on harness engineering, agentic token economics, spec-driven development, agentic tools, software architecture, and modern engineering practices.
 author: David Daniel
 date: 2026-01-07
 ---
@@ -8,6 +8,26 @@ date: 2026-01-07
 # Research Papers
 
 In-depth technical analysis to help engineers evaluate frameworks, tools, and practices.
+
+---
+
+### [Harness Engineering: How Claude Code and Codex Became Long-Running Agentic-Engineering Systems](/papers/harness-engineering/)
+
+A survey of "harness engineering" as an emerging discipline: the pre-wired agentic loop, a borrowed nine-component harness anatomy, three distinct separation patterns for long-running work, a CoALA-grounded memory mapping, and the copilot-to-operator shift, with evidence-status labels on every vendor and practitioner claim.
+
+**Topics:** Harness engineering, agent harness anatomy, separation patterns, CoALA memory mapping, multi-agent orchestration
+
+[Read →](/papers/harness-engineering/)
+
+---
+
+### [When the Loop Never Stops: How Long-Running Agents Broke Seat-Based Pricing and Created the AI Value Problem](/papers/agentic-pricing-break/)
+
+A causal account of how long-running coding agents mechanically multiplied token consumption, forced the seat-to-token pricing pivot, exhausted enterprise AI budgets, and triggered the late-May 2026 cost reckoning, with every link in the chain traced to a dated, publicly verifiable proof point.
+
+**Topics:** Token economics, usage-based billing, agentic cost mechanism, enterprise AI budgets, the AI value problem
+
+[Read →](/papers/agentic-pricing-break/)
 
 ---
 
@@ -55,8 +75,12 @@ Analysis of BMAD, SpecKit, and OpenSpec frameworks - when to use each, how they 
 
 These papers are supported by practitioner-focused articles in the [Articles](/articles/) section:
 
-- [The Specification Layer](/articles/specification-layer/) — why enterprises need machine-readable specifications to scale agentic development
-- [The Autonomous Agents Loop](/articles/autonomous-agents-loop/) — why autonomous execution loops outperform interactive assistance
+- [The Specification Layer](/articles/specification-layer/): why enterprises need machine-readable specifications to scale agentic development
+- [The Autonomous Agents Loop](/articles/autonomous-agents-loop/): why autonomous execution loops outperform interactive assistance
+- [Harness vs Framework](/articles/harness-vs-framework/): the build-versus-adopt fork at the start of every agent project
+- [The Day Copilot Started Charging by the Token](/articles/copilot-token-billing/): anatomy of the seat-to-token pricing break
+- [More Turns, Bigger Bill](/articles/token-multiplier/): why agentic architecture is a token multiplier independent of price
+- [FinOps for Agents](/articles/finops-for-agents/): the cost-control levers a platform team can deploy this quarter
 
 ## About
 
