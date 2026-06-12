@@ -35,7 +35,7 @@ The argument does not need the aftermath. The announcement alone is the document
 
 ## What broke, mechanically
 
-The break is not that tokens got more expensive. It is that one seat no longer maps to one bounded workload. (What follows is the article's own reading of the announcement, not something GitHub spelled out beyond the sentence quoted above.)
+The break is not that tokens got more expensive. It is that one seat no longer maps to one bounded workload. (What follows is a reading of the announcement, not something GitHub spelled out beyond the sentence quoted above.)
 
 Flat-fee pricing is, underneath, a bet on averages. The vendor charges everyone roughly the average cost-to-serve, and light users subsidize heavy users. The bet holds as long as the variance between the cheapest and most expensive seat stays small. Human-paced usage kept that variance small for decades. A developer can only type, read, and ask so much in a working day.
 
@@ -73,11 +73,11 @@ A vendor changing its list price is one half of the story. The other half is a b
 
 According to Fortune, **Uber burned through its entire 2026 budget for AI coding tools in roughly four months**. Claude Code is the tool Fortune's reporting names, and the COO's comments address the company's rising use of it specifically. The adoption was something the company had itself encouraged, via an internal leaderboard that ranked teams by how much they used the AI tools ([Fortune, May 26, 2026](https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/)).
 
-The reporting discloses no specific dollar figure for that budget, and none is used here. Fortune also frames the four-month figure as following earlier reports rather than as its own primary disclosure. What the news-hook leans on is narrower: the four-month burn as Fortune carries it, plus what Uber's COO said on the record about it.
+The reporting discloses no specific dollar figure for that budget, and none is used here. Fortune also frames the four-month figure as following earlier reports rather than as its own primary disclosure. The load-bearing facts are narrower: the four-month burn as Fortune carries it, plus what Uber's COO said on the record about it.
 
 As reported by Fortune, COO Andrew Macdonald was openly skeptical of the return. He said it is "very hard to draw a line" between the company's AI usage statistics and "producing like 25% more useful consumer features," and that "that link is not there yet."
 
-The four-month line was subsequently repeated across broader coverage of the corporate AI cost reckoning. TheStreet, for instance, carried it in its June 4 report on the \$1,500-per-tool monthly spending caps Uber went on to impose, crediting the underlying figure to Bloomberg's reporting ([TheStreet, June 4, 2026](https://www.thestreet.com/investing/stocks/uber-reveals-an-unexpected-problem-behind-the-ai-boom-caps-1500-ai-coding-tool-spending-after-budget-runs-out-early)). The repetition traces back to the same underlying reporting, though, not independent corroboration. And calling the Uber example the emblematic demand-side case is the article's reading of the coverage, not a fact the coverage states about itself.
+The four-month line was subsequently repeated across broader coverage of the corporate AI cost reckoning. TheStreet, for instance, carried it in its June 4 report on the \$1,500-per-tool monthly spending caps Uber went on to impose, crediting the underlying figure to Bloomberg's reporting ([TheStreet, June 4, 2026](https://www.thestreet.com/investing/stocks/uber-reveals-an-unexpected-problem-behind-the-ai-boom-caps-1500-ai-coding-tool-spending-after-budget-runs-out-early)). The repetition traces back to the same underlying reporting, though, not independent corroboration. Calling the Uber example the emblematic demand-side case is a reading of the coverage, not a fact the coverage states about itself.
 
 The two events rhyme. GitHub, on the supply side, concluded the seat no longer describes its costs and changed the unit. Uber, on the demand side, discovered that a budget sized for the old consumption pattern could not survive the new one. Its COO could not yet draw the line from spend to value.
 
@@ -91,7 +91,7 @@ First, the cost of autonomy is not just the per-token price. In Artificial Analy
 
 Only part of it comes from price. Per-token rates roughly tripled (\$1.50/\$9.00 versus \$0.50/\$3.00 per million input/output tokens). The rest comes from consumption. Per the same analysis, input token usage "increases significantly, driven primarily by an increase in the number of turns in agentic evaluations." More capable agentic behavior meant more turns, and more turns meant more tokens at any price.
 
-Generalizing from that benchmark (reading agentic architecture itself as a token multiplier, independent of the per-token rate) is the article's interpretation. It is also the interpretation the turn-count data invites.
+Generalizing from that benchmark (reading agentic architecture itself as a token multiplier, independent of the per-token rate) goes beyond what Artificial Analysis states. It is also the interpretation the turn-count data invites.
 
 Second, token prices are genuinely falling, and it still does not resolve the problem. **DeepSeek made its 75 percent discount permanent on V4-Pro, pricing output tokens at roughly \$0.87 per million, about 34x below GPT-5.5's roughly \$30** ([The Decoder](https://the-decoder.com/deepseek-makes-its-75-percent-discount-permanent-pricing-output-tokens-at-least-34x-below-gpt-5-5/)). The discount had been set to expire May 31, 2026 and was extended indefinitely instead.
 
@@ -99,9 +99,9 @@ Price deflation on tokens is real. But a cheaper token only rescues a budget if 
 
 Cheaper tokens and more turns can, and on the current evidence do, pull in opposite directions. The seat-to-token shift is not a one-time repricing you can dodge by swapping models, because what got repriced was not the model but the loop.
 
-## The dual cost model, named as the article's own frame
+## The dual cost model
 
-What the Copilot date leaves behind, structurally, is an uncomfortable hybrid. Organizations now hold fixed per-seat licenses for some AI tooling alongside open-ended, pass-through token billing for the agentic portion of the same work. Call it a dual cost model. The frame is the article's own, not the FinOps Foundation's.
+What the Copilot date leaves behind, structurally, is an uncomfortable hybrid. Organizations now hold fixed per-seat licenses for some AI tooling alongside open-ended, pass-through token billing for the agentic portion of the same work. Call it a dual cost model, a name the FinOps Foundation itself does not use.
 
 The [FinOps Foundation Framework](https://www.finops.org/framework/) supports variable-cost management as a principle and treats AI as an emerging cost category, which is why the cloud-FinOps playbook is the natural place this problem lands. But the Framework does not itself articulate a "per-seat-versus-token" dual cost model. That layer sits on top of what the Framework actually says.
 
@@ -109,9 +109,9 @@ The practical consequence follows directly from the sourced facts: a budget line
 
 The discipline that eventually domesticated cloud spend (forecasting, allocation, unit economics, anomaly detection) now has a second, faster-moving variable cost to domesticate. In this one, a single seat can quietly become the largest line item.
 
-## Where the article stops and the paper begins
+## Where this article stops and the paper begins
 
-That is deliberately where the article stops. The date, the verbatim quote, the effective deadline, the go-live confirmation, the backlash on both sides of the switch, and the demand-side mirror establish that the break is real, documented, and datable. The mechanism is the paper's work: how a long-running loop converts a bounded seat into an unbounded variable cost, what the spend levers actually are, and what governance survives the transition.
+That is deliberately where this article stops. The date, the verbatim quote, the effective deadline, the go-live confirmation, the backlash on both sides of the switch, and the demand-side mirror establish that the break is real, documented, and datable. The mechanism is the companion paper's work: how a long-running loop converts a bounded seat into an unbounded variable cost, what the spend levers actually are, and what governance survives the transition.
 
 But when that paper argues that agentic workloads dissolve seat-based pricing, it will not be arguing a forecast. April 27, 2026 is the cleanest place to point and say: it already happened, on the record, in the vendor's own words, with an effective date.
 
