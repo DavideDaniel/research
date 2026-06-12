@@ -107,7 +107,7 @@ One inference follows: in an always-on agent, the *frequency* of context re-read
 
 **Horizon.** The second mechanism is how long the loop runs before a task is done. Public long-horizon numbers give a sense of scale. Artificial Analysis reports that evaluating Qwen3.7 Max on its full Intelligence Index [generated about 97 million tokens at a cost of $1,202](https://artificialanalysis.ai/models/qwen3-7-max). That figure is the total across the entire evaluation suite (many tasks, not one autonomous run): a measure of what sustained agentic-style workloads accumulate to, not the price of a single task.
 
-And in a vendor demo (not independently audited), MiniMax describes its [M3 model running roughly 24 hours on a CUDA-kernel task, completing 147 benchmark submissions and 1,959 tool calls](https://www.minimax.io/models/text/m3). Neither figure proves the thesis on its own (one is a benchmark aggregate, the other a vendor showcase), which is why neither is load-bearing here. Both are here as illustrations of shape: when the horizon extends, one "task" decomposes into hundreds or thousands of billable steps, and every step is turns.
+And in a vendor demo (not independently audited), MiniMax describes its [M3 model running roughly 24 hours on a CUDA-kernel task, completing 147 benchmark submissions and 1,959 tool calls](https://www.minimax.io/models/text/m3). Neither figure proves the thesis on its own (one is a benchmark aggregate, the other a vendor showcase), which is why nothing rests on either one. Both are here as illustrations of shape: when the horizon extends, one "task" decomposes into hundreds or thousands of billable steps, and every step is turns.
 
 Cadence sets how often the loop fires. Horizon sets how long it keeps firing. Together they determine the turn count, and the turn count, multiplied by the rate card, is the bill.
 
@@ -123,9 +123,9 @@ What it does claim: token consumption per task is an architectural property, set
 
 ## The takeaway, handed back to the paper
 
-The single point of this companion is narrow on purpose: **agentic architecture is a token multiplier independent of price.** If the diagnosis is right, the fix is not only cheaper tokens. It is governing turns: cadence, horizons, loop termination, and, above all, whether each cycle of the loop produces enough value to justify the tokens it consumed.
+The single point of this companion is narrow on purpose: **agentic architecture is a token multiplier independent of price.** If the diagnosis is right, the fix is not only cheaper tokens. It is governing turns: cadence, horizons, loop termination, and what each cycle of the loop actually delivers.
 
-That governance question, measuring whether the loop paid for itself and deciding what to do when it doesn't, is where **["When the Loop Never Stops"](/papers/agentic-pricing-break/)** takes over. This companion exists to make the paper's token-multiplier premise unambiguous before the paper builds on it.
+A caution on how to ask that last question. "Did the tokens pay for themselves" prices an input. The useful comparison is what the work delivered and how long it took, set against what the same delivery used to cost and take. That framing, and the measurement it requires, is where **["When the Loop Never Stops"](/papers/agentic-pricing-break/)** takes over. This companion exists to make the paper's token-multiplier premise unambiguous before the paper builds on it.
 
 _Companion to: ["When the Loop Never Stops"](/papers/agentic-pricing-break/), token-multiplier section._
 

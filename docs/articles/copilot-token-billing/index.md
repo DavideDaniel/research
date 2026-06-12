@@ -73,7 +73,7 @@ A vendor changing its list price is one half of the story. The other half is a b
 
 According to Fortune, **Uber burned through its entire 2026 budget for AI coding tools in roughly four months**. Claude Code is the tool Fortune's reporting names, and the COO's comments address the company's rising use of it specifically. The adoption was something the company had itself encouraged, via an internal leaderboard that ranked teams by how much they used the AI tools ([Fortune, May 26, 2026](https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/)).
 
-The reporting discloses no specific dollar figure for that budget, and none is used here. Fortune also frames the four-month figure as following earlier reports rather than as its own primary disclosure. The load-bearing facts are narrower: the four-month burn as Fortune carries it, plus what Uber's COO said on the record about it.
+The reporting discloses no specific dollar figure for that budget, and none is used here. Fortune also frames the four-month figure as following earlier reports rather than as its own primary disclosure. The facts that matter here are narrower: the four-month burn as Fortune carries it, plus what Uber's COO said on the record about it.
 
 As reported by Fortune, COO Andrew Macdonald was openly skeptical of the return. He said it is "very hard to draw a line" between the company's AI usage statistics and "producing like 25% more useful consumer features," and that "that link is not there yet."
 

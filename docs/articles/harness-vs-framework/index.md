@@ -52,7 +52,7 @@ The list functions as a build-versus-adopt checklist. Each item is a subsystem w
 
 A team that adopts a harness inherits a vendor's answer to each of these problems on day one. Which of the nine any given product implements, and how well, varies. The enumeration is a map of the surface area, not a feature matrix for any specific tool.
 
-The asymmetry it exposes is the load-bearing point. On one side of the fork, nine subsystems arrive pre-built and pre-integrated. On the other, nine subsystems go on your team's roadmap and stay there for the life of the system. That asymmetry, not any deficiency in the libraries, is why "just use LangChain" faded as the default answer (my reading). The libraries did not get worse. The checklist got visible.
+The asymmetry it exposes is the point that matters. On one side of the fork, nine subsystems arrive pre-built and pre-integrated. On the other, nine subsystems go on your team's roadmap and stay there for the life of the system. That asymmetry, not any deficiency in the libraries, is why "just use LangChain" faded as the default answer (my reading). The libraries did not get worse. The checklist got visible.
 
 ## The strongest public evidence the harness side is real
 
