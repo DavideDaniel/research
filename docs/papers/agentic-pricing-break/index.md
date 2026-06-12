@@ -19,7 +19,7 @@ description: "How long-running agents multiplied token consumption, broke seat-b
 
 Between the start of 2026 and June 2026, AI coding tools crossed a threshold their pricing models were never designed to survive. The shift from the inline copilot to the long-running agent (a loop that runs for minutes or hours, taking many turns per task and re-reading a growing context at every step) is not only an architectural change. It is mechanically a cost change.
 
-A multi-hour autonomous session can consume orders of magnitude more tokens than a quick completion. That single fact propagated through the industry's economics in a tight, datable chain: more agentic turns per task → open-ended token consumption → the collapse of flat per-seat licensing → enterprise budget burn → the public ROI reckoning of late May 2026.
+A multi-hour autonomous session can consume orders of magnitude more tokens than a quick completion. That single fact propagated through the industry's economics in a tight, datable chain. More turns per task meant open-ended token consumption. Open-ended consumption broke flat per-seat licensing. Metered bills burned through enterprise budgets. And the burned budgets set off the public ROI reckoning of late May 2026.
 
 This paper traces that chain link by link using the cleanest dated proof points of the window. GitHub Copilot switched to usage-based billing on April 27, 2026, effective June 1. Uber exhausted its 2026 AI coding-tools budget in four months. Microsoft canceled Claude Code licenses in its largest product division on May 14, 2026. The concentrated "tokenmaxxing is dead" news cycle ran May 23–28, 2026.
 
@@ -255,9 +255,9 @@ Each link in the causal chain now has a dated proof point and an evidence status
 |---|---|---|---|
 | Agentic turns multiply tokens independent of price | Artificial Analysis Gemini 3.5 Flash decomposition (5.5x = 3x price + turn-driven consumption) | May 19, 2026; figures stable as of June 2026 | independent benchmark |
 | Per-task multiplier can be extreme | "1000x more tokens than code reasoning and code chat" (arXiv 2604.22750; popularized by Tom's Hardware) | study submitted April 24, 2026; press cycle May 23, 2026 | academic study figure; agentic-coding-specific, not cross-workload |
-| Aggregate token consumption multiplies | Goldman Sachs Research ~24x forecast, 2026→2030 (~120 quadrillion tokens/month) | published May 20, 2026 | public analyst forecast (consumer + enterprise combined), not a measurement |
+| Aggregate token consumption multiplies | Goldman Sachs Research ~24x forecast, 2026 to 2030 (~120 quadrillion tokens/month) | published May 20, 2026 | public analyst forecast (consumer + enterprise combined), not a measurement |
 | Flat per-seat pricing becomes unsustainable | GitHub Copilot usage-based billing announcement | April 27, 2026 (effective June 1, 2026) | first-party vendor announcement |
-| Buyers lose bill predictability | Copilot billing backlash; ~$29→~$750/mo example | May 30, 2026 | reported anecdotes; ranges derived, not measured |
+| Buyers lose bill predictability | Copilot billing backlash; the ~$29 to ~$750/mo example | May 30, 2026 | reported anecdotes; ranges derived, not measured |
 | Metered access reaches the model tier | Claude Fable 5: subscription inclusion ends June 22, then usage credits; listed at 2x the Opus 4.8 rate | June 9, 2026 | first-party vendor announcement; 2x multiple derived from Anthropic's published price sheet; capacity framing is the vendor's |
 | Budgets exhaust ahead of plan | Uber four-month burn + COO ROI skepticism | first reported April 2026 (The Information); Fortune May 26, 2026 | reputable press (original paywalled, carried via Fortune); dollar figure undisclosed |
 | Cost pressure reaches the deepest-pocketed buyer | Microsoft cancels Claude Code licenses in Experiences + Devices; Copilot CLI migration by fiscal-year end (June 30) | May 14, 2026 | reputable press (primary scoop + corroboration); cost role inferred; Microsoft's stated rationale is standardization |
