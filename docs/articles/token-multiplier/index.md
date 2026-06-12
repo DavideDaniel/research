@@ -9,7 +9,7 @@ description: "Why agentic architecture multiplies token costs independent of pri
 
 **Published:** June 2026 | **Author:** David Daniel
 
-> _Companion to the paper **["When the Loop Never Stops" (Paper 2)](/papers/agentic-pricing-break/)**. This article isolates one argument from the paper's token-multiplier section and sharpens it to a single empirical point: agentic workflows multiply token consumption through **turns**, not just price. The paper situates this inside the larger always-on-agent cost reckoning; this piece exists to make the architecture-as-cost mechanism impossible to wave away._
+> _Companion to the paper **["When the Loop Never Stops"](/papers/agentic-pricing-break/)**. This article isolates one argument from the paper's token-multiplier section and sharpens it to a single empirical point: agentic workflows multiply token consumption through **turns**, not just price. The paper situates this inside the larger always-on-agent cost reckoning; this piece exists to make the architecture-as-cost mechanism impossible to wave away._
 
 A note on method before the argument: this piece mixes three kinds of claims, and I've tried to label which is which as they appear. Some things are directly reported by a source. Some things are arithmetic derived from source numbers. And some things are my analysis: inferences the sources don't make themselves. Where a figure is a vendor's self-report or a mathematical illustration rather than an observed measurement, it says so inline.
 
@@ -83,9 +83,9 @@ What it does claim is this: token consumption per task is an architectural prope
 
 The single point of this companion is narrow on purpose: **agentic architecture is a token multiplier independent of price.** GitHub's billing change names the spread between a chat question and an autonomous session as the thing that broke flat-fee pricing. The Gemini 3.5 Flash decomposition separates the factors: roughly 3x from price, the rest of 5.5x from token volume driven by more agentic turns. DeepSeek's 34x output-token price gap shows that even dramatic price deflation settles nothing by itself, because volume sits on the other side of the multiplication. And Uber's four-month budget burn shows what it looks like when turn-heavy workloads meet budgets sized for a less agentic era, with the caveat, marked above, that the mechanism reading there is analysis, not reportage.
 
-If the diagnosis is right, the fix is not only cheaper tokens. It is governing turns: cadence, horizons, loop termination, and, above all, whether each cycle of the loop produces enough value to justify the tokens it consumed. That governance question, measuring whether the loop paid for itself and deciding what to do when it doesn't, is where **["When the Loop Never Stops" (Paper 2)](/papers/agentic-pricing-break/)** takes over. This piece exists to make its token-multiplier premise unambiguous before the paper builds on it.
+If the diagnosis is right, the fix is not only cheaper tokens. It is governing turns: cadence, horizons, loop termination, and, above all, whether each cycle of the loop produces enough value to justify the tokens it consumed. That governance question, measuring whether the loop paid for itself and deciding what to do when it doesn't, is where **["When the Loop Never Stops"](/papers/agentic-pricing-break/)** takes over. This piece exists to make its token-multiplier premise unambiguous before the paper builds on it.
 
-_Companion to: ["When the Loop Never Stops" (Paper 2)](/papers/agentic-pricing-break/), token-multiplier section._
+_Companion to: ["When the Loop Never Stops"](/papers/agentic-pricing-break/), token-multiplier section._
 
 ---
 
