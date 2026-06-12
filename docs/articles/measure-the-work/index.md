@@ -25,7 +25,7 @@ Uber reportedly exhausted its planned 2026 budget for agentic coding tools withi
 
 Those are real operational problems, and the [FinOps playbook](/articles/finops-for-agents/) exists to solve them: caps, caching, gateways, routing. But a second reaction is spreading alongside the operational one, and it is the one worth slowing down: the demand that token spend be traced, line by line, to business value. **"What value did these tokens create"** is becoming a standing question in budget reviews.
 
-It feels rigorous. It is not. It prices the new way of working with the old way of measuring, and it will not produce an answer. It is an input question, and inputs were never how we measured knowledge work. Not for AI, and not for the humans before it.
+It feels rigorous. In practice it prices the new way of working with the old way of measuring, and it will not produce an answer, because it is an input question. Inputs were never how we measured knowledge work, for AI or for the humans before it.
 
 ## We Never Measured Humans This Way Either
 
@@ -35,7 +35,7 @@ That trap is reappearing in the agent era, not just history. Cursor's platform t
 
 The research record on this predates agents entirely. The SPACE framework ([Forsgren et al., 2021](https://cacm.acm.org/practice/the-space-of-developer-productivity/)) exists because its authors found that no single metric (and especially no activity metric) captures developer productivity. It takes five dimensions, most of which have nothing to do with volume of activity. That paper was a published admission, from researchers at GitHub and Microsoft among others, that counting what developers *do* tells you very little about what they *deliver*.
 
-And the gap between activity and outcome is not just wide. It can point in the wrong direction. METR's randomized controlled trial (Becker et al., [arXiv:2507.09089](https://arxiv.org/abs/2507.09089)) had experienced open-source developers complete 246 tasks with AI use randomly allowed or disallowed. Developers forecast AI would make them 24% faster. Afterward, they believed it had made them 20% faster. Measured completion time was 19% *slower*.
+And the gap between activity and outcome can point in the wrong direction. METR's randomized controlled trial (Becker et al., [arXiv:2507.09089](https://arxiv.org/abs/2507.09089)) had experienced open-source developers complete 246 tasks with AI use randomly allowed or disallowed. Developers forecast AI would make them 24% faster. Afterward, they believed it had made them 20% faster. Measured completion time was 19% *slower*.
 
 That is a single study of early-2025 tools in one setting, not a verdict on AI coding. But it is direct evidence that perceived productivity and activity-side signals can sit on the opposite side of zero from measured reality. An organization auditing token consumption is auditing exactly the kind of signal that study showed to be unreliable.
 
@@ -53,19 +53,19 @@ This is the comparison agents actually change. The unit of work shifts: a persis
 
 The honest productivity case rests on *cycle time of delivered work* (time from request to shipped, verified change), not on tokens consumed and not on how fast any individual step felt. Cost per delivered change and cycle time per delivered change are both measurable, both comparable to a baseline, and both denominated in the thing the business actually buys: finished work.
 
-This is not a hypothetical instrument. At least one tooling vendor already publishes average **cost per task** as the headline axis of a public benchmark. Cursor's [CursorBench](https://cursor.com/cursorbench) plots model success rate against dollars spent per task (a vendor benchmark, the vendor's own figures).
+At least one tooling vendor already publishes average **cost per task** as the headline axis of a public benchmark. Cursor's [CursorBench](https://cursor.com/cursorbench) plots model success rate against dollars spent per task (a vendor benchmark, the vendor's own figures).
 
-In its current run, a cheaper in-house model scores 63.2% at $0.55 per task against a frontier model's 58.4% at $4.41. That is comparable quality at roughly one-eighth the cost per delivered unit. Whatever one makes of the specific models, the *denominator* is the point: cost measured per finished task, not per token. That is the shift, already in the wild.
+In its current run, a cheaper in-house model scores 63.2% at $0.55 per task against a frontier model's 58.4% at $4.41. That is comparable quality at roughly one-eighth the cost per task. Whatever one makes of the specific models, the *denominator* is the point: cost measured per task, not per token. It is the same idea as cost per delivered change. That is the shift, already in the wild.
 
-Notice what this framing deliberately gives up. It does not promise to measure the *business value* of each change (whether this feature mattered more than that one). Nobody has ever measured that, for human teams or any other kind, and pretending tokens make it suddenly tractable is how organizations end up with ROI theater.
+This framing deliberately gives up one thing: it does not promise to measure the *business value* of each change (whether this feature mattered more than that one). Nobody has ever measured that, for human teams or any other kind, and pretending tokens make it suddenly tractable is how organizations end up with ROI theater.
 
 What it promises instead is rigorous *delivery economics*: the cost and speed of producing finished work. Quality is held constant by the verification you already run: tests, review, evals. That is more measurement than knowledge work has ever actually had. Take all of it, and stop demanding the part that has never existed.
 
-So the practical question becomes: how do you set up to answer it? There are two situations, and they call for different moves.
+The setup work depends on how far into adoption you already are.
 
 ## If You're Early: Snapshot the Baseline Now
 
-The comparison above has a denominator (*what delivery used to cost and take*), and that denominator can only be captured before agents change the work. If your organization is still early in agent adoption, the single highest-leverage measurement move available costs almost nothing and has a closing window:
+The comparison above has a denominator (*what delivery used to cost and take*), and that denominator can only be captured before agents change the work. If your organization is still early in agent adoption, one measurement move costs almost nothing and becomes unavailable once agents change the work:
 
 **Snapshot your current delivery economics, this quarter, before the transition blurs them.**
 
@@ -105,7 +105,7 @@ Tokens are a cost to be *governed* (that is the FinOps layer) and a denominator 
 
 The compressed version, for the meeting itself:
 
-The token bill is a cost-control problem, and cost control is a solved playbook: caps, caching, gateways, routing, deployable now. It is not a value-measurement instrument, and auditing it as one measures the wrong thing with a tool research has shown points the wrong way as often as not. The value question has an answerable form: cost and cycle time per delivered change, against a baseline.
+The token bill is a cost-control problem, and cost control is a solved playbook: caps, caching, gateways, routing, deployable now. It is not a value-measurement instrument, and auditing it as one measures the wrong thing; in the one randomized trial on record, that kind of activity signal pointed the opposite way from measured reality. The value question has an answerable form: cost and cycle time per delivered change, against a baseline.
 
 If you can still capture that baseline, capture it this quarter. If you can't, draw the start line today and instrument forward (tag spend to shipped work at the gateway) and let the trend answer. Govern the meter. Measure the work.
 
