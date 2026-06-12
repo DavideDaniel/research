@@ -23,7 +23,7 @@ A multi-hour autonomous session can consume orders of magnitude more tokens than
 
 This paper traces that chain link by link using the cleanest dated proof points of the window. GitHub Copilot switched to usage-based billing on April 27, 2026, effective June 1. Uber exhausted its 2026 AI coding-tools budget in four months. Microsoft canceled Claude Code licenses in its largest product division on May 14, 2026. The concentrated "tokenmaxxing is dead" news cycle ran May 23–28, 2026.
 
-The paper argues that long-running agents *are* the cost driver, not merely a coincident one. Price cuts alone cannot neutralize a cost that is structural to the architecture: cheaper tokens attack the per-token rate while leaving the turn count untouched.
+This paper argues that long-running agents *are* the cost driver, not merely a coincident one. Price cuts alone cannot neutralize a cost that is structural to the architecture: cheaper tokens attack the per-token rate while leaving the turn count untouched.
 
 The paper deliberately stops at establishing the cost mechanism and its consequences. How enterprises should measure whether agentic spend bought value, and how they should govern it, is handed to companion work on instrumenting agentic value. Figures that are vendor self-reported, secondhand, forecast-based, or derived are flagged inline.
 
@@ -117,7 +117,7 @@ If the token multiplier is the mechanism, the pricing pivot is the consequence, 
 
 GitHub named the cause in its own words: "a quick chat question and a multi-hour autonomous coding session can cost the user the same amount," and therefore "the current premium request model is no longer sustainable."
 
-This is the single cleanest first-party admission in the paper's chain. It covers the pricing link specifically, not the whole chain. The vendor that operates the most widely deployed AI coding assistant stated, in an official announcement, that the spread between its cheapest and most expensive uses had grown too wide for a flat unit to price. That spread was created specifically by multi-hour autonomous sessions.
+This is the single cleanest first-party admission in this paper's chain. It covers the pricing link specifically, not the whole chain. The vendor that operates the most widely deployed AI coding assistant stated, in an official announcement, that the spread between its cheapest and most expensive uses had grown too wide for a flat unit to price. That spread was created specifically by multi-hour autonomous sessions.
 
 The long-running agent broke the flat fee, and the vendor said so. The rest of the chain, from architecture through budget burn to the value reckoning, is press-documented and author-argued, not vendor-admitted.
 
@@ -295,7 +295,7 @@ The paper's claims are only as strong as the evidence notes they carry, so the n
 
 - **Framing boundaries.** The "dual cost model" formulation is analyst/vendor framing. The FinOps Foundation supports the variable-cost-management category but does not assert that model. The DeepSeek/GPT-5.5 price comparison is The Decoder's, which cites the vendors' pricing pages; the figures are dated as of late May 2026 and may have moved since. Paywalled or fetch-blocked corroboration (Axios, The Information, the Financial Times, press coverage of the OpenAI data agent) is noted but not relied on. CNBC's "Tokens or humans?" body was verified from accessible search-indexed excerpts rather than a direct fetch (the direct fetch returned empty and archive services were inaccessible from the drafting environment, June 9, 2026). It is corroboration, not the load-bearing budget-burn case. Derek Thompson's essay is a partially paywalled post whose cited framing appears in its free portion. Volatile pricing/billing sources could not be snapshot-archived from this environment for the same reason, so access dates are stated inline instead.
 
-- **Window dependence.** This is an account of a specific news window (roughly late April through early June 2026). The causal chain is argued from mechanism plus dated events, not from a controlled study. Subsequent reporting could revise individual proof points without, in the author's judgment, breaking the chain. That judgment is the paper's, and it is dated June 2026.
+- **Window dependence.** This is an account of a specific news window (roughly late April through early June 2026). The causal chain is argued from mechanism plus dated events, not from a controlled study. Subsequent reporting could revise individual proof points without, in the author's judgment, breaking the chain. That judgment is dated June 2026.
 
 ## Conclusion
 
