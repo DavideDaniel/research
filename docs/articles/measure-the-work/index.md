@@ -23,6 +23,8 @@ Token billing itemized it. [GitHub's move of Copilot to usage-based billing](htt
 
 Uber reportedly exhausted its planned 2026 budget for agentic coding tools within four months and responded with hard per-employee caps ([second-hand press via Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/uber-stock-drops-reportedly-caps-190100595.html), citing The Information and Bloomberg). Individual developers hit credit walls within days of Copilot's meter going live ([Visual Studio Magazine, June 4, 2026](https://visualstudiomagazine.com/articles/2026/06/04/copilot-billing-shock-hits-developers.aspx)).
 
+Note the order of those two events. The enterprises that adopted agentic tools at scale were never on seat pricing for them. A flat seat cannot exhaust an annual budget ahead of schedule, only a meter can. Those companies lived usage-based pricing a full budget cycle before the Copilot pivot brought it to everyone else, and their blown budgets were already circulating as cautionary tales when the meter reached the broader market. The panic arrived pre-loaded.
+
 Those are real operational problems, and the [FinOps playbook](/articles/finops-for-agents/) exists to solve them: caps, caching, gateways, routing. But a second reaction is spreading alongside the operational one, and it is the one worth slowing down: the demand that token spend be traced, line by line, to business value. **"What value did these tokens create"** is becoming a standing question in budget reviews.
 
 It feels rigorous. In practice it prices the new way of working with the old way of measuring, and it will not produce an answer, because it is an input question. Inputs were never how we measured knowledge work, for AI or for the humans before it.
