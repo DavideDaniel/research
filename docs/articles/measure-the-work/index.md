@@ -85,13 +85,15 @@ Retroactive baselines are built from records that weren't designed to be baselin
 
 The better move is to stop trying to grade the past and set up to measure the future:
 
-**Draw the measurement start line at today's date, and instrument forward from it.** The infrastructure is the same gateway layer the FinOps playbook already argued for, with one addition. Where agent traffic flows through infrastructure you control, tag it with task identity, so token spend joins to the delivered change it produced: the pull request, the ticket, the shipped artifact.
+**Draw the measurement start line at today's date, and instrument forward from it.** Start on the work side, because it is already instrumented. The systems that record delivered changes (the pull request, the ticket, the deploy log) cover every team you have, and they record the same way whether a team runs agents on every task or barely touches them. Cycle time per delivered change and rework rate come straight out of those records, trending from the start line.
+
+That uniformity is the point of measuring work instead of tooling. A team that moves faster without leaning on agents shows up in the same numbers as the team that automated everything, and so does a team whose agent spend is buying nothing. Measuring how teams use agents only ever shows you the agent-using teams. Measuring the work moving across teams accounts for everyone, whatever is producing the speed.
+
+The cost side joins afterward, through the same gateway layer the FinOps playbook already argued for. Where agent traffic flows through infrastructure you control, tag it with task identity, so token spend joins to the delivered change it produced.
 
 How far that tagging reaches depends on where your agents run. Agents you operate yourself (internal builds on API keys, CI and cloud sessions, CLI harnesses routed through your gateway) can carry task identity in the request path. Claude Code, for example, supports enterprise gateway routing and sends a session identifier on every request so a proxy can attribute cost without parsing request bodies ([LLM gateway configuration](https://code.claude.com/docs/en/llm-gateway), official docs). Vendor-hosted tools like Cursor give you no such path. Their traffic terminates at the vendor, and what comes back is admin usage reporting: spend per user or team over a billing period.
 
-That difference changes the resolution, not the metric. Joining the work to the tokens turns the input meter into **cost per delivered change**. That number is a ratio. A ratio survives coarse inputs: take the team's spend for the month and divide by the changes the team delivered. The spend comes from gateway logs where you have them and vendor usage exports where you don't.
-
-Where the request path is yours, tagging sharpens the join to the individual change. Track cycle time per delivered change and rework rate alongside it, all from the same start date.
+That difference changes the resolution, not the metric. Joining the work to the tokens turns the input meter into **cost per delivered change**. That number is a ratio. A ratio survives coarse inputs: take the team's spend for the month and divide by the changes the team delivered. The spend comes from gateway logs where you have them and vendor usage exports where you don't. Where the request path is yours, tagging sharpens the join to the individual change.
 
 Six months of forward data beats any reconstruction of the past. The trend line (is delivery getting faster and cheaper per finished change, at constant quality?) is the answer leaders are actually asking for when they ask whether the spend is worth it. And it has a property the token audit never will: it improves the longer you run it.
 
