@@ -161,6 +161,8 @@ Per [Fortune's May 26, 2026 reporting](https://fortune.com/2026/05/26/uber-coo-a
 
 A budget sized at the start of the year for twelve months of spend was gone by roughly the end of April. That places the exhaustion in the same weeks as GitHub's pivot announcement.
 
+The exhaustion also reveals the billing model, and the timing that follows from it. A flat seat cannot burn through an annual budget ahead of schedule; the line item does not move. Only metered spend can do that, which means Uber was already paying for agentic tooling by consumption, under a budget negotiated before anyone knew what long-running agents would draw. Enterprises in that position met usage-based pricing a full budget cycle before the pivot carried it to the seat-priced mainstream.
+
 No specific dollar amount is disclosed in the verified reporting. A "$3.4B budget" number that circulated in some retellings is unverified and is not used here, in the brief, or in any companion piece. The facts that matter are the four-month exhaustion and what came with it.
 
 What came with it is the more important half, because it previews the value problem the companion work takes up. The same Fortune reporting records Uber COO Andrew Macdonald's skepticism about what the spend bought. On the link between AI usage statistics and shipped consumer value, Macdonald said the link "is not there yet," and that it is "very hard to draw a line" between token-spend metrics and shipping roughly 25% more useful features. The budget is gone, the usage metrics are spectacular, and the operating chief cannot trace the one to business outcomes the company can bank.
@@ -214,6 +216,8 @@ The Meta detail is the clearest. A leaderboard (even an informal, employee-creat
 ### The widening: from news cycle to narrative
 
 Within days the cycle had widened from a cost story into a value story. Derek Thompson's May 29, 2026 essay ["The AI Boom Has Entered Its 'Wait, Is This Worth It?' Phase"](https://www.derekthompson.org/p/the-great-ai-cost-panic-of-2026) (subtitled "The great AI cost panic of 2026 is upon us") argued that "the center of gravity of the AI discourse has shifted from concerns about demand, to worries about supply, to a freakout over *value*". Thompson framed the episode as the third act of the AI-bubble debate rather than a billing dispute. The same day, CNBC's ["Tokens or humans?"](https://www.cnbc.com/2026/05/29/-tokens-or-humans-the-new-corporate-trade-off.html) framing made the trade-off explicit at the level of corporate resource allocation.
+
+The dates carry one more structural fact. The cycle ran and closed before June 1, the day Copilot's usage-based billing took effect. The companies in the pullback coverage were not reacting to the pivot's first bills, which had not yet been issued. They were the early adopters whose negotiated budgets had already collapsed under metered agentic spend: the enterprises that experienced usage-based pricing before the moment arrived for the broader market. Their blown commitments were circulating as cautionary tales while the seat-priced mainstream was still waiting for its first metered invoice, and that pre-loading is part of why the flip read as panic rather than as a price adjustment.
 
 The sentiment flip posed, rather than resolved, the question of what replaces token volume as a proxy for value. The conclusion argues the question itself needs reframing before anyone answers it. That work is where this paper stops and the companion measurement work begins.
 
