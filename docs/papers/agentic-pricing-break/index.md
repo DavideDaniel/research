@@ -161,7 +161,7 @@ Per [Fortune's May 26, 2026 reporting](https://fortune.com/2026/05/26/uber-coo-a
 
 A budget sized at the start of the year for twelve months of spend was gone by roughly the end of April. That places the exhaustion in the same weeks as GitHub's pivot announcement.
 
-The exhaustion also reveals the billing model, and the timing that follows from it. A flat seat cannot burn through an annual budget ahead of schedule; the line item does not move. Only metered spend can do that, which means Uber was already paying for agentic tooling on a meter, under a budget negotiated before anyone knew what long-running agents would draw. Enterprises in that position were on usage-based pricing a full budget cycle before the pivot carried it to the seat-priced mainstream.
+The exhaustion also says something about the billing model, and the timing that follows from it. A twelve-month budget gone in four points to a spend line that moves with usage rather than with seat count, and the reporting frames Uber's spend in token terms. Uber was already confronting metered agentic spend, under a budget set before anyone knew what long-running agents would draw. Enterprises in that position were living with usage-based pricing a full budget cycle before the pivot carried it to the seat-priced mainstream.
 
 No specific dollar amount is disclosed in the verified reporting. A "$3.4B budget" number that circulated in some retellings is unverified and is not used here, in the brief, or in any companion piece. The facts that matter are the four-month exhaustion and what came with it.
 
