@@ -18,6 +18,9 @@ hero:
       link: /papers/
 
 features:
+  - title: Measure the Work, Not the Meter
+    details: "Article · June 2026 · Token billing itemized the cost of AI work and measures none of its value: the answerable question is cost and cycle time per delivered change, against a baseline"
+    link: /articles/measure-the-work/
   - title: Harness Engineering
     details: "Paper · June 2026 · How Claude Code and Codex became long-running agentic-engineering systems, and why the harness, not the model, became the locus of capability gains"
     link: /papers/harness-engineering/
