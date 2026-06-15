@@ -7,6 +7,9 @@ const siteBase = '/research'
 const siteUrl = `${siteHostname}${siteBase}`
 const siteName = 'Research'
 const siteDescription = 'In-depth technical analysis on software development frameworks, AI-powered development, and engineering practices'
+// Brand logo is hosted by the root site at daviddaniel.tech/logo.png (same origin
+// as /research), so structured data references it by absolute URL — no copy needed here.
+const siteLogo = `${siteHostname}/logo.png`
 
 const rssOptions = {
   title: 'Research Papers - Technical Analysis on Software Development',
@@ -119,14 +122,21 @@ export default withMermaid(
           '@type': 'TechArticle',
           headline: title,
           description: description,
+          image: siteLogo,
           author: {
             '@type': 'Person',
             name: 'David Daniel',
             url: 'https://daviddaniel.tech'
           },
           publisher: {
-            '@type': 'Person',
-            name: 'David Daniel'
+            '@type': 'Organization',
+            name: 'David Daniel Research',
+            logo: {
+              '@type': 'ImageObject',
+              url: siteLogo,
+              width: 400,
+              height: 400
+            }
           },
           url: canonicalUrl,
           datePublished: pageData.frontmatter.date
@@ -156,6 +166,7 @@ export default withMermaid(
             '@type': 'WebPage',
             name: title,
             description: description,
+            image: siteLogo,
             url: canonicalUrl,
             author: {
               '@type': 'Person',
